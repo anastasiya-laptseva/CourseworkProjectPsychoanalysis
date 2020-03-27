@@ -16,6 +16,10 @@
 		0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */; };
 		0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */; };
 		0E7D5DFB242D50690002B228 /* TestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */; };
+		0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */; };
+		0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */; };
+		0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */; };
+		0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E03242E3C9E0002B228 /* BasicInformationsViewController.swift */; };
 		B081F694B1D5EEE4C462D1E7 /* Pods_CourseworkProjectPsychoanalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTestsTableViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestionsViewController.swift; sourceTree = "<group>"; };
+		0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
+		0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
+		0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateViewController.swift; sourceTree = "<group>"; };
+		0E7D5E03242E3C9E0002B228 /* BasicInformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInformationsViewController.swift; sourceTree = "<group>"; };
 		78A8FF729B9CE739D0F4E2C0 /* Pods-CourseworkProjectPsychoanalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; sourceTree = "<group>"; };
 		80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseworkProjectPsychoanalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E201A143F875EA48479E32 /* Pods-CourseworkProjectPsychoanalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,14 +77,12 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0E7D5E05242E3CC90002B228 /* SystemFiles */,
+				0E7D5DFE242E3B770002B228 /* ProfileControllers */,
 				0E7D5DF5242D4E060002B228 /* TestsControllers */,
-				0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */,
-				0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */,
 				0E7D5DE3242A3AB50002B228 /* ViewController.swift */,
 				0E7D5DE5242A3AB50002B228 /* Main.storyboard */,
 				0E7D5DE8242A3AB90002B228 /* Assets.xcassets */,
-				0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */,
-				0E7D5DED242A3AB90002B228 /* Info.plist */,
 				0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */,
 			);
 			path = CourseworkProjectPsychoanalysis;
@@ -87,8 +93,30 @@
 			children = (
 				0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */,
 				0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */,
+				0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */,
 			);
 			path = TestsControllers;
+			sourceTree = "<group>";
+		};
+		0E7D5DFE242E3B770002B228 /* ProfileControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */,
+				0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */,
+				0E7D5E03242E3C9E0002B228 /* BasicInformationsViewController.swift */,
+			);
+			path = ProfileControllers;
+			sourceTree = "<group>";
+		};
+		0E7D5E05242E3CC90002B228 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */,
+				0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */,
+				0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */,
+				0E7D5DED242A3AB90002B228 /* Info.plist */,
+			);
+			path = SystemFiles;
 			sourceTree = "<group>";
 		};
 		9665E83702A7DD92B0D6144A /* Frameworks */ = {
@@ -206,10 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */,
+				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
+				0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */,
 				0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */,
 				0E7D5DFB242D50690002B228 /* TestQuestionsViewController.swift in Sources */,
+				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
+				0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
