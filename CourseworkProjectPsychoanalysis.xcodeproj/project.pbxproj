@@ -389,7 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
-				INFOPLIST_FILE = CourseworkProjectPsychoanalysis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
-				INFOPLIST_FILE = CourseworkProjectPsychoanalysis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
