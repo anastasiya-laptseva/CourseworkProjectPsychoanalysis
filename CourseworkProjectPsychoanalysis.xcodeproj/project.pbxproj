@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC8F245B914600AB1C5E /* Profile.swift */; };
+		0E4BEC92245B91C000AB1C5E /* Save Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC91245B91C000AB1C5E /* Save Manager.swift */; };
+		0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC9A245B983300AB1C5E /* LoginViewController.swift */; };
+		0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC9C245B989F00AB1C5E /* AuthorisationViewController.swift */; };
+		0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC9E245B98C100AB1C5E /* RegistrationViewController.swift */; };
+		0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA0245B99BD00AB1C5E /* AlertManager.swift */; };
+		0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA2245B99FA00AB1C5E /* UsersManager.swift */; };
+		0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA4245B9A3300AB1C5E /* User.swift */; };
+		0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */; };
+		0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -24,6 +34,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E4BEC8F245B914600AB1C5E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0E4BEC91245B91C000AB1C5E /* Save Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Save Manager.swift"; sourceTree = "<group>"; };
+		0E4BEC9A245B983300AB1C5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0E4BEC9C245B989F00AB1C5E /* AuthorisationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorisationViewController.swift; sourceTree = "<group>"; };
+		0E4BEC9E245B98C100AB1C5E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0E4BECA0245B99BD00AB1C5E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		0E4BECA2245B99FA00AB1C5E /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
+		0E4BECA4245B9A3300AB1C5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManager.swift; sourceTree = "<group>"; };
+		0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +76,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4BEC93245B934A00AB1C5E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D5DE3242A3AB50002B228 /* ViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		0E4BEC95245B937E00AB1C5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */,
+				0E4BECA8245B9DCD00AB1C5E /* Settings */,
+				0E4BEC99245B97F800AB1C5E /* Authorithaions */,
+				0E4BEC93245B934A00AB1C5E /* Map */,
+				0E7D5DF5242D4E060002B228 /* TestsControllers */,
+				0E7D5DFE242E3B770002B228 /* ProfileControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0E4BEC96245B93B000AB1C5E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BEC8F245B914600AB1C5E /* Profile.swift */,
+				0E4BECA4245B9A3300AB1C5E /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0E4BEC97245B93CE00AB1C5E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BEC91245B91C000AB1C5E /* Save Manager.swift */,
+				0E4BECA0245B99BD00AB1C5E /* AlertManager.swift */,
+				0E4BECA2245B99FA00AB1C5E /* UsersManager.swift */,
+				0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0E4BEC99245B97F800AB1C5E /* Authorithaions */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BEC9A245B983300AB1C5E /* LoginViewController.swift */,
+				0E4BEC9C245B989F00AB1C5E /* AuthorisationViewController.swift */,
+				0E4BEC9E245B98C100AB1C5E /* RegistrationViewController.swift */,
+			);
+			path = Authorithaions;
+			sourceTree = "<group>";
+		};
+		0E4BECA8245B9DCD00AB1C5E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		0E7D5DD3242A3AB50002B228 = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +156,12 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0E4BEC95245B937E00AB1C5E /* ViewControllers */,
 				0E7D5E05242E3CC90002B228 /* SystemFiles */,
-				0E7D5DFE242E3B770002B228 /* ProfileControllers */,
-				0E7D5DF5242D4E060002B228 /* TestsControllers */,
-				0E7D5DE3242A3AB50002B228 /* ViewController.swift */,
+				0E4BEC96245B93B000AB1C5E /* Entities */,
+				0E4BEC97245B93CE00AB1C5E /* Managers */,
 				0E7D5DE5242A3AB50002B228 /* Main.storyboard */,
 				0E7D5DE8242A3AB90002B228 /* Assets.xcassets */,
-				0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */,
 			);
 			path = CourseworkProjectPsychoanalysis;
 			sourceTree = "<group>";
@@ -233,15 +311,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
+				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
 				0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
+				0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */,
+				0E4BEC92245B91C000AB1C5E /* Save Manager.swift in Sources */,
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
 				0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */,
 				0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */,
 				0E7D5DFB242D50690002B228 /* TestQuestionsViewController.swift in Sources */,
+				0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */,
+				0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */,
 				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
+				0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */,
+				0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */,
+				0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */,
 				0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */,
+				0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

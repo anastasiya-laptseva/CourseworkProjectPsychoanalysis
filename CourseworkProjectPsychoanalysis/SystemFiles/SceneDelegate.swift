@@ -18,6 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if UsersManager.shared.IsLogin(){
+           ControllerManager.shared.setWelcomeControllerRoot()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -40,6 +44,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        SaveManager.shared.setDark(state: UIScreen.main.traitCollection.userInterfaceStyle == .dark)
+        print("sceneWillEnterForeground")
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

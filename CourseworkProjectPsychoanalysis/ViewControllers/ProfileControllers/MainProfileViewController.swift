@@ -1,5 +1,5 @@
 //
-//  BasicInformationsViewController.swift
+//  MainPrrofile.swift
 //  CourseworkProjectPsychoanalysis
 //
 //  Created by Anastasiya Laptseva on 3/27/20.
@@ -8,10 +8,15 @@
 
 import UIKit
 
-class BasicInformationsViewController: UIViewController {
+class MainProfileViewController: UIViewController {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
 
         // Do any additional setup after loading the view.
     }

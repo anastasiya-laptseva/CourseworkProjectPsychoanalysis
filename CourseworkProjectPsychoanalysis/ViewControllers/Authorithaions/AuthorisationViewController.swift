@@ -1,22 +1,25 @@
 //
-//  MainPrrofile.swift
+//  AuthorisationViewController.swift
 //  CourseworkProjectPsychoanalysis
 //
-//  Created by Anastasiya Laptseva on 3/27/20.
+//  Created by Anastasiya Laptseva on 5/1/20.
 //  Copyright © 2020 Anastasiya Laptseva. All rights reserved.
 //
 
 import UIKit
 
-class MainProfileViewController: UIViewController {
-
+class AuthorisationViewController: UIViewController {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
 
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 

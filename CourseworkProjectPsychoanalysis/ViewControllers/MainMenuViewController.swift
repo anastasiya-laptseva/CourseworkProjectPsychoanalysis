@@ -10,10 +10,24 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutClick))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
+    }
+    
+    @objc func logoutClick() {
+        print("logoutClick")
+        UsersManager.shared.saveLogin(state: false)
+        ControllerManager.shared.setLoginControllerRoot()
     }
     
 
