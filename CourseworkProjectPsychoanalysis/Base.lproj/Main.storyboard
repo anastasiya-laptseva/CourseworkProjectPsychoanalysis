@@ -106,7 +106,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEK-du-ajY">
                                                 <rect key="frame" x="0.0" y="200" width="334" height="50"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="goB-4P-T6f"/>
                                                 </constraints>
@@ -115,7 +115,7 @@
                                                     <color key="titleColor" name="TextColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="4CQ-c0-K6S" kind="show" id="VsO-CU-2cb"/>
+                                                    <segue destination="2XQ-ur-8wh" kind="show" id="ESU-oX-G6s"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-To-amy">
@@ -307,6 +307,52 @@
             </objects>
             <point key="canvasLocation" x="138" y="-1214"/>
         </scene>
+        <!--All Tests Table View Controller-->
+        <scene sceneID="eOD-vx-7UW">
+            <objects>
+                <tableViewController id="2XQ-ur-8wh" customClass="AllTestsTableViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCY-0g-bVD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="ViewControllerColor"/>
+                        <color key="sectionIndexColor" name="TextColor"/>
+                        <color key="sectionIndexBackgroundColor" name="ViewControllerColor"/>
+                        <color key="sectionIndexTrackingBackgroundColor" name="ComponentsColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="3eG-kV-OzE" style="IBUITableViewCellStyleDefault" id="OVn-si-Izk">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OVn-si-Izk" id="H9O-On-WzV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3eG-kV-OzE">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="ComponentsColor"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="ComponentsColor"/>
+                                <connections>
+                                    <segue destination="lcQ-UV-X2v" kind="show" id="uPj-SJ-fvQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2XQ-ur-8wh" id="iGB-pa-nui"/>
+                            <outlet property="delegate" destination="2XQ-ur-8wh" id="Z3c-il-XPh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ZZa-6f-iTo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZn-oL-Sm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="-541"/>
+        </scene>
         <!--Current State View Controller-->
         <scene sceneID="ZV7-wo-UxC">
             <objects>
@@ -417,9 +463,6 @@
                                             <color key="backgroundColor" name="ComponentsColor"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="ComponentsColor"/>
-                                        <connections>
-                                            <segue destination="lcQ-UV-X2v" kind="show" id="8CS-Pi-B3H"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -431,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3z-3c-WM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879.71014492753625" y="-541.07142857142856"/>
+            <point key="canvasLocation" x="1723" y="144"/>
         </scene>
         <!--Result Test View Controller-->
         <scene sceneID="hev-hi-n0B">
