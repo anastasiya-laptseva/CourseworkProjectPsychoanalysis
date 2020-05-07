@@ -1,0 +1,14 @@
+{
+  "array": [
+    {"boolean": true, "color": "gold"},
+    {"boolean": true, "color": "gold"}
+  ],
+  "boolean": true,
+  "color": "gold",
+  "number": 123,
+  "object": {
+    "a": "b",
+    "c": "d"
+  },
+  "string": "Hello World"
+}

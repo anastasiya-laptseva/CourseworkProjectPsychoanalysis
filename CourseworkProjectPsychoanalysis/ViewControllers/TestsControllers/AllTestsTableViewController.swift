@@ -11,12 +11,13 @@ import UIKit
 class AllTestsTableViewController: UITableViewController {
     
     let arrayTests = [
+        ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
         ["External Test","Valuation Test"],
-        ["Temperament Test","Character Type Test","Character Test","Difficulty Test"],
+        ["Character Type Test","Character Test","Difficulty Test"],
         ["Geometric test","Favorite color test"]
     ]
     
-    let arrayNameSection = ["Somatipology", "Psychology", "Perception"]
+    let arrayNameSection = [ "Temperament Test","Somatipology", "Psychology", "Perception"]
 
     
     override func viewDidLoad() {
