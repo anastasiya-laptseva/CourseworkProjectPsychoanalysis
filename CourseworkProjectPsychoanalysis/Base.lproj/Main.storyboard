@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="537-Nw-xvn">
             <objects>
-                <viewController id="QuC-aq-Swf" customClass="MainMenuViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QuC-aq-Swf" customClass="MainMenuViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQd-tX-tEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
         <!--Main Profile View Controller-->
         <scene sceneID="5iq-qU-IHx">
             <objects>
-                <viewController id="ooU-am-KUP" customClass="MainProfileViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ooU-am-KUP" customClass="MainProfileViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qi4-EG-1MM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,7 +310,7 @@
         <!--All Tests Table View Controller-->
         <scene sceneID="eOD-vx-7UW">
             <objects>
-                <tableViewController id="2XQ-ur-8wh" customClass="AllTestsTableViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2XQ-ur-8wh" customClass="AllTestsTableViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCY-0g-bVD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,9 +337,6 @@
                                     <color key="backgroundColor" name="ComponentsColor"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="ComponentsColor"/>
-                                <connections>
-                                    <segue destination="lcQ-UV-X2v" kind="show" id="uPj-SJ-fvQ"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -348,6 +345,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ZZa-6f-iTo"/>
+                    <connections>
+                        <segue destination="lcQ-UV-X2v" kind="show" identifier="yesNo" id="3KG-hE-ryq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZn-oL-Sm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -356,7 +356,7 @@
         <!--Current State View Controller-->
         <scene sceneID="ZV7-wo-UxC">
             <objects>
-                <viewController id="M5U-3Z-cU9" customClass="CurrentStateViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M5U-3Z-cU9" customClass="CurrentStateViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGD-cV-ncp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -426,7 +426,7 @@
         <!--Result Test View Controller-->
         <scene sceneID="hev-hi-n0B">
             <objects>
-                <viewController id="PcS-02-fXY" customClass="ResultTestViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PcS-02-fXY" customClass="ResultTestViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVh-68-95M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +546,7 @@
         <!--Authorisation View Controller-->
         <scene sceneID="PNR-3y-lmW">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="hKj-Re-31I" customClass="AuthorisationViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="hKj-Re-31I" customClass="AuthorisationViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVk-eB-d4u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,7 +631,7 @@
         <!--Registration View Controller-->
         <scene sceneID="MPz-QK-QFX">
             <objects>
-                <viewController id="Kod-i4-SmA" customClass="RegistrationViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kod-i4-SmA" customClass="RegistrationViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPh-8g-VNW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -787,7 +787,7 @@
         <!--Login View Controller-->
         <scene sceneID="Mep-ay-e9v">
             <objects>
-                <viewController id="KkO-ec-SCE" customClass="LoginViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KkO-ec-SCE" customClass="LoginViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QHp-zn-N4z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -935,7 +935,7 @@
         <!--Basic Informations View Controller-->
         <scene sceneID="YA9-ls-Zvo">
             <objects>
-                <viewController id="WzV-ss-T6Z" customClass="BasicInformationsViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WzV-ss-T6Z" customClass="BasicInformationsViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6gV-ba-WND">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1070,7 +1070,7 @@
         <!--Setting View Controller-->
         <scene sceneID="cJP-I8-l1u">
             <objects>
-                <viewController id="9MU-DI-wTm" customClass="SettingViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9MU-DI-wTm" customClass="SettingViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmP-Z7-bZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1148,7 +1148,7 @@
         <!--Test Questions View Controller-->
         <scene sceneID="vXt-qZ-OZN">
             <objects>
-                <viewController id="lcQ-UV-X2v" customClass="TestQuestionsViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lcQ-UV-X2v" customClass="TestQuestionsViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYf-Dh-Uo3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1203,9 +1203,12 @@
                                                             <constraint firstAttribute="width" constant="70" id="0c6-7z-1ei"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" title="Yes">
+                                                        <state key="normal" title="Да">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="yesClick:" destination="lcQ-UV-X2v" eventType="touchUpInside" id="Bud-py-7oD"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-nU-PfJ">
                                                         <rect key="frame" x="284" y="0.0" width="70" height="50"/>
@@ -1214,9 +1217,12 @@
                                                             <constraint firstAttribute="width" constant="70" id="B8Y-pi-mnQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" title="No">
+                                                        <state key="normal" title="Нет">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="noClick:" destination="lcQ-UV-X2v" eventType="touchUpInside" id="bEX-n4-bgN"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1253,7 +1259,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="X4Q-U3-Dra"/>
                     <connections>
-                        <segue destination="PcS-02-fXY" kind="show" id="vpz-Iv-V86"/>
+                        <outlet property="progressLabel" destination="Q9V-pN-YEo" id="Dch-6s-lCJ"/>
+                        <outlet property="questionLabel" destination="09u-kL-4kp" id="g50-Ep-OZk"/>
+                        <segue destination="PcS-02-fXY" kind="show" identifier="result" id="vpz-Iv-V86"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xtW-52-c9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -9,6 +9,10 @@
 import UIKit
 
 class AllTestsTableViewController: UITableViewController {
+    var section: Int?
+    var indexRow: Int?
+    let yesNoIdentifier = "yesNo"
+    var temperamentsTests: Temperaments?
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
@@ -23,14 +27,18 @@ class AllTestsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        temperamentsTests =  JSONManager().loadTest()
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.section)
-        print(indexPath.row)
-  
+        section = indexPath.section
+        indexRow = indexPath.row
+        
+        if section == 0{
+            self.performSegue(withIdentifier: yesNoIdentifier, sender: self)
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,9 +64,36 @@ class AllTestsTableViewController: UITableViewController {
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if(segue.identifier == yesNoIdentifier){
+            guard let testQuestionController = segue.destination as? TestQuestionsViewController ?? nil else {
+                return
+            }
+            
+            if(section == 0){
+                var questions = [QuestionsArray]()
+                
+                switch indexRow {
+                case 0:
+                    questions = temperamentsTests?.phlegmatic as! [QuestionsArray]
+                    break
+                case 1:
+                    questions = temperamentsTests?.melancholic as! [QuestionsArray]
+                    break
+                case 2:
+                    questions = temperamentsTests?.choleric as! [QuestionsArray]
+                    break
+                case 3:
+                    questions = temperamentsTests?.sanguine as! [QuestionsArray]
+                    break
+                default:
+                    break
+                }
+                
+                testQuestionController.questions = questions
+            }
+        }
     }
 
 

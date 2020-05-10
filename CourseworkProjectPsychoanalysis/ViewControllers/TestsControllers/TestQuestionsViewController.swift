@@ -9,6 +9,15 @@
 import UIKit
 
 class TestQuestionsViewController: UIViewController {
+    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    var currentNumber: Int = -1
+    let resultIdentifier = "result"
+    
+    
+    var questions: [QuestionsArray]?
+    var countQuestion = 0
+    var result = [Bool]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +25,13 @@ class TestQuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Previous question", style: .plain, target: self, action: #selector(backQuestion))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close Test", style: .plain, target: self, action: #selector(closeTest))
+        
+        countQuestion = questions?.count ?? 0
+        for _ in 0...countQuestion{
+            result.append(false)
+        }
+        
+        UpdateQuestion()
     }
     
     @objc func backQuestion() {
@@ -25,6 +41,37 @@ class TestQuestionsViewController: UIViewController {
         print("closeTest")
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func yesClick(_ sender: Any) {
+        result[currentNumber] = true
+        UpdateQuestion()
+    }
+    
+    @IBAction func noClick(_ sender: Any) {
+        result[currentNumber] = false
+        UpdateQuestion()
+    }
+    
+    func UpdateQuestion() {
+        currentNumber+=1
+        if(currentNumber<questions?.count ?? 0){
+            questionLabel.text = questions?[currentNumber].question
+            progressLabel.text = "\(currentNumber+1)/\(questions?.count ?? 0)"
+        }
+        else{
+            var countYes = 0
+            for value in result {
+                if value == true{
+                    countYes+=1
+                }
+            }
+            
+            print("\(countYes)/\(countQuestion)")
+            
+            self.performSegue(withIdentifier: resultIdentifier, sender: self)
+        }
+    }
+    
 
     /*
     // MARK: - Navigation
