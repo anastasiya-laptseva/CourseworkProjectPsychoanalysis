@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="537-Nw-xvn">
             <objects>
-                <viewController id="QuC-aq-Swf" customClass="MainMenuViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QuC-aq-Swf" customClass="MainMenuViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQd-tX-tEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
         <!--Main Profile View Controller-->
         <scene sceneID="5iq-qU-IHx">
             <objects>
-                <viewController id="ooU-am-KUP" customClass="MainProfileViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ooU-am-KUP" customClass="MainProfileViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qi4-EG-1MM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,7 +310,7 @@
         <!--All Tests Table View Controller-->
         <scene sceneID="eOD-vx-7UW">
             <objects>
-                <tableViewController id="2XQ-ur-8wh" customClass="AllTestsTableViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2XQ-ur-8wh" customClass="AllTestsTableViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCY-0g-bVD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +356,7 @@
         <!--Current State View Controller-->
         <scene sceneID="ZV7-wo-UxC">
             <objects>
-                <viewController id="M5U-3Z-cU9" customClass="CurrentStateViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M5U-3Z-cU9" customClass="CurrentStateViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGD-cV-ncp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -426,7 +426,7 @@
         <!--Result Test View Controller-->
         <scene sceneID="hev-hi-n0B">
             <objects>
-                <viewController id="PcS-02-fXY" customClass="ResultTestViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PcS-02-fXY" customClass="ResultTestViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVh-68-95M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +546,7 @@
         <!--Authorisation View Controller-->
         <scene sceneID="PNR-3y-lmW">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="hKj-Re-31I" customClass="AuthorisationViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="hKj-Re-31I" customClass="AuthorisationViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVk-eB-d4u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,7 +631,7 @@
         <!--Registration View Controller-->
         <scene sceneID="MPz-QK-QFX">
             <objects>
-                <viewController id="Kod-i4-SmA" customClass="RegistrationViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kod-i4-SmA" customClass="RegistrationViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPh-8g-VNW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -787,7 +787,7 @@
         <!--Login View Controller-->
         <scene sceneID="Mep-ay-e9v">
             <objects>
-                <viewController id="KkO-ec-SCE" customClass="LoginViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KkO-ec-SCE" customClass="LoginViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QHp-zn-N4z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -935,7 +935,7 @@
         <!--Basic Informations View Controller-->
         <scene sceneID="YA9-ls-Zvo">
             <objects>
-                <viewController id="WzV-ss-T6Z" customClass="BasicInformationsViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WzV-ss-T6Z" customClass="BasicInformationsViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6gV-ba-WND">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1070,7 +1070,7 @@
         <!--Setting View Controller-->
         <scene sceneID="cJP-I8-l1u">
             <objects>
-                <viewController id="9MU-DI-wTm" customClass="SettingViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9MU-DI-wTm" customClass="SettingViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmP-Z7-bZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1148,7 +1148,7 @@
         <!--Test Questions View Controller-->
         <scene sceneID="vXt-qZ-OZN">
             <objects>
-                <viewController id="lcQ-UV-X2v" customClass="TestQuestionsViewController" customModule="CourseworkProjectPsychoanalysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lcQ-UV-X2v" customClass="TestQuestionsViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYf-Dh-Uo3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1157,10 +1157,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-5n-X0Y">
-                                        <rect key="frame" x="10" y="30" width="394" height="400"/>
+                                        <rect key="frame" x="10" y="30" width="394" height="450"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyw-kQ-U6E">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9V-pN-YEo">
+                                                        <rect key="frame" x="20" y="0.0" width="354" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Q9V-pN-YEo" firstAttribute="leading" secondItem="Hyw-kQ-U6E" secondAttribute="leading" constant="20" id="ODB-dx-h9T"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ZcB-jK-kcy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Q9V-pN-YEo" secondAttribute="bottom" id="ciA-tY-WGJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q9V-pN-YEo" secondAttribute="trailing" constant="20" id="swg-sd-YHb"/>
+                                                    <constraint firstItem="Q9V-pN-YEo" firstAttribute="top" secondItem="Hyw-kQ-U6E" secondAttribute="top" id="ykI-ci-HNk"/>
+                                                </constraints>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09u-kL-4kp">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
+                                                <rect key="frame" x="0.0" y="50" width="394" height="300"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="1bY-nh-x7p"/>
@@ -1170,22 +1188,47 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zu-WS-s0g">
-                                                <rect key="frame" x="0.0" y="300" width="394" height="50"/>
+                                                <rect key="frame" x="0.0" y="350" width="394" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="fGB-xI-gGr"/>
                                                 </constraints>
                                             </view>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lkg-s1-tFe">
-                                                <rect key="frame" x="0.0" y="350" width="394" height="51"/>
-                                                <color key="backgroundColor" name="ComponentsColor"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-Zo-hc6">
+                                                <rect key="frame" x="0.0" y="400" width="394" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-Qy-mVN">
+                                                        <rect key="frame" x="40" y="0.0" width="70" height="50"/>
+                                                        <color key="backgroundColor" name="ComponentsColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="0c6-7z-1ei"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Yes">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-nU-PfJ">
+                                                        <rect key="frame" x="284" y="0.0" width="70" height="50"/>
+                                                        <color key="backgroundColor" name="ComponentsColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="B8Y-pi-mnQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="No">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="ctA-Iz-gW4"/>
+                                                    <constraint firstAttribute="height" constant="50" id="MDr-JS-iyJ"/>
+                                                    <constraint firstItem="ipn-Qy-mVN" firstAttribute="top" secondItem="nHq-Zo-hc6" secondAttribute="top" id="OCV-Hm-Nkj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lZU-nU-PfJ" secondAttribute="trailing" constant="40" id="Ox7-Rf-KaA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lZU-nU-PfJ" secondAttribute="bottom" id="hNq-9z-mNz"/>
+                                                    <constraint firstItem="ipn-Qy-mVN" firstAttribute="leading" secondItem="nHq-Zo-hc6" secondAttribute="leading" constant="40" id="iG2-aA-amY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ipn-Qy-mVN" secondAttribute="bottom" id="mv4-SD-4hg"/>
+                                                    <constraint firstItem="lZU-nU-PfJ" firstAttribute="top" secondItem="nHq-Zo-hc6" secondAttribute="top" id="x5I-EF-BX6"/>
                                                 </constraints>
-                                                <segments>
-                                                    <segment title="First"/>
-                                                    <segment title="Second"/>
-                                                </segments>
-                                            </segmentedControl>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>

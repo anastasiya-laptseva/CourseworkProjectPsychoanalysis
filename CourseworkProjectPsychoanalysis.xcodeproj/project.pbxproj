@@ -19,10 +19,10 @@
 		0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */; };
 		0E4BECB1245E432600AB1C5E /* Tests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */; };
 		0E4BECB42464C14400AB1C5E /* Test1Temperament.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* Test1Temperament.json */; };
-		0E4BECB62464C2F400AB1C5E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB52464C2F400AB1C5E /* Test.swift */; };
-		0E4BECB82464C5B100AB1C5E /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB72464C5B100AB1C5E /* Test.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
 		0E4BECBC2464CB8100AB1C5E /* TemperamentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */; };
+		0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */; };
+		0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECDF2465CF4700AB1C5E /* Firebase.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -52,11 +52,11 @@
 		0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0E4BECB0245E432600AB1C5E /* Tests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tests.xcdatamodel; sourceTree = "<group>"; };
 		0E4BECB32464C14400AB1C5E /* Test1Temperament.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test1Temperament.json; sourceTree = "<group>"; };
-		0E4BECB52464C2F400AB1C5E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		0E4BECB72464C5B100AB1C5E /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		0E4BECB92464CAF900AB1C5E /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperamentTest.swift; sourceTree = "<group>"; };
-		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E4BECDF2465CF4700AB1C5E /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE3242A3AB50002B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 				0E4BEC93245B934A00AB1C5E /* Map */,
 				0E7D5DF5242D4E060002B228 /* TestsControllers */,
 				0E7D5DFE242E3B770002B228 /* ProfileControllers */,
+				0E4BECDF2465CF4700AB1C5E /* Firebase.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -115,7 +116,6 @@
 			children = (
 				0E4BEC8F245B914600AB1C5E /* Profile.swift */,
 				0E4BECA4245B9A3300AB1C5E /* User.swift */,
-				0E4BECB52464C2F400AB1C5E /* Test.swift */,
 				0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */,
 			);
 			path = Entities;
@@ -155,7 +155,6 @@
 			children = (
 				0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */,
 				0E4BECB32464C14400AB1C5E /* Test1Temperament.json */,
-				0E4BECB72464C5B100AB1C5E /* Test.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -174,7 +173,7 @@
 		0E7D5DDD242A3AB50002B228 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.app */,
+				0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +218,7 @@
 				0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */,
 				0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */,
 				0E7D5DED242A3AB90002B228 /* Info.plist */,
+				0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */,
 			);
 			path = SystemFiles;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			);
 			name = CourseworkProjectPsychoanalysis;
 			productName = CourseworkProjectPsychoanalysis;
-			productReference = 0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.app */;
+			productReference = 0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 				0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */,
 				0E7D5DE9242A3AB90002B228 /* Assets.xcassets in Resources */,
 				0E7D5DE7242A3AB50002B228 /* Main.storyboard in Resources */,
-				0E4BECB82464C5B100AB1C5E /* Test.json in Resources */,
+				0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */,
 				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
 				0E4BECBC2464CB8100AB1C5E /* TemperamentTest.swift in Sources */,
@@ -346,7 +347,6 @@
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
-				0E4BECB62464C2F400AB1C5E /* Test.swift in Sources */,
 				0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */,
 				0E4BEC92245B91C000AB1C5E /* SaveManager.swift in Sources */,
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
@@ -510,12 +510,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
 				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -529,12 +530,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
 				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

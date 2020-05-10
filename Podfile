@@ -8,4 +8,5 @@ target 'CourseworkProjectPsychoanalysis' do
   # Pods for CourseworkProjectPsychoanalysis
 
 pod 'SwiftLint' 
+pod 'Firebase/Auth'
 end
