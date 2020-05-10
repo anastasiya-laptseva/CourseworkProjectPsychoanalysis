@@ -14,8 +14,17 @@ class TestQuestionsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Previous question", style: .plain, target: self, action: #selector(backQuestion))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close Test", style: .plain, target: self, action: #selector(closeTest))
     }
     
+    @objc func backQuestion() {
+        print("backQuestion")
+    }
+    @objc func closeTest() {
+        print("closeTest")
+        navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
