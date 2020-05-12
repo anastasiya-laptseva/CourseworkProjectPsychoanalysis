@@ -12,7 +12,7 @@ class AllTestsTableViewController: UITableViewController {
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
-    var temperamentsTests: Tests?
+    var temperamentsTests: TestsEntity?
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
@@ -72,20 +72,20 @@ class AllTestsTableViewController: UITableViewController {
             }
             
             if(section == 0){
-//                var questions = [QuesCharacterTypeQuestionstionsArray]()
+//                var questions = [QuestionsArray]()
                 
                 switch indexRow {
                 case 0:
-//                    questions = temperamentsTests?.phlegmatic as! [QuestionsArray]
+//                    questions = TemperamentEntity?.phlegmatic as! [QuestionsArray]
                     break
                 case 1:
-//                    questions = temperamentsTests?.melancholic as! [QuestionsArray]
+//                    questions = TemperamentEntity?.melancholic as! [QuestionsArray]
                     break
                 case 2:
-//                    questions = temperamentsTests?.choleric as! [QuestionsArray]
+//                    questions = TemperamentEntity?.choleric as! [QuestionsArray]
                     break
                 case 3:
-//                    questions = temperamentsTests?.sanguine as! [QuestionsArray]
+//                    questions = TemperamentEntity?.sanguine as! [QuestionsArray]
                     break
                 default:
                     break

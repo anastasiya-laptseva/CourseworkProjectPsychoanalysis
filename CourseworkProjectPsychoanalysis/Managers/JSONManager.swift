@@ -23,9 +23,9 @@ class JSONManager {
         return Data.init()
     }
     
-    func loadTest() -> Tests {
+    func loadTest() -> TestsEntity {
         let dataJson = loadFileAsString(name: "AllTests", type: ".json")
-        let temperamentTestModel: Tests = try! JSONDecoder().decode(Tests.self, from: dataJson)
+        let temperamentTestModel: TestsEntity = try! JSONDecoder().decode(TestsEntity.self, from: dataJson)
         return temperamentTestModel
     }
 }
