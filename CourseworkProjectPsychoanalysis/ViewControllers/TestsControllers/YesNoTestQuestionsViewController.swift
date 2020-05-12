@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestQuestionsViewController: UIViewController {
+class YesNoTestQuestionsViewController: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     var currentNumber: Int = -1

@@ -16,12 +16,12 @@ class AllTestsTableViewController: UITableViewController {
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
-        ["External Test","Valuation Test"],
-        ["Character Type Test","Character Test","Difficulty Test"],
+        ["Extrovert","Introvert"],
+        ["Character Test","Difficulty Test"],
         ["Geometric test","Favorite color test"]
     ]
     
-    let arrayNameSection = [ "Temperament Test","Somatipology", "Psychology", "Perception"]
+    let arrayNameSection = [ "Temperament Test","Character type test", "Psychology", "Perception"]
 
     
     override func viewDidLoad() {
@@ -67,7 +67,7 @@ class AllTestsTableViewController: UITableViewController {
 //     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == yesNoIdentifier){
-            guard let testQuestionController = segue.destination as? TestQuestionsViewController ?? nil else {
+            guard let testQuestionController = segue.destination as? YesNoTestQuestionsViewController ?? nil else {
                 return
             }
             

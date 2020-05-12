@@ -8,6 +8,12 @@
 
 import Foundation
 
+public struct Tests: Codable{
+    var test1: Temperaments
+    var test2: Temperaments
+    var test3: Temperaments
+}
+
 public struct Temperaments : Codable {
     var phlegmatic : [QuestionsArray]
     var melancholic : [QuestionsArray]
