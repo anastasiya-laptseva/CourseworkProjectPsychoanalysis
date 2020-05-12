@@ -72,26 +72,26 @@ class AllTestsTableViewController: UITableViewController {
             }
             
             if(section == 0){
-                var questions = [QuestionsArray]()
+//                var questions = [QuesCharacterTypeQuestionstionsArray]()
                 
                 switch indexRow {
                 case 0:
-                    questions = temperamentsTests?.phlegmatic as! [QuestionsArray]
+//                    questions = temperamentsTests?.phlegmatic as! [QuestionsArray]
                     break
                 case 1:
-                    questions = temperamentsTests?.melancholic as! [QuestionsArray]
+//                    questions = temperamentsTests?.melancholic as! [QuestionsArray]
                     break
                 case 2:
-                    questions = temperamentsTests?.choleric as! [QuestionsArray]
+//                    questions = temperamentsTests?.choleric as! [QuestionsArray]
                     break
                 case 3:
-                    questions = temperamentsTests?.sanguine as! [QuestionsArray]
+//                    questions = temperamentsTests?.sanguine as! [QuestionsArray]
                     break
                 default:
                     break
                 }
                 
-                testQuestionController.questions = questions
+//                testQuestionCoCharacterTypeQuestionsntroller.questions = questions
             }
         }
     }

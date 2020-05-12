@@ -9,12 +9,12 @@
 import Foundation
 
 public struct Tests: Codable {
-    var temperamentTest: [Temperaments]
-    var characterTypeTest: Temperaments
-    var characterTest: Temperaments
-    var favoriteColorTest: Temperaments
-    var geometricTest: Temperaments
-    var difficultyTest: Temperaments
+    var temperamentTest: Temperaments
+    var characterTypeTest: CharacterType
+//    var characterTest: Temperaments
+//    var favoriteColorTest: Temperaments
+//    var geometricTest: Temperaments
+//    var difficultyTest: Temperaments
 }
 
 //Temperament structures
@@ -39,13 +39,9 @@ public struct ResultArray : Codable {
 
 //character Type structures
 public struct CharacterType : Codable {
-    var introvert : [CharacterTypeQuestionsArray]
-    var extrovert : [CharacterTypeQuestionsArray]
-    var results: ResultArray
-}
-
-public struct CharacterTypeQuestions : Codable {
-    var question: String
+    var introvert : [QuestionsArray]
+    var extrovert : [QuestionsArray]
+    var results: CharacterTypeResult
 }
 
 public struct CharacterTypeResult : Codable {
