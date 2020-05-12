@@ -12,7 +12,7 @@ class AllTestsTableViewController: UITableViewController {
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
-    var temperamentsTests: Temperaments?
+    var temperamentsTests: Tests?
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
@@ -21,7 +21,7 @@ class AllTestsTableViewController: UITableViewController {
         ["Geometric test","Favorite color test"]
     ]
     
-    let arrayNameSection = [ "Temperament Test","Character type test", "Psychology", "Perception"]
+    let arrayNameSection = [ "Temperament tests","Character type tests", "Psychology tests", "Perception tests"]
 
     
     override func viewDidLoad() {
