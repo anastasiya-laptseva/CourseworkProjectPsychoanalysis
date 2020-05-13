@@ -18,11 +18,19 @@
 		0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */; };
 		0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */; };
 		0E4BECB1245E432600AB1C5E /* Tests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */; };
-		0E4BECB42464C14400AB1C5E /* Test1Temperament.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* Test1Temperament.json */; };
+		0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* AllTests.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
-		0E4BECBC2464CB8100AB1C5E /* TemperamentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */; };
+		0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */; };
 		0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */; };
 		0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECDF2465CF4700AB1C5E /* Firebase.swift */; };
+		0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */; };
+		0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */; };
+		0E4BECE7246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE6246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift */; };
+		0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE9246AF3DE00AB1C5E /* TemperamentEntity.swift */; };
+		0E4BECEC246AF40500AB1C5E /* QuestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECEB246AF40500AB1C5E /* QuestionEntity.swift */; };
+		0E4BECEE246AF42000AB1C5E /* ResultTemperamentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECED246AF42000AB1C5E /* ResultTemperamentEntity.swift */; };
+		0E4BECF0246AF44C00AB1C5E /* CharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECEF246AF44C00AB1C5E /* CharacterEntity.swift */; };
+		0E4BECF2246AF46500AB1C5E /* ResultCharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECF1246AF46500AB1C5E /* ResultCharacterEntity.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -31,7 +39,7 @@
 		0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */; };
 		0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */; };
 		0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */; };
-		0E7D5DFB242D50690002B228 /* TestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */; };
+		0E7D5DFB242D50690002B228 /* YesNoTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFA242D50690002B228 /* YesNoTestQuestionsViewController.swift */; };
 		0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */; };
 		0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */; };
 		0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */; };
@@ -51,11 +59,19 @@
 		0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManager.swift; sourceTree = "<group>"; };
 		0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0E4BECB0245E432600AB1C5E /* Tests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tests.xcdatamodel; sourceTree = "<group>"; };
-		0E4BECB32464C14400AB1C5E /* Test1Temperament.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test1Temperament.json; sourceTree = "<group>"; };
+		0E4BECB32464C14400AB1C5E /* AllTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllTests.json; sourceTree = "<group>"; };
 		0E4BECB92464CAF900AB1C5E /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
-		0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperamentTest.swift; sourceTree = "<group>"; };
+		0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsEntity.swift; sourceTree = "<group>"; };
 		0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E4BECDF2465CF4700AB1C5E /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyTestQuestionsViewController.swift; sourceTree = "<group>"; };
+		0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricTestViewController.swift; sourceTree = "<group>"; };
+		0E4BECE6246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteColorTestViewController.swift; sourceTree = "<group>"; };
+		0E4BECE9246AF3DE00AB1C5E /* TemperamentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperamentEntity.swift; sourceTree = "<group>"; };
+		0E4BECEB246AF40500AB1C5E /* QuestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEntity.swift; sourceTree = "<group>"; };
+		0E4BECED246AF42000AB1C5E /* ResultTemperamentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTemperamentEntity.swift; sourceTree = "<group>"; };
+		0E4BECEF246AF44C00AB1C5E /* CharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEntity.swift; sourceTree = "<group>"; };
+		0E4BECF1246AF46500AB1C5E /* ResultCharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCharacterEntity.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +82,7 @@
 		0E7D5DED242A3AB90002B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E7D5DF6242D4F120002B228 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTestsTableViewController.swift; sourceTree = "<group>"; };
-		0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestionsViewController.swift; sourceTree = "<group>"; };
+		0E7D5DFA242D50690002B228 /* YesNoTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoTestQuestionsViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
 		0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateViewController.swift; sourceTree = "<group>"; };
@@ -114,9 +130,9 @@
 		0E4BEC96245B93B000AB1C5E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0E4BECE8246AF3A200AB1C5E /* Tests */,
 				0E4BEC8F245B914600AB1C5E /* Profile.swift */,
 				0E4BECA4245B9A3300AB1C5E /* User.swift */,
-				0E4BECBB2464CB8100AB1C5E /* TemperamentTest.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -154,9 +170,22 @@
 			isa = PBXGroup;
 			children = (
 				0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */,
-				0E4BECB32464C14400AB1C5E /* Test1Temperament.json */,
+				0E4BECB32464C14400AB1C5E /* AllTests.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0E4BECE8246AF3A200AB1C5E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */,
+				0E4BECE9246AF3DE00AB1C5E /* TemperamentEntity.swift */,
+				0E4BECEB246AF40500AB1C5E /* QuestionEntity.swift */,
+				0E4BECED246AF42000AB1C5E /* ResultTemperamentEntity.swift */,
+				0E4BECEF246AF44C00AB1C5E /* CharacterEntity.swift */,
+				0E4BECF1246AF46500AB1C5E /* ResultCharacterEntity.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		0E7D5DD3242A3AB50002B228 = {
@@ -195,8 +224,11 @@
 			isa = PBXGroup;
 			children = (
 				0E7D5DF8242D4FF60002B228 /* AllTestsTableViewController.swift */,
-				0E7D5DFA242D50690002B228 /* TestQuestionsViewController.swift */,
+				0E7D5DFA242D50690002B228 /* YesNoTestQuestionsViewController.swift */,
 				0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */,
+				0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */,
+				0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */,
+				0E4BECE6246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift */,
 			);
 			path = TestsControllers;
 			sourceTree = "<group>";
@@ -299,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E4BECB42464C14400AB1C5E /* Test1Temperament.json in Resources */,
+				0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */,
 				0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */,
 				0E7D5DE9242A3AB90002B228 /* Assets.xcassets in Resources */,
 				0E7D5DE7242A3AB50002B228 /* Main.storyboard in Resources */,
@@ -342,7 +374,7 @@
 				0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */,
 				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
-				0E4BECBC2464CB8100AB1C5E /* TemperamentTest.swift in Sources */,
+				0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */,
 				0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
@@ -352,17 +384,25 @@
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
 				0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */,
 				0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */,
-				0E7D5DFB242D50690002B228 /* TestQuestionsViewController.swift in Sources */,
+				0E7D5DFB242D50690002B228 /* YesNoTestQuestionsViewController.swift in Sources */,
 				0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */,
 				0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */,
+				0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */,
 				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
 				0E4BECB1245E432600AB1C5E /* Tests.xcdatamodeld in Sources */,
 				0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */,
 				0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */,
+				0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */,
 				0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */,
+				0E4BECF0246AF44C00AB1C5E /* CharacterEntity.swift in Sources */,
 				0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */,
+				0E4BECEC246AF40500AB1C5E /* QuestionEntity.swift in Sources */,
+				0E4BECE7246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift in Sources */,
 				0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */,
+				0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */,
+				0E4BECEE246AF42000AB1C5E /* ResultTemperamentEntity.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
+				0E4BECF2246AF46500AB1C5E /* ResultCharacterEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

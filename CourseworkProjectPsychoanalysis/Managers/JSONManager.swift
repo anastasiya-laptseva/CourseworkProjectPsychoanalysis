@@ -10,6 +10,8 @@ import UIKit
 
 class JSONManager {
     
+    
+    
     func loadFileAsString(name: String, type: String) -> Data {
         if let path = Bundle.main.path(forResource: name, ofType: type) {
             let fileManager = FileManager()
@@ -21,9 +23,9 @@ class JSONManager {
         return Data.init()
     }
     
-    func loadTest() -> Temperaments {
-        let dataJson = loadFileAsString(name: "Test1Temperament", type: ".json")
-        let temperamentTestModel: Temperaments = try! JSONDecoder().decode(Temperaments.self, from: dataJson)
+    func loadTest() -> TestsEntity {
+        let dataJson = loadFileAsString(name: "AllTests", type: ".json")
+        let temperamentTestModel: TestsEntity = try! JSONDecoder().decode(TestsEntity.self, from: dataJson)
         return temperamentTestModel
     }
 }

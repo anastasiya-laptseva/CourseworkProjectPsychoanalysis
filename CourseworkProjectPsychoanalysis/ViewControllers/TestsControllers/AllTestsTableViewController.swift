@@ -9,28 +9,36 @@
 import UIKit
 
 class AllTestsTableViewController: UITableViewController {
+    var section: Int?
+    var indexRow: Int?
+    let yesNoIdentifier = "yesNo"
+    var temperamentsTests: TestsEntity?
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
-        ["External Test","Valuation Test"],
-        ["Character Type Test","Character Test","Difficulty Test"],
+        ["Extrovert","Introvert"],
+        ["Character Test","Difficulty Test"],
         ["Geometric test","Favorite color test"]
     ]
     
-    let arrayNameSection = [ "Temperament Test","Somatipology", "Psychology", "Perception"]
+    let arrayNameSection = [ "Temperament tests","Character type tests", "Psychology tests", "Perception tests"]
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        temperamentsTests =  JSONManager().loadTest()
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.section)
-        print(indexPath.row)
-  
+        section = indexPath.section
+        indexRow = indexPath.row
+        
+        if section == 0{
+            self.performSegue(withIdentifier: yesNoIdentifier, sender: self)
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,9 +64,36 @@ class AllTestsTableViewController: UITableViewController {
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if(segue.identifier == yesNoIdentifier){
+            guard let testQuestionController = segue.destination as? YesNoTestQuestionsViewController ?? nil else {
+                return
+            }
+            
+            if(section == 0){
+//                var questions = [QuestionsArray]()
+                
+                switch indexRow {
+                case 0:
+//                    questions = TemperamentEntity?.phlegmatic as! [QuestionsArray]
+                    break
+                case 1:
+//                    questions = TemperamentEntity?.melancholic as! [QuestionsArray]
+                    break
+                case 2:
+//                    questions = TemperamentEntity?.choleric as! [QuestionsArray]
+                    break
+                case 3:
+//                    questions = TemperamentEntity?.sanguine as! [QuestionsArray]
+                    break
+                default:
+                    break
+                }
+                
+//                testQuestionCoCharacterTypeQuestionsntroller.questions = questions
+            }
+        }
     }
 
 
