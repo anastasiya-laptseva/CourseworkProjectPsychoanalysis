@@ -12,7 +12,15 @@ class AllTestsTableViewController: UITableViewController {
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
-    var temperamentsTests: TestsEntity?
+    let colorIdentifier = "color"
+    let geometricIdentifier = "geometric"
+    let difficultIdentifier = "difficulty"
+    var temperamentsTests: TemperamentEntity?
+    var characterTypeTests: CharacterTypeEntity?
+    var characterTest: CharacterEntity?
+    var favoriteTest: FavoriteColorEntity?
+    var geometricTest: GeometricEntity?
+    var difficultyTest: DifficultyEntity?
     
     let arrayTests = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
@@ -23,11 +31,16 @@ class AllTestsTableViewController: UITableViewController {
     
     let arrayNameSection = [ "Temperament tests","Character type tests", "Psychology tests", "Perception tests"]
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        temperamentsTests =  JSONManager().loadTest()
+        let loadTests = JSONManager().loadTest()
+        temperamentsTests =  loadTests.temperamentTest
+        characterTypeTests = loadTests.characterTypeTest
+        characterTest = loadTests.characterTest
+        favoriteTest = loadTests.favoriteColorTest
+        geometricTest = loadTests.geometricTest
+        difficultyTest = loadTests.difficultyTest
     }
 
     // MARK: - Table view data source
@@ -36,8 +49,20 @@ class AllTestsTableViewController: UITableViewController {
         section = indexPath.section
         indexRow = indexPath.row
         
-        if section == 0{
+        if section == 0 || section == 1 || (section == 2 && indexRow == 0) {
             self.performSegue(withIdentifier: yesNoIdentifier, sender: self)
+        } else if section == 2 {
+            if indexRow == 1 {
+                self.performSegue(withIdentifier: difficultIdentifier, sender: self)
+            }
+        }
+        else if section == 3{
+            if indexRow == 0 {
+                self.performSegue(withIdentifier: geometricIdentifier, sender: self)
+            }
+            else if indexRow == 1 {
+                self.performSegue(withIdentifier: colorIdentifier, sender: self)
+            }
         }
     }
     
@@ -66,35 +91,108 @@ class AllTestsTableViewController: UITableViewController {
 
 //     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == yesNoIdentifier){
+        if segue.identifier == yesNoIdentifier {
             guard let testQuestionController = segue.destination as? YesNoTestQuestionsViewController ?? nil else {
                 return
             }
-            
-            if(section == 0){
-//                var questions = [QuestionsArray]()
-                
-                switch indexRow {
-                case 0:
-//                    questions = TemperamentEntity?.phlegmatic as! [QuestionsArray]
-                    break
-                case 1:
-//                    questions = TemperamentEntity?.melancholic as! [QuestionsArray]
-                    break
-                case 2:
-//                    questions = TemperamentEntity?.choleric as! [QuestionsArray]
-                    break
-                case 3:
-//                    questions = TemperamentEntity?.sanguine as! [QuestionsArray]
-                    break
-                default:
-                    break
-                }
-                
-//                testQuestionCoCharacterTypeQuestionsntroller.questions = questions
+            if section == 0 {
+                self.setUpTemperament(testQuestionController: testQuestionController)
+            } else if section == 1 {
+                self.setUpCharacterType(testQuestionController: testQuestionController)
+            } else if section == 2 && indexRow == 0 {
+                self.setUpCharacter(testQuestionController: testQuestionController)
+            }
+        }
+        else if segue.identifier == colorIdentifier {
+            guard let favoriteColorTestController = segue.destination as? FavoriteColorTestViewController ?? nil else { return }
+            if section == 3 && indexRow == 1 {
+                self.setUpFavoriteColor(favoriteController: favoriteColorTestController)
+            }
+        }
+        else if segue.identifier == geometricIdentifier {
+            guard let geometricTestController = segue.destination as? GeometricTestViewController ?? nil else { return }
+            if section == 3 && indexRow == 0 {
+                self.setUpGeometric(geometricController: geometricTestController)
+            }
+        }
+        else if segue.identifier == difficultIdentifier {
+            guard let difficultyTestController = segue.destination as? DifficultyTestQuestionsViewController ?? nil else { return }
+            if section == 2 && indexRow == 1 {
+                self.setUpDifficulty(difficultyController: difficultyTestController)
             }
         }
     }
-
-
+    
+    func setUpTemperament(testQuestionController: YesNoTestQuestionsViewController){
+        var questionsTemperament = [QuestionsArray]()
+        var testName = ""
+        var testDescription = ""
+        
+        switch indexRow {
+        case 0:
+            questionsTemperament = temperamentsTests?.phlegmatic as! [QuestionsArray]
+            testName = "Phlegmatic"
+            testDescription = temperamentsTests?.results.phlegmatic as! String
+            break
+        case 1:
+            questionsTemperament = temperamentsTests?.melancholic as! [QuestionsArray]
+            testName = "Melancholic"
+            testDescription = temperamentsTests?.results.melancholic as! String
+            break
+        case 2:
+            questionsTemperament = temperamentsTests?.choleric as! [QuestionsArray]
+            testName = "Choleric"
+            testDescription = temperamentsTests?.results.choleric as! String
+            break
+        case 3:
+            questionsTemperament = temperamentsTests?.sanguine as! [QuestionsArray]
+            testName = "Sanguine"
+            testDescription = temperamentsTests?.results.sanguine as! String
+            break
+        default:
+            break
+        }
+        testQuestionController.questions = questionsTemperament
+        testQuestionController.testName = testName
+        testQuestionController.testDescription = testDescription
+    }
+    
+    func setUpCharacterType(testQuestionController: YesNoTestQuestionsViewController)  {
+        var questionsCharacterType = [QuestionsArray]()
+        
+        switch indexRow {
+        case 0:
+            questionsCharacterType = characterTypeTests?.introvert as! [QuestionsArray]
+            break
+        case 1:
+            questionsCharacterType = characterTypeTests?.extrovert as! [QuestionsArray]
+            break
+        default:
+            break
+        }
+        testQuestionController.questions = questionsCharacterType
+    }
+    
+    func setUpCharacter(testQuestionController: YesNoTestQuestionsViewController) {
+        var questionsCharacter = [QuestionsArray]()
+        
+        switch indexRow {
+        case 0:
+            questionsCharacter = characterTest?.questions as! [QuestionsArray]
+            break
+        default:
+            break
+        }
+        testQuestionController.questions = questionsCharacter
+    }
+    
+    func setUpFavoriteColor(favoriteController: FavoriteColorTestViewController) {
+        favoriteController.favoriteModel = favoriteTest
+    }
+    func setUpGeometric(geometricController: GeometricTestViewController) {
+        geometricController.geometricModel = geometricTest
+    }
+    func setUpDifficulty(difficultyController: DifficultyTestQuestionsViewController) {
+        difficultyController.difficultyModel = difficultyTest
+    }
 }

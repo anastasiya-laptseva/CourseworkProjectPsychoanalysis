@@ -10,11 +10,11 @@ import Foundation
 
 public struct TestsEntity: Codable {
     var temperamentTest: TemperamentEntity
-    var characterTypeTest: CharacterType
-//    var characterTest: Temperaments
-//    var favoriteColorTest: Temperaments
-//    var geometricTest: Temperaments
-//    var difficultyTest: Temperaments
+    var characterTypeTest: CharacterTypeEntity
+    var characterTest: CharacterEntity
+    var favoriteColorTest: FavoriteColorEntity
+    var geometricTest: GeometricEntity
+    var difficultyTest: DifficultyEntity
 }
 
 

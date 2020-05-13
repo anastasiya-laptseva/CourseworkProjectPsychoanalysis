@@ -9,11 +9,26 @@
 import UIKit
 
 class ResultTestViewController: UIViewController {
+    @IBOutlet weak var nameResultLabel: UILabel!
+    @IBOutlet weak var textResultLabel: UILabel!
+    
+    var testName: String?
+    var testDescription: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nameResultLabel.text = testName
+        textResultLabel.text = testDescription
         // Do any additional setup after loading the view.
+    }
+    
+    func setNameResult(value: String) {
+        testName = value
+    }
+    
+    func setTextResult(value: String) {
+        testDescription = value
     }
     
 

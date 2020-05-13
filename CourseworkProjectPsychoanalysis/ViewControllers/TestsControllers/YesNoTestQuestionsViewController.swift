@@ -15,9 +15,12 @@ class YesNoTestQuestionsViewController: UIViewController {
     let resultIdentifier = "result"
     
     
+    var testName: String?
+    var testDescription: String?
     var questions: [QuestionsArray]?
     var countQuestion = 0
     var result = [Bool]()
+    var resultPersent: Float?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,7 @@ class YesNoTestQuestionsViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close Test", style: .plain, target: self, action: #selector(closeTest))
         
         countQuestion = questions?.count ?? 0
-        for _ in 0...countQuestion{
+        for _ in 0...countQuestion {
             result.append(false)
         }
         
@@ -53,8 +56,8 @@ class YesNoTestQuestionsViewController: UIViewController {
     }
     
     func UpdateQuestion() {
-        currentNumber+=1
-        if(currentNumber<questions?.count ?? 0){
+        currentNumber += 1
+        if(currentNumber < questions?.count ?? 0){
             questionLabel.text = questions?[currentNumber].question
             progressLabel.text = "\(currentNumber+1)/\(questions?.count ?? 0)"
         }
@@ -65,22 +68,25 @@ class YesNoTestQuestionsViewController: UIViewController {
                     countYes+=1
                 }
             }
-            
-            print("\(countYes)/\(countQuestion)")
+            resultPersent = Float(countYes)/Float(countQuestion)*100
             
             self.performSegue(withIdentifier: resultIdentifier, sender: self)
         }
     }
+
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == resultIdentifier{
+            guard let resultController = segue.destination as? ResultTestViewController ?? nil else {
+                return
+            }
+            resultController.setNameResult(value: "\(testName ?? "") - \(resultPersent ?? 0.0)%")
+            resultController.setTextResult(value: "\(testDescription ?? "")")
+        }
     }
-    */
-
 }

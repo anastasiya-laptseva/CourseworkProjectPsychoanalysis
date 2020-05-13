@@ -1,5 +1,5 @@
 //
-//  CharacterEntity.swift
+//  DifficultyResult.swift
 //  CourseworkProjectPsychoanalysis
 //
 //  Created by Anastasiya Laptseva on 5/13/20.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-//Character structures
-public struct CharacterEntity : Codable {
-    var questions : [QuestionsArray]
-    var results: CharacterResult
+public struct DifficultyResultArray : Codable {
+    var result1: String
+    var result2: String
+    var result3: String
+    var result4: String
 }
