@@ -9,7 +9,8 @@
 import Foundation
 
 //Character structures
-public struct CharacterEntity : Codable {
-    var questions : [QuestionsArray]
-    var results: CharacterResult
+public struct CharacterTypeEntity : Codable {
+    var introvert : [QuestionsArray]
+    var extrovert : [QuestionsArray]
+    var results: CharacterTypeResult
 }

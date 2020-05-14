@@ -1,5 +1,5 @@
 //
-//  CharacterEntity.swift
+//  GeometricEntity.swift
 //  CourseworkProjectPsychoanalysis
 //
 //  Created by Anastasiya Laptseva on 5/13/20.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-//Character structures
-public struct CharacterEntity : Codable {
-    var questions : [QuestionsArray]
-    var results: CharacterResult
+//geometric structures
+public struct GeometricEntity : Codable {
+    var question : String
+    var results: GeometricResult
 }
