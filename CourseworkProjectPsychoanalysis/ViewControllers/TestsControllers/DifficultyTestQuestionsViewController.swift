@@ -67,8 +67,16 @@ class DifficultyTestQuestionsViewController: UIViewController {
         }
     }
     
-    func resultSum() {
-        
+    func resultSum(value: Int) -> String {
+        if sum <= 30 {
+            return difficultyModel!.results.result1
+        } else if sum>30 && sum<=50 {
+            return difficultyModel!.results.result2
+        } else if sum>50 && sum<=90{
+            return difficultyModel!.results.result3
+        } else {
+            return difficultyModel!.results.result4
+        }
     }
 //создать функцию которая принимает параметром int число и возвращает string, где String это результат реста на основе алгоритма. Функция должна анализировать входной параметр Int
     
@@ -83,6 +91,8 @@ class DifficultyTestQuestionsViewController: UIViewController {
                 return
             }
             
+            resultController.setNameResult(value: "Difficulty Test")
+            resultController.setTextResult(value: resultSum(value: sum))
         }
     }
 }

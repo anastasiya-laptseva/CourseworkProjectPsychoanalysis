@@ -159,18 +159,26 @@ class AllTestsTableViewController: UITableViewController {
     
     func setUpCharacterType(testQuestionController: YesNoTestQuestionsViewController)  {
         var questionsCharacterType = [QuestionsArray]()
+        var testName = ""
+        var testDescription = ""
         
         switch indexRow {
         case 0:
-            questionsCharacterType = characterTypeTests?.introvert as! [QuestionsArray]
+            questionsCharacterType = characterTypeTests?.extrovert as! [QuestionsArray]
+            testName = "Extrovert"
+            testDescription = characterTypeTests?.results.extrovert as! String
             break
         case 1:
-            questionsCharacterType = characterTypeTests?.extrovert as! [QuestionsArray]
+            questionsCharacterType = characterTypeTests?.introvert as! [QuestionsArray]
+            testName = "Introvert"
+            testDescription = characterTypeTests?.results.introvert as! String
             break
         default:
             break
         }
         testQuestionController.questions = questionsCharacterType
+        testQuestionController.testName = testName
+        testQuestionController.testDescription = testDescription
     }
     
     func setUpCharacter(testQuestionController: YesNoTestQuestionsViewController) {
@@ -184,6 +192,8 @@ class AllTestsTableViewController: UITableViewController {
             break
         }
         testQuestionController.questions = questionsCharacter
+        testQuestionController.isCharacter = true
+        testQuestionController.characterResultModel = characterTest?.results
     }
     
     func setUpFavoriteColor(favoriteController: FavoriteColorTestViewController) {
