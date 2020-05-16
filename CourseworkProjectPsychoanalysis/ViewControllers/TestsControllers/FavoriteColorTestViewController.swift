@@ -66,10 +66,7 @@ class FavoriteColorTestViewController: UIViewController {
     func goToResult() {
         self.performSegue(withIdentifier: resultIdentifier, sender: self)
     }
-    
-    
-    
-    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
