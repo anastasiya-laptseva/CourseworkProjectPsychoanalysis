@@ -39,6 +39,19 @@
 		0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED2F246BE8B900AB1C5E /* GeometricResult.swift */; };
 		0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED31246BE9EE00AB1C5E /* DifficulyEntity.swift */; };
 		0E4BED34246BEA0900AB1C5E /* DifficultyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED33246BEA0900AB1C5E /* DifficultyResult.swift */; };
+		0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */; };
+		0E4BED5C247023E500AB1C5E /* AllTestsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED5B247023E500AB1C5E /* AllTestsData.swift */; };
+		0E4BED622470269E00AB1C5E /* ExtrovertCharacterTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */; };
+		0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */; };
+		0E4BED66247026FC00AB1C5E /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED65247026FC00AB1C5E /* CharacterData.swift */; };
+		0E4BED68247027C200AB1C5E /* DifficultyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED67247027C200AB1C5E /* DifficultyData.swift */; };
+		0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED69247028BA00AB1C5E /* GeometricData.swift */; };
+		0E4BED6C2470290C00AB1C5E /* FavotiteColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */; };
+		0E4BED6E2470294700AB1C5E /* PhlegmaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */; };
+		0E4BED702470299900AB1C5E /* MelancholicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6F2470299900AB1C5E /* MelancholicData.swift */; };
+		0E4BED72247029B500AB1C5E /* CholericData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED71247029B500AB1C5E /* CholericData.swift */; };
+		0E4BED74247029D300AB1C5E /* SanguineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED73247029D300AB1C5E /* SanguineData.swift */; };
+		0E4BED762470372100AB1C5E /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED752470372100AB1C5E /* BaseData.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -88,6 +101,19 @@
 		0E4BED2F246BE8B900AB1C5E /* GeometricResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricResult.swift; sourceTree = "<group>"; };
 		0E4BED31246BE9EE00AB1C5E /* DifficulyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficulyEntity.swift; sourceTree = "<group>"; };
 		0E4BED33246BEA0900AB1C5E /* DifficultyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyResult.swift; sourceTree = "<group>"; };
+		0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsDataProtocol.swift; sourceTree = "<group>"; };
+		0E4BED5B247023E500AB1C5E /* AllTestsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTestsData.swift; sourceTree = "<group>"; };
+		0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrovertCharacterTypeData.swift; sourceTree = "<group>"; };
+		0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrovertCharacterTypeData.swift; sourceTree = "<group>"; };
+		0E4BED65247026FC00AB1C5E /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		0E4BED67247027C200AB1C5E /* DifficultyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyData.swift; sourceTree = "<group>"; };
+		0E4BED69247028BA00AB1C5E /* GeometricData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricData.swift; sourceTree = "<group>"; };
+		0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotiteColorData.swift; sourceTree = "<group>"; };
+		0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhlegmaticData.swift; sourceTree = "<group>"; };
+		0E4BED6F2470299900AB1C5E /* MelancholicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelancholicData.swift; sourceTree = "<group>"; };
+		0E4BED71247029B500AB1C5E /* CholericData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CholericData.swift; sourceTree = "<group>"; };
+		0E4BED73247029D300AB1C5E /* SanguineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguineData.swift; sourceTree = "<group>"; };
+		0E4BED752470372100AB1C5E /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +238,26 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		0E4BED582470197700AB1C5E /* ResultTestData */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */,
+				0E4BED5B247023E500AB1C5E /* AllTestsData.swift */,
+				0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */,
+				0E4BED6F2470299900AB1C5E /* MelancholicData.swift */,
+				0E4BED71247029B500AB1C5E /* CholericData.swift */,
+				0E4BED73247029D300AB1C5E /* SanguineData.swift */,
+				0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */,
+				0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */,
+				0E4BED65247026FC00AB1C5E /* CharacterData.swift */,
+				0E4BED67247027C200AB1C5E /* DifficultyData.swift */,
+				0E4BED69247028BA00AB1C5E /* GeometricData.swift */,
+				0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */,
+				0E4BED752470372100AB1C5E /* BaseData.swift */,
+			);
+			path = ResultTestData;
+			sourceTree = "<group>";
+		};
 		0E7D5DD3242A3AB50002B228 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +280,7 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0E4BED582470197700AB1C5E /* ResultTestData */,
 				0E4BEC95245B937E00AB1C5E /* ViewControllers */,
 				0E7D5E05242E3CC90002B228 /* SystemFiles */,
 				0E4BEC96245B93B000AB1C5E /* Entities */,
@@ -402,17 +449,25 @@
 				0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */,
 				0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */,
 				0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */,
+				0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */,
+				0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
 				0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */,
+				0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
 				0E4BED34246BEA0900AB1C5E /* DifficultyResult.swift in Sources */,
 				0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */,
+				0E4BED66247026FC00AB1C5E /* CharacterData.swift in Sources */,
+				0E4BED6C2470290C00AB1C5E /* FavotiteColorData.swift in Sources */,
+				0E4BED68247027C200AB1C5E /* DifficultyData.swift in Sources */,
 				0E4BEC92245B91C000AB1C5E /* SaveManager.swift in Sources */,
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
 				0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */,
 				0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */,
+				0E4BED622470269E00AB1C5E /* ExtrovertCharacterTypeData.swift in Sources */,
 				0E7D5DFB242D50690002B228 /* YesNoTestQuestionsViewController.swift in Sources */,
+				0E4BED702470299900AB1C5E /* MelancholicData.swift in Sources */,
 				0E4BED28246BD90700AB1C5E /* CharacterEntity.swift in Sources */,
 				0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */,
 				0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */,
@@ -425,13 +480,18 @@
 				0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */,
 				0E4BED2A246BE6EE00AB1C5E /* FavoriteColorEntity.swift in Sources */,
 				0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */,
+				0E4BED5C247023E500AB1C5E /* AllTestsData.swift in Sources */,
 				0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */,
 				0E4BECEC246AF40500AB1C5E /* QuestionEntity.swift in Sources */,
 				0E4BECE7246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift in Sources */,
 				0E4BED24246BD30300AB1C5E /* CharacterTypeEntity.swift in Sources */,
 				0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */,
 				0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */,
+				0E4BED762470372100AB1C5E /* BaseData.swift in Sources */,
+				0E4BED74247029D300AB1C5E /* SanguineData.swift in Sources */,
+				0E4BED6E2470294700AB1C5E /* PhlegmaticData.swift in Sources */,
 				0E4BED2E246BE89200AB1C5E /* GeometricEntity.swift in Sources */,
+				0E4BED72247029B500AB1C5E /* CholericData.swift in Sources */,
 				0E4BECEE246AF42000AB1C5E /* ResultTemperamentEntity.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
 				0E4BECF2246AF46500AB1C5E /* ResultCharacterTypeEntity.swift in Sources */,

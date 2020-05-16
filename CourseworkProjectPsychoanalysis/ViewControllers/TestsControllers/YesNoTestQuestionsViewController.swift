@@ -136,29 +136,17 @@ class YesNoTestQuestionsViewController: UIViewController {
     func characterPrepare(resultController: ResultTestViewController)  {
         resultController.setNameResult(value: testName ?? "Character Type Test")
         switch resultCharacter {
-        case "0000":
-            resultController.setTextResult(value: "\(characterResultModel?.r0000 ?? "")")
+        case "1111":
+            resultController.setTextResult(value: "\(characterResultModel?.r1111 ?? "")")
             break
-        case "0001":
-            resultController.setTextResult(value: "\(characterResultModel?.r0001 ?? "")")
+        case "1000":
+            resultController.setTextResult(value: "\(characterResultModel?.r1000 ?? "")")
             break
-        case "1010":
-            resultController.setTextResult(value: "\(characterResultModel?.r1010 ?? "")")
+        case "1001":
+            resultController.setTextResult(value: "\(characterResultModel?.r1001 ?? "")")
             break
         case "1011":
             resultController.setTextResult(value: "\(characterResultModel?.r1011 ?? "")")
-            break
-        case "1100":
-            resultController.setTextResult(value: "\(characterResultModel?.r1100 ?? "")")
-            break
-        case "1101":
-            resultController.setTextResult(value: "\(characterResultModel?.r1101 ?? "")")
-            break
-        case "1110":
-            resultController.setTextResult(value: "\(characterResultModel?.r1110 ?? "")")
-            break
-        case "1111":
-            resultController.setTextResult(value: "\(characterResultModel?.r1111 ?? "")")
             break
         case "0111":
             resultController.setTextResult(value: "\(characterResultModel?.r0111 ?? "")")
@@ -172,6 +160,15 @@ class YesNoTestQuestionsViewController: UIViewController {
         case "0000":
             resultController.setTextResult(value: "\(characterResultModel?.r0000 ?? "")")
             break
+        case "1010":
+            resultController.setTextResult(value: "\(characterResultModel?.r1010 ?? "")")
+            break
+        case "1110":
+            resultController.setTextResult(value: "\(characterResultModel?.r1110 ?? "")")
+            break
+        case "1100":
+            resultController.setTextResult(value: "\(characterResultModel?.r1100 ?? "")")
+            break
         case "0001":
             resultController.setTextResult(value: "\(characterResultModel?.r0001 ?? "")")
             break
@@ -180,6 +177,9 @@ class YesNoTestQuestionsViewController: UIViewController {
             break
         case "0101":
             resultController.setTextResult(value: "\(characterResultModel?.r0101 ?? "")")
+            break
+        case "1101":
+            resultController.setTextResult(value: "\(characterResultModel?.r1101 ?? "")")
             break
         case "0010":
             resultController.setTextResult(value: "\(characterResultModel?.r0010 ?? "")")
