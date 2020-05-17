@@ -131,9 +131,34 @@ class YesNoTestQuestionsViewController: UIViewController {
         str+=" - \(resultPersent ?? 0.0)%"
         resultController.setNameResult(value: str)
         resultController.setTextResult(value: "\(testDescription ?? "")")
+        
+        let rTest = "\(resultPersent ?? 0.0)"
+        switch testName ?? "" {
+        case "Phlegmatic":
+            PhlegmaticData().save(value: rTest)
+            break
+        case "Melancholic":
+            MelancholicData().save(value: rTest)
+            break
+        case "Choleric":
+            CholericData().save(value: rTest)
+            break
+        case "Sanguine":
+            SanguineData().save(value: rTest)
+            break
+        case "Extrovert":
+            ExtrovertCharacterTypeData().save(value: rTest)
+            break
+        case "Introvert":
+            IntrovertCharacterTypeData().save(value: rTest)
+            break
+        default:
+            break
+        }
     }
     
     func characterPrepare(resultController: ResultTestViewController)  {
+        CharacterData().save(value: resultCharacter)
         resultController.setNameResult(value: testName ?? "Character Type Test")
         switch resultCharacter {
         case "1111":

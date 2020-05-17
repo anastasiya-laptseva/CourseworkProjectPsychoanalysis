@@ -9,13 +9,31 @@
 import UIKit
 
 class AllTestsData {
-    var allTests: [TestsDataProtocol]!
+    private var allTests: [TestsDataProtocol]?
+    var loadTests = [TestsDataProtocol]()
+    
+    init() {
+        allTests = [TestsDataProtocol]()
+        allTests?.append(PhlegmaticData())
+        allTests?.append(MelancholicData())
+        allTests?.append(CholericData())
+        allTests?.append(SanguineData())
+        allTests?.append(ExtrovertCharacterTypeData())
+        allTests?.append(IntrovertCharacterTypeData())
+        allTests?.append(CharacterData())
+        allTests?.append(DifficultyData())
+        allTests?.append(GeometricData())
+        allTests?.append(FavotiteColorData())
+    }
     
     func load() {
         var data = allTests as! [BaseData]
-        
+        loadTests.removeAll()
         for test in data {
-            
+            test.load()
+            if test.isResult(){
+                loadTests.append(test as! TestsDataProtocol)
+            }
         }
     }
 }

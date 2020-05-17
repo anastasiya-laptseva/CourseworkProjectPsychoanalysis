@@ -31,7 +31,15 @@ class ResultTestViewController: UIViewController {
         testDescription = value
     }
     
-
+    @IBAction func clickBack(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: AllTestsTableViewController.self) {
+                self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

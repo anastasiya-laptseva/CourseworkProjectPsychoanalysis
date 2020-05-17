@@ -21,7 +21,7 @@ class DifficultyData: BaseData, TestsDataProtocol {
     }
     
     func getShortDescription() -> String {
-        return ""
+        return "\(result ?? "")"
     }
     
     func getLongDescription() -> String {

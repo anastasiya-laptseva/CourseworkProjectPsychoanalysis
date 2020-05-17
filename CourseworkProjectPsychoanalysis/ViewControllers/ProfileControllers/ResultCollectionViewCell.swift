@@ -9,12 +9,12 @@
 import UIKit
 
 class ResultCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelDescription: UILabel!
     
     
-    func setCell(text: String, color: UIColor) {
-        self.backgroundColor = color
-        label.text = text
-        label.textColor = .white
+    func setCell(name: String, description: String) {
+        labelName.text = name
+        labelDescription.text = description
     }
 }

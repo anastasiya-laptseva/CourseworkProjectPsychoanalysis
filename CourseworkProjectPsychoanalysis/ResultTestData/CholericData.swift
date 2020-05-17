@@ -20,7 +20,7 @@ class CholericData: BaseData, TestsDataProtocol {
     }
     
     func getShortDescription() -> String {
-        return "\(result) %"
+        return "\(result ?? "0.0") %"
     }
     
     func getLongDescription() -> String {

@@ -9,46 +9,37 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+private let toControllerIdentifier = "completeResult"
 
 class ResultsCollectionViewController: UICollectionViewController {
-    let array = ["AAA","BBB","CCC","DDD","EEE","FFF","GGG","III","ASDa", "ASFGadsg", "ASgfasg"]
+//    let array = ["AAA","BBB","CCC","DDD","EEE","FFF","GGG","III","ASDa", "ASFGadsg", "ASgfasg"]
     let sectionCount = 2
     
+    var data = AllTestsData()
+    var elementClick: TestsDataProtocol?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        data.load()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return array.count/sectionCount+1
+        return data.loadTests.count/sectionCount+1
     }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return min(sectionCount, array.count-sectionCount*section)
+        return min(sectionCount, data.loadTests.count-sectionCount*section)
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -56,10 +47,29 @@ class ResultsCollectionViewController: UICollectionViewController {
         
     
         // Configure the cell
-        var text = array[indexPath.row+sectionCount*indexPath.section]
-        cell.setCell(text: text, color: .black)
+        let element = data.loadTests[indexPath.row+sectionCount*indexPath.section]
+        cell.setCell(name: element.getName(), description: element.getShortDescription())
     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        elementClick = data.loadTests[indexPath.row+sectionCount*indexPath.section]
+        self.performSegue(withIdentifier: toControllerIdentifier, sender: self)
+    }
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        if segue.identifier == toControllerIdentifier{
+            guard let resultController = segue.destination as? CompletedResultControllerViewController ?? nil else {
+                return
+            }
+            resultController.setData(name: elementClick?.getName() ?? "", description: elementClick?.getLongDescription() ?? "")
+        }
     }
 
     // MARK: UICollectionViewDelegate

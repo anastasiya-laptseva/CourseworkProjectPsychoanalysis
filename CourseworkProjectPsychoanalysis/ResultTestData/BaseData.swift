@@ -22,4 +22,8 @@ class BaseData{
     func save(value: String) {
         SaveManager.shared.saveWithKey(key: getKey(), value: value)
     }
+    
+    func isResult() -> Bool {
+        return result?.elementsEqual("") == false
+    }
 }

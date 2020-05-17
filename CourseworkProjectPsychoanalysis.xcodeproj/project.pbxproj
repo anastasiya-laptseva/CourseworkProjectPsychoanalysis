@@ -54,6 +54,7 @@
 		0E4BED762470372100AB1C5E /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED752470372100AB1C5E /* BaseData.swift */; };
 		0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */; };
 		0E4BED7A2471871B00AB1C5E /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */; };
+		0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -118,6 +119,7 @@
 		0E4BED752470372100AB1C5E /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
 		0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewController.swift; sourceTree = "<group>"; };
 		0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedResultControllerViewController.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				0E7D5E03242E3C9E0002B228 /* BasicInformationsViewController.swift */,
 				0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */,
 				0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */,
+				0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */,
 			);
 			path = ProfileControllers;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				0E4BED28246BD90700AB1C5E /* CharacterEntity.swift in Sources */,
 				0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */,
 				0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */,
+				0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */,
 				0E4BED26246BD42300AB1C5E /* ResultCharacterEntity.swift in Sources */,
 				0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */,
 				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
