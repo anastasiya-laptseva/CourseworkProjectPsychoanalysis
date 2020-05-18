@@ -11,6 +11,10 @@ import UIKit
 class DifficultyData: BaseData, TestsDataProtocol {
     let keySave = "result_difficalty"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "difficalty") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

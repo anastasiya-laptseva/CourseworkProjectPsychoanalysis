@@ -11,6 +11,10 @@ import UIKit
 class CholericData: BaseData, TestsDataProtocol {
     let keySave = "result_choleric"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "choleric") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

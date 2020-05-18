@@ -11,6 +11,10 @@ import UIKit
 class MelancholicData: BaseData, TestsDataProtocol {
     let keySave = "result_melancholic"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "melancholic") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

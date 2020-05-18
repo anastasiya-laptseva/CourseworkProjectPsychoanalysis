@@ -11,6 +11,10 @@ import UIKit
 class CharacterData: BaseData, TestsDataProtocol {
     let keySave = "result_character"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "character") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

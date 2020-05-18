@@ -11,6 +11,10 @@ import UIKit
 class FavotiteColorData: BaseData, TestsDataProtocol {
     let keySave = "result_favorite_color"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "favoriteColor") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

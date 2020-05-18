@@ -9,6 +9,10 @@
 import UIKit
 
 class PhlegmaticData: BaseData, TestsDataProtocol {
+    func getImage() -> UIImage {
+        return UIImage(named: "phlegmatic") ?? UIImage()
+    }
+    
     let keySave = "result_phlegmatic"
     
     override func getKey() -> String {

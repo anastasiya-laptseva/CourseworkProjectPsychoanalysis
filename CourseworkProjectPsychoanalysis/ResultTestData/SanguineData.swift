@@ -9,6 +9,11 @@
 import UIKit
 
 class SanguineData: BaseData, TestsDataProtocol {
+    
+    func getImage() -> UIImage {
+        return UIImage(named: "sanguine") ?? UIImage()
+    }
+    
     let keySave = "result_sanguine"
     
     override func getKey() -> String {

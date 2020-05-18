@@ -11,6 +11,10 @@ import UIKit
 class GeometricData: BaseData, TestsDataProtocol {
     let keySave = "result_geometric"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "geometric") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }

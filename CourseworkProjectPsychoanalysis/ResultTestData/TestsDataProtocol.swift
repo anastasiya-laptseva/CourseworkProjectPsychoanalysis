@@ -10,6 +10,7 @@ import UIKit
 
 protocol TestsDataProtocol {
     func getName() -> String
+    func getImage() -> UIImage
     func getShortDescription() -> String
     func getLongDescription() -> String
 }

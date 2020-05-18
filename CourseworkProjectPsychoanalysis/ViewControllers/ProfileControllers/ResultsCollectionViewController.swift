@@ -48,7 +48,7 @@ class ResultsCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         let element = data.loadTests[indexPath.row+sectionCount*indexPath.section]
-        cell.setCell(name: element.getName(), description: element.getShortDescription())
+        cell.setCell(name: element.getName(), description: element.getShortDescription(), image: element.getImage())
     
         return cell
     }

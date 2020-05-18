@@ -11,6 +11,10 @@ import UIKit
 class IntrovertCharacterTypeData: BaseData, TestsDataProtocol {
     let keySave = "result_introvert"
     
+    func getImage() -> UIImage {
+        return UIImage(named: "introvert") ?? UIImage()
+    }
+    
     override func getKey() -> String {
         return keySave
     }
