@@ -894,15 +894,34 @@
                                     <constraint firstItem="dz6-PZ-T4u" firstAttribute="top" secondItem="8Em-s0-dSO" secondAttribute="bottom" constant="50" id="uol-u9-FY4"/>
                                 </constraints>
                             </scrollView>
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZO-pG-aUr" userLabel="WaitView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7pJ-XP-O4h">
+                                        <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7pJ-XP-O4h" firstAttribute="centerY" secondItem="zZO-pG-aUr" secondAttribute="centerY" id="LpN-9F-vHx"/>
+                                    <constraint firstItem="7pJ-XP-O4h" firstAttribute="centerX" secondItem="zZO-pG-aUr" secondAttribute="centerX" id="idb-ff-AYV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="ViewControllerColor"/>
                         <constraints>
+                            <constraint firstItem="zZO-pG-aUr" firstAttribute="centerX" secondItem="h18-Tx-IaQ" secondAttribute="centerX" id="A3Q-3D-vX7"/>
+                            <constraint firstItem="h18-Tx-IaQ" firstAttribute="bottom" secondItem="zZO-pG-aUr" secondAttribute="bottom" id="CRN-BS-e8g"/>
                             <constraint firstItem="FNU-Gh-lg6" firstAttribute="centerY" secondItem="h18-Tx-IaQ" secondAttribute="centerY" id="I8u-Xk-Jlb"/>
+                            <constraint firstItem="h18-Tx-IaQ" firstAttribute="trailing" secondItem="zZO-pG-aUr" secondAttribute="trailing" id="VWB-To-TnT"/>
                             <constraint firstItem="h18-Tx-IaQ" firstAttribute="trailing" secondItem="FNU-Gh-lg6" secondAttribute="trailing" id="ZFs-w6-LkB"/>
                             <constraint firstItem="FNU-Gh-lg6" firstAttribute="top" secondItem="h18-Tx-IaQ" secondAttribute="top" id="ZKj-Vm-jV6"/>
                             <constraint firstItem="h18-Tx-IaQ" firstAttribute="bottom" secondItem="FNU-Gh-lg6" secondAttribute="bottom" id="a5I-uD-Kbq"/>
+                            <constraint firstItem="zZO-pG-aUr" firstAttribute="leading" secondItem="h18-Tx-IaQ" secondAttribute="leading" id="dVb-TK-bFf"/>
                             <constraint firstItem="FNU-Gh-lg6" firstAttribute="leading" secondItem="h18-Tx-IaQ" secondAttribute="leading" id="m0h-8T-kym"/>
+                            <constraint firstItem="zZO-pG-aUr" firstAttribute="top" secondItem="h18-Tx-IaQ" secondAttribute="top" id="n4q-8X-Azy"/>
                             <constraint firstItem="FNU-Gh-lg6" firstAttribute="centerX" secondItem="h18-Tx-IaQ" secondAttribute="centerX" id="oW6-s6-cWt"/>
+                            <constraint firstItem="zZO-pG-aUr" firstAttribute="centerY" secondItem="h18-Tx-IaQ" secondAttribute="centerY" id="pkL-5c-Caa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h18-Tx-IaQ"/>
                     </view>
@@ -914,6 +933,7 @@
                         <outlet property="repeatPasswordEditText" destination="SPL-e4-DeW" id="e4m-Er-cAN"/>
                         <outlet property="scrollView" destination="FNU-Gh-lg6" id="hbs-RU-2ng"/>
                         <outlet property="stackView" destination="8Em-s0-dSO" id="zrN-fU-o10"/>
+                        <outlet property="waitView" destination="zZO-pG-aUr" id="SCc-nX-eah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-GL-4bk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1043,12 +1063,29 @@
                                     <constraint firstItem="jrp-Vr-XHq" firstAttribute="top" secondItem="sOh-DM-Lwg" secondAttribute="top" constant="25" id="xWO-GZ-Tbg"/>
                                 </constraints>
                             </scrollView>
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vza-l4-jov" userLabel="WaitView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Syh-1Y-odd">
+                                        <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Syh-1Y-odd" firstAttribute="centerX" secondItem="vza-l4-jov" secondAttribute="centerX" id="OMh-z3-uul"/>
+                                    <constraint firstItem="Syh-1Y-odd" firstAttribute="centerY" secondItem="vza-l4-jov" secondAttribute="centerY" id="vxc-zY-k3a"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="ViewControllerColor"/>
                         <constraints>
                             <constraint firstItem="sOh-DM-Lwg" firstAttribute="top" secondItem="ku4-dM-5dj" secondAttribute="top" id="04u-Fv-kiS"/>
                             <constraint firstItem="sOh-DM-Lwg" firstAttribute="centerY" secondItem="ku4-dM-5dj" secondAttribute="centerY" id="9j8-iq-9o4"/>
+                            <constraint firstItem="ku4-dM-5dj" firstAttribute="bottom" secondItem="vza-l4-jov" secondAttribute="bottom" id="KNE-nV-oc2"/>
+                            <constraint firstItem="vza-l4-jov" firstAttribute="leading" secondItem="ku4-dM-5dj" secondAttribute="leading" id="dkh-Vv-b0m"/>
+                            <constraint firstItem="vza-l4-jov" firstAttribute="top" secondItem="ku4-dM-5dj" secondAttribute="top" id="inl-Fg-h9F"/>
                             <constraint firstItem="sOh-DM-Lwg" firstAttribute="centerX" secondItem="ku4-dM-5dj" secondAttribute="centerX" id="jX2-a4-Y9e"/>
+                            <constraint firstItem="ku4-dM-5dj" firstAttribute="trailing" secondItem="vza-l4-jov" secondAttribute="trailing" id="oQr-Lc-jry"/>
                             <constraint firstItem="ku4-dM-5dj" firstAttribute="bottom" secondItem="sOh-DM-Lwg" secondAttribute="bottom" id="qXQ-fE-aXx"/>
                             <constraint firstItem="ku4-dM-5dj" firstAttribute="trailing" secondItem="sOh-DM-Lwg" secondAttribute="trailing" id="w9l-4n-wc3"/>
                             <constraint firstItem="sOh-DM-Lwg" firstAttribute="leading" secondItem="ku4-dM-5dj" secondAttribute="leading" id="x21-WH-ZID"/>
@@ -1062,6 +1099,7 @@
                         <outlet property="scrollView" destination="sOh-DM-Lwg" id="ofm-Ec-xih"/>
                         <outlet property="secureIcon" destination="UlW-qK-EzY" id="0WW-D7-RVl"/>
                         <outlet property="stackView" destination="zq6-hb-hcw" id="w1h-Rc-ve7"/>
+                        <outlet property="waitView" destination="vza-l4-jov" id="HXV-dV-79w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEz-vn-GnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     
+    @IBOutlet weak var waitView: UIView!
     
     var secure: Bool = false
     
@@ -52,14 +53,15 @@ class LoginViewController: UIViewController {
             return
         }
         
-        if UsersManager.shared.IsUser(login: loginText, password: passwordText){
-            ControllerManager.shared.setWelcomeControllerRoot()
-            UsersManager.shared.saveLogin(state: true)
-        }
-        else
-        {
-            AlertManager.shared.showAlert(text: "Login or password is not correct", self)
-        }
+        FirebaseModule.shared.logIn(email: loginText, password: passwordText, loading: waitView, completion: { (state) in
+            if state{
+                ControllerManager.shared.setWelcomeControllerRoot()
+                UsersManager.shared.saveLogin(state: true)
+            }
+            else{
+                AlertManager.shared.showAlert(text: "Login or password is not correct", self)
+            }
+        })
     }
     
     @IBAction func iconSecureTouch(_ sender: Any) {

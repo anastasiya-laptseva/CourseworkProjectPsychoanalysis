@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* AllTests.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
 		0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */; };
-		0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */; };
 		0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECDF2465CF4700AB1C5E /* Firebase.swift */; };
 		0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */; };
 		0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */; };
@@ -55,6 +54,8 @@
 		0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */; };
 		0E4BED7A2471871B00AB1C5E /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */; };
 		0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */; };
+		0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C2215247203F80006E657 /* FirebaseModule.swift */; };
+		0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C2219247220ED0006E657 /* GoogleService-Info.plist */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
@@ -86,7 +87,6 @@
 		0E4BECB32464C14400AB1C5E /* AllTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllTests.json; sourceTree = "<group>"; };
 		0E4BECB92464CAF900AB1C5E /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsEntity.swift; sourceTree = "<group>"; };
-		0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E4BECDF2465CF4700AB1C5E /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyTestQuestionsViewController.swift; sourceTree = "<group>"; };
 		0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricTestViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +120,8 @@
 		0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewController.swift; sourceTree = "<group>"; };
 		0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedResultControllerViewController.swift; sourceTree = "<group>"; };
+		0E4C2215247203F80006E657 /* FirebaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModule.swift; sourceTree = "<group>"; };
+		0E4C2219247220ED0006E657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +266,22 @@
 			path = ResultTestData;
 			sourceTree = "<group>";
 		};
+		0E4C2213247203D40006E657 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C2214247203E80006E657 /* Firebase */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0E4C2214247203E80006E657 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C2215247203F80006E657 /* FirebaseModule.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		0E7D5DD3242A3AB50002B228 = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +304,8 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C2219247220ED0006E657 /* GoogleService-Info.plist */,
+				0E4C2213247203D40006E657 /* Modules */,
 				0E4BED582470197700AB1C5E /* ResultTestData */,
 				0E4BEC95245B937E00AB1C5E /* ViewControllers */,
 				0E7D5E05242E3CC90002B228 /* SystemFiles */,
@@ -330,7 +350,6 @@
 				0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */,
 				0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */,
 				0E7D5DED242A3AB90002B228 /* Info.plist */,
-				0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */,
 			);
 			path = SystemFiles;
 			sourceTree = "<group>";
@@ -363,6 +382,7 @@
 				0E7D5DD8242A3AB50002B228 /* Sources */,
 				0E7D5DD9242A3AB50002B228 /* Frameworks */,
 				0E7D5DDA242A3AB50002B228 /* Resources */,
+				AC898452D5158BC69EBABB74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,15 +433,32 @@
 			files = (
 				0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */,
 				0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */,
+				0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */,
 				0E7D5DE9242A3AB90002B228 /* Assets.xcassets in Resources */,
 				0E7D5DE7242A3AB50002B228 /* Main.storyboard in Resources */,
-				0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AC898452D5158BC69EBABB74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B61C2F4346C05CC473B7CB42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +501,7 @@
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
 				0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */,
+				0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */,
 				0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
 				0E4BED34246BEA0900AB1C5E /* DifficultyResult.swift in Sources */,
@@ -659,7 +697,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,7 +717,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

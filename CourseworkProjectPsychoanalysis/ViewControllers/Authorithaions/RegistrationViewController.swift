@@ -16,6 +16,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordEditTex: UITextField!
     @IBOutlet weak var repeatPasswordEditText: UITextField!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var waitView: UIView!
     
     
     
@@ -66,9 +67,15 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        UsersManager.shared.registrationUser(name: nameText, login: loginText, password: passwordText)
-        ControllerManager.shared.setWelcomeControllerRoot()
-        UsersManager.shared.saveLogin(state: true)
+        UsersManager.shared.registrationUser(name: nameText, login: loginText, password: passwordText, loading: waitView) { (state) in
+            if state{
+                ControllerManager.shared.setWelcomeControllerRoot()
+                UsersManager.shared.saveLogin(state: true)
+            }
+            else{
+                AlertManager.shared.showAlert(text: "Error registration", self)
+            }
+        }
     }
     /*
      // MARK: - Navigation
