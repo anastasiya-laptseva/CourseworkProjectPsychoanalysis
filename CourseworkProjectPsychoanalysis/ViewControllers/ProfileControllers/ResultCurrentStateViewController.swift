@@ -40,6 +40,16 @@ class ResultCurrentStateViewController: UIViewController {
         return progressBar
     }
     
+    @IBAction func ClickButton(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: MainProfileViewController.self) {
+                self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    }
+    
+    
 
     /*
     // MARK: - Navigation
