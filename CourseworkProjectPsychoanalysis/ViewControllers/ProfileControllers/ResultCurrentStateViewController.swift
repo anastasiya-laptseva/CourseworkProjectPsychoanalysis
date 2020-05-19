@@ -12,18 +12,29 @@ import GTProgressBar
 class ResultCurrentStateViewController: UIViewController {
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var healthProgressView: UIView!
+    @IBOutlet weak var activityLabel: UILabel!
+    @IBOutlet weak var activityProgressView: UIView!
+    @IBOutlet weak var moodLabel: UILabel!
+    @IBOutlet weak var moodProgressView: UIView!
+    
     
     var progressBarHealth: GTProgressBar?
+    var progressBarActivity: GTProgressBar?
+    var progressBarMood: GTProgressBar?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         progressBarHealth = createProgressView(view: healthProgressView)
+        progressBarActivity = createProgressView(view: activityProgressView)
+        progressBarMood = createProgressView(view: moodProgressView)
+
         // Do any additional setup after loading the view.
     }
     
     func createProgressView(view: UIView) ->  GTProgressBar{
         let progressBar = GTProgressBar(frame: CGRect(x: 0, y: 0, width: view.bounds.width-40, height: view.bounds.height))
+
         progressBar.progress = 0.75
         progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
         progressBar.barFillColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)

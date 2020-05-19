@@ -527,8 +527,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="xcI-2G-iqF"/>
                     <connections>
+                        <outlet property="activityLabel" destination="8if-N3-DbJ" id="OGb-xN-Zyv"/>
+                        <outlet property="activityProgressView" destination="gvc-JR-AL2" id="bT7-g3-t4d"/>
                         <outlet property="healthLabel" destination="mcu-LW-PGe" id="rE4-fg-eaC"/>
                         <outlet property="healthProgressView" destination="r5L-TN-WaP" id="NMX-nC-E0a"/>
+                        <outlet property="moodLabel" destination="ck2-Y7-zRf" id="Hn5-A9-BzI"/>
+                        <outlet property="moodProgressView" destination="8NR-1s-pHP" id="3jq-nj-GDP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8W9-Qs-Pxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
