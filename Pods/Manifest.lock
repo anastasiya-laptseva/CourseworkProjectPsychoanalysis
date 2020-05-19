@@ -72,6 +72,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.6.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.4.0)
+  - GTProgressBar (0.3.3)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
@@ -83,6 +84,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
+  - GTProgressBar
   - SwiftLint
 
 SPEC REPOS:
@@ -100,6 +102,7 @@ SPEC REPOS:
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - GTMSessionFetcher
+    - GTProgressBar
     - nanopb
     - PromisesObjC
     - SwiftLint
@@ -118,10 +121,11 @@ SPEC CHECKSUMS:
   GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  GTProgressBar: a480283ecb0ada50de16c71e634892826928f640
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: a9ee995d0a33da97e9e81911d0e24bcde53dc984
+PODFILE CHECKSUM: 742c8af58ec3dfc13aecf357cb4dadd11fa7ee5a
 
 COCOAPODS: 1.9.1

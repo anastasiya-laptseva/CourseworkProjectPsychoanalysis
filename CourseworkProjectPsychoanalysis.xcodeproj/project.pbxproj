@@ -56,6 +56,8 @@
 		0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */; };
 		0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C2215247203F80006E657 /* FirebaseModule.swift */; };
 		0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C2219247220ED0006E657 /* GoogleService-Info.plist */; };
+		0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */; };
+		0E4C221E2473F7660006E657 /* ResultCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* MapViewController.swift */; };
@@ -122,6 +124,8 @@
 		0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedResultControllerViewController.swift; sourceTree = "<group>"; };
 		0E4C2215247203F80006E657 /* FirebaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModule.swift; sourceTree = "<group>"; };
 		0E4C2219247220ED0006E657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrentStateViewController.swift; sourceTree = "<group>"; };
+		0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCurrentStateViewController.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 				0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */,
 				0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */,
 				0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */,
+				0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */,
+				0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */,
 			);
 			path = ProfileControllers;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
+				0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */,
 				0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */,
 				0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */,
 				0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */,
@@ -508,6 +515,7 @@
 				0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */,
 				0E4BED66247026FC00AB1C5E /* CharacterData.swift in Sources */,
 				0E4BED6C2470290C00AB1C5E /* FavotiteColorData.swift in Sources */,
+				0E4C221E2473F7660006E657 /* ResultCurrentStateViewController.swift in Sources */,
 				0E4BED7A2471871B00AB1C5E /* ResultCollectionViewCell.swift in Sources */,
 				0E4BED68247027C200AB1C5E /* DifficultyData.swift in Sources */,
 				0E4BEC92245B91C000AB1C5E /* SaveManager.swift in Sources */,

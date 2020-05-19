@@ -8,6 +8,7 @@ target 'CourseworkProjectPsychoanalysis' do
   # Pods for CourseworkProjectPsychoanalysis
 
 pod 'SwiftLint' 
+pod "GTProgressBar"
 pod 'Firebase/Auth'
 # add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
