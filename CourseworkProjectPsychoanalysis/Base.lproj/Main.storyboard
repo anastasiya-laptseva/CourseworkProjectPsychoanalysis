@@ -2749,7 +2749,6 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="NextButton:" destination="f3r-p4-LYt" eventType="touchUpInside" id="x2H-4j-30H"/>
-                                                            <segue destination="h9N-aW-rWv" kind="show" identifier="resultCurrentState" id="5Te-Ml-KSV"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -2789,6 +2788,7 @@
                         <outlet property="progressLabel" destination="2by-Bq-Xky" id="kbk-P4-Agy"/>
                         <outlet property="question1Label" destination="qML-i5-Qt3" id="RVC-fo-DoV"/>
                         <outlet property="question2Label" destination="JJk-jm-NaS" id="4VC-ju-H5U"/>
+                        <segue destination="h9N-aW-rWv" kind="show" identifier="stateResult" id="lY4-7Z-RHq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oy-c8-dhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2798,7 +2798,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Dv7-6Q-WoJ"/>
-        <segue reference="5Te-Ml-KSV"/>
+        <segue reference="lY4-7Z-RHq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Profile" width="170.66667175292969" height="170.66667175292969"/>
