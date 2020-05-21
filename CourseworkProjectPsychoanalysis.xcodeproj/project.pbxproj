@@ -58,6 +58,10 @@
 		0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C2219247220ED0006E657 /* GoogleService-Info.plist */; };
 		0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */; };
 		0E4C221E2473F7660006E657 /* ResultCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */; };
+		0E4C2220247570B50006E657 /* CurrentStateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221F247570B40006E657 /* CurrentStateEntity.swift */; };
+		0E4C2222247570D00006E657 /* CurrentStateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C2221247570D00006E657 /* CurrentStateResult.swift */; };
+		0E4C2224247587D80006E657 /* CurrentStateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C2223247587D80006E657 /* CurrentStateData.swift */; };
+		0E4C222624767CB50006E657 /* CurrentStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C222524767CB50006E657 /* CurrentStateProtocol.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
 		0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* MapViewController.swift */; };
@@ -126,6 +130,10 @@
 		0E4C2219247220ED0006E657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrentStateViewController.swift; sourceTree = "<group>"; };
 		0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCurrentStateViewController.swift; sourceTree = "<group>"; };
+		0E4C221F247570B40006E657 /* CurrentStateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateEntity.swift; sourceTree = "<group>"; };
+		0E4C2221247570D00006E657 /* CurrentStateResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateResult.swift; sourceTree = "<group>"; };
+		0E4C2223247587D80006E657 /* CurrentStateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateData.swift; sourceTree = "<group>"; };
+		0E4C222524767CB50006E657 /* CurrentStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateProtocol.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +254,8 @@
 				0E4BED2F246BE8B900AB1C5E /* GeometricResult.swift */,
 				0E4BED31246BE9EE00AB1C5E /* DifficulyEntity.swift */,
 				0E4BED33246BEA0900AB1C5E /* DifficultyResult.swift */,
+				0E4C221F247570B40006E657 /* CurrentStateEntity.swift */,
+				0E4C2221247570D00006E657 /* CurrentStateResult.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 				0E4BED67247027C200AB1C5E /* DifficultyData.swift */,
 				0E4BED69247028BA00AB1C5E /* GeometricData.swift */,
 				0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */,
+				0E4C2223247587D80006E657 /* CurrentStateData.swift */,
+				0E4C222524767CB50006E657 /* CurrentStateProtocol.swift */,
 				0E4BED752470372100AB1C5E /* BaseData.swift */,
 			);
 			path = ResultTestData;
@@ -494,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4C222624767CB50006E657 /* CurrentStateProtocol.swift in Sources */,
 				0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */,
 				0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */,
 				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
@@ -506,6 +519,7 @@
 				0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
+				0E4C2220247570B50006E657 /* CurrentStateEntity.swift in Sources */,
 				0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */,
 				0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */,
 				0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */,
@@ -536,6 +550,7 @@
 				0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */,
 				0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */,
 				0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */,
+				0E4C2224247587D80006E657 /* CurrentStateData.swift in Sources */,
 				0E4BED2A246BE6EE00AB1C5E /* FavoriteColorEntity.swift in Sources */,
 				0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */,
 				0E4BED5C247023E500AB1C5E /* AllTestsData.swift in Sources */,
@@ -552,6 +567,7 @@
 				0E4BED72247029B500AB1C5E /* CholericData.swift in Sources */,
 				0E4BECEE246AF42000AB1C5E /* ResultTemperamentEntity.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
+				0E4C2222247570D00006E657 /* CurrentStateResult.swift in Sources */,
 				0E4BECF2246AF46500AB1C5E /* ResultCharacterTypeEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

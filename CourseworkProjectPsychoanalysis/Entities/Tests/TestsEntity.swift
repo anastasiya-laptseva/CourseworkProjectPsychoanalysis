@@ -15,6 +15,7 @@ public struct TestsEntity: Codable {
     var favoriteColorTest: FavoriteColorEntity
     var geometricTest: GeometricEntity
     var difficultyTest: DifficultyEntity
+    var currentStateTest: CurrentStateEntity
 }
 
 

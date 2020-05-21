@@ -58,7 +58,7 @@ class DifficultyTestQuestionsViewController: UIViewController {
     
     func UpdateQuestion() {
         currentNumber += 1
-        var questions = difficultyModel?.questions
+        let questions = difficultyModel?.questions
         if currentNumber < questions?.count ?? 0 {
             questionLabel.text = questions?[currentNumber].question
             progressLabel.text = "\(currentNumber+1)/\(questions?.count ?? 0)"

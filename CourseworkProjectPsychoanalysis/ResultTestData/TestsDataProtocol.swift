@@ -8,9 +8,6 @@
 
 import UIKit
 
-protocol TestsDataProtocol {
-    func getName() -> String
+protocol TestsDataProtocol: CurrentStateProtocol {
     func getImage() -> UIImage
-    func getShortDescription() -> String
-    func getLongDescription() -> String
 }
