@@ -79,7 +79,8 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
             selector = #selector(editClick)
         }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? "Save" : "Edit", style: .plain, target: self, action: selector)
+        let saveStr = LocalizationManager.shared.getText(key: LocalizationMa nager.KEY_SAVE)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : "Edit", style: .plain, target: self, action: selector)
     }
     
     func updateProfile() {
