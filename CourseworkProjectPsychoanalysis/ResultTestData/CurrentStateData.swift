@@ -8,39 +8,48 @@
 
 import Foundation
 
-class CurrentStateData: BaseData, CurrentStateProtocol {
-    
-    let keySave = "result_current_state"
-    
-    override func getKey() -> String {
-        return keySave
-    }
+enum ECurrentState{
+    case currentStateHealth
+    case currentStateActivity
+    case currentStateMood
+}
 
+class CurrentStateData {
+    let keyHealth = "result_current_state_health"
+    let keyActivity = "result_current_state_activity"
+    let keyMood = "result_current_state_mood"
     
-    func getName() -> String {
-        return "Current state"
-    }
-    
-    func getShortDescription() -> String {
-        return "\(result ?? "")"
-    }
-    
-    func getLongDescription() -> String {
-        return getResultLong(value: result ?? "")
-    }
-    func getResultLong(value: String) -> String  {
-        let tests = JSONManager().loadTest()
-        let currentStateModel = tests.currentStateTest.results
-        switch result {
-        case "result1":
-            return  currentStateModel.result1
-        case "result2":
-            return currentStateModel.result2
-        case "result3":
-            return currentStateModel.result3
-        default:
-            return ""
+    func set(key: ECurrentState, value: Int) {
+        var keySave = ""
+        switch key {
+        case .currentStateHealth:
+            keySave = keyHealth
+            break
+        case .currentStateActivity:
+            keySave = keyActivity
+            break
+        case .currentStateMood:
+            keySave = keyMood
+            break
         }
+        
+        SaveManager.shared.saveWithKey(key: keySave, value: value)
     }
-
+    
+    func get(key: ECurrentState) -> Int {
+        var keySave = ""
+        switch key {
+        case .currentStateHealth:
+            keySave = keyHealth
+            break
+        case .currentStateActivity:
+            keySave = keyActivity
+            break
+        case .currentStateMood:
+            keySave = keyMood
+            break
+        }
+        
+        return SaveManager.shared.loadWithKey(key: keySave)
+    }
 }

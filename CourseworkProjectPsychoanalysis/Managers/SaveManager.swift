@@ -69,4 +69,17 @@ class SaveManager {
         }
         return ""
     }
+    
+    func saveWithKey(key: String, value: Int) {
+        UserDefaults.standard.set(value, forKey: key)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func loadWithKey(key: String) -> Int {
+        if let value: AnyObject = UserDefaults.standard.object(forKey: key) as AnyObject? {
+            let str = value as! Int
+            return str
+        }
+        return 0
+    }
 }

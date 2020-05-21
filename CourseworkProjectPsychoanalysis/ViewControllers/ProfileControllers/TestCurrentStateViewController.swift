@@ -48,13 +48,14 @@ class TestCurrentStateViewController: UIViewController {
     }
     
     @IBAction func NextButton(_ sender: Any) {
-        let questions = currentStateModel?.questions
-        if currentNumber == questions?.count ?? 0 {
+        let questions = currentStateModel?.questions ?? [Questions]()
+        
+        array[currentNumber] = currentStateModel?.answers[selectedIndex] ?? 0
+        if currentNumber == questions.count-1 {
             calculate()
             self.performSegue(withIdentifier: resultIdentifier, sender: self)
         }
         else{
-            array[currentNumber] = currentStateModel?.answers[selectedIndex] ?? 0
             UpdateQuestion()
         }
     }
@@ -66,6 +67,7 @@ class TestCurrentStateViewController: UIViewController {
             question1Label.text = questions?[currentNumber].question1
             question2Label.text = questions?[currentNumber].question2
             progressLabel.text = "\(currentNumber+1)/\(questions?.count ?? 0)"
+            
         }
     }
     
@@ -73,7 +75,7 @@ class TestCurrentStateViewController: UIViewController {
         var sumHealth = 0
         var sumActivity = 0
         var sumMood = 0
-        for index in 0...array.count {
+        for index in 0...array.count-1 {
             let value = array[index]
             if healthArray.contains(index) {
                 sumHealth+=value
@@ -85,19 +87,11 @@ class TestCurrentStateViewController: UIViewController {
                 sumMood+=value
             }
         }
-    }
-    
-    func resultSum(value: Int) -> String {
-        if sum <= 30 {
-            CurrentStateData().save(value: "result1")
-            return currentStateModel!.results.result1
-        } else if sum>30 && sum<=50 {
-            CurrentStateData().save(value: "result2")
-            return currentStateModel!.results.result2
-        } else {
-            CurrentStateData().save(value: "result3")
-            return currentStateModel!.results.result3
-        }
+        
+        let data = CurrentStateData()
+        data.set(key: .currentStateHealth, value: sumHealth)
+        data.set(key: .currentStateActivity, value: sumActivity)
+        data.set(key: .currentStateMood, value: sumMood)
     }
     
     /*

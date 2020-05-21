@@ -7,3 +7,5 @@
 */
 
 "keySave" = "Save";
+"keyEdit" = "Edit";
+"keyLogout" = "Logout";

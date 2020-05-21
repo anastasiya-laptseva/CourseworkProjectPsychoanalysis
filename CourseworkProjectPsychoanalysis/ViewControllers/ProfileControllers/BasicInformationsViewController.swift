@@ -80,7 +80,8 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         }
         
         let saveStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_SAVE)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : "Edit", style: .plain, target: self, action: selector)
+        let editStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_EDIT)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : editStr, style: .plain, target: self, action: selector)
     }
     
     func updateProfile() {

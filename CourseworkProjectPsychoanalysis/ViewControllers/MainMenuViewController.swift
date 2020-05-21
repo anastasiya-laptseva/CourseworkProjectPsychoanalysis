@@ -17,7 +17,8 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutClick))
+        let logoutStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_LOGOUT)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: logoutStr, style: .plain, target: self, action: #selector(logoutClick))
     }
     
     override func viewWillAppear(_ animated: Bool) {
