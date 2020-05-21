@@ -79,7 +79,7 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
             selector = #selector(editClick)
         }
         
-        let saveStr = LocalizationManager.shared.getText(key: LocalizationMa nager.KEY_SAVE)
+        let saveStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_SAVE)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : "Edit", style: .plain, target: self, action: selector)
     }
     
