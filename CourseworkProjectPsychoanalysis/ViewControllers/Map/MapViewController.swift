@@ -8,8 +8,9 @@
 
 import UIKit
 import WebKit
+import MapKit
 
-class ViewController: UIViewController, WKUIDelegate {
+class MapViewController: UIViewController, WKUIDelegate {
     var webView: WKWebView!
     
     override func loadView() {

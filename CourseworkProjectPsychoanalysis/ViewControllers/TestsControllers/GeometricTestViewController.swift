@@ -24,22 +24,27 @@ class GeometricTestViewController: UIViewController {
     }
     
     @IBAction func squareButton(_ sender: Any) {
+        GeometricData().save(value: "square")
         result = geometricModel?.results.square
         goToResult()
     }
     @IBAction func triangleButton(_ sender: Any) {
+        GeometricData().save(value: "triangle")
         result = geometricModel?.results.triangle
         goToResult()
     }
     @IBAction func rectangleButton(_ sender: Any) {
+        GeometricData().save(value: "rectangle")
         result = geometricModel?.results.rectangle
         goToResult()
     }
     @IBAction func circleButton(_ sender: Any) {
+        GeometricData().save(value: "circle")
         result = geometricModel?.results.circle
         goToResult()
     }
     @IBAction func zigzagButton(_ sender: Any) {
+        GeometricData().save(value: "zigzag")
         result = geometricModel?.results.zigzag
         goToResult()
     }

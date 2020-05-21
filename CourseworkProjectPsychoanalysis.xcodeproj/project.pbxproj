@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* AllTests.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
 		0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */; };
-		0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */; };
 		0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECDF2465CF4700AB1C5E /* Firebase.swift */; };
 		0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */; };
 		0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */; };
@@ -39,9 +38,29 @@
 		0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED2F246BE8B900AB1C5E /* GeometricResult.swift */; };
 		0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED31246BE9EE00AB1C5E /* DifficulyEntity.swift */; };
 		0E4BED34246BEA0900AB1C5E /* DifficultyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED33246BEA0900AB1C5E /* DifficultyResult.swift */; };
+		0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */; };
+		0E4BED5C247023E500AB1C5E /* AllTestsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED5B247023E500AB1C5E /* AllTestsData.swift */; };
+		0E4BED622470269E00AB1C5E /* ExtrovertCharacterTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */; };
+		0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */; };
+		0E4BED66247026FC00AB1C5E /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED65247026FC00AB1C5E /* CharacterData.swift */; };
+		0E4BED68247027C200AB1C5E /* DifficultyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED67247027C200AB1C5E /* DifficultyData.swift */; };
+		0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED69247028BA00AB1C5E /* GeometricData.swift */; };
+		0E4BED6C2470290C00AB1C5E /* FavotiteColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */; };
+		0E4BED6E2470294700AB1C5E /* PhlegmaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */; };
+		0E4BED702470299900AB1C5E /* MelancholicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED6F2470299900AB1C5E /* MelancholicData.swift */; };
+		0E4BED72247029B500AB1C5E /* CholericData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED71247029B500AB1C5E /* CholericData.swift */; };
+		0E4BED74247029D300AB1C5E /* SanguineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED73247029D300AB1C5E /* SanguineData.swift */; };
+		0E4BED762470372100AB1C5E /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED752470372100AB1C5E /* BaseData.swift */; };
+		0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */; };
+		0E4BED7A2471871B00AB1C5E /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */; };
+		0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */; };
+		0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C2215247203F80006E657 /* FirebaseModule.swift */; };
+		0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C2219247220ED0006E657 /* GoogleService-Info.plist */; };
+		0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */; };
+		0E4C221E2473F7660006E657 /* ResultCurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */; };
 		0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */; };
 		0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */; };
-		0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* ViewController.swift */; };
+		0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE3242A3AB50002B228 /* MapViewController.swift */; };
 		0E7D5DE7242A3AB50002B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE5242A3AB50002B228 /* Main.storyboard */; };
 		0E7D5DE9242A3AB90002B228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7D5DE8242A3AB90002B228 /* Assets.xcassets */; };
 		0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */; };
@@ -70,7 +89,6 @@
 		0E4BECB32464C14400AB1C5E /* AllTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllTests.json; sourceTree = "<group>"; };
 		0E4BECB92464CAF900AB1C5E /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsEntity.swift; sourceTree = "<group>"; };
-		0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E4BECDF2465CF4700AB1C5E /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyTestQuestionsViewController.swift; sourceTree = "<group>"; };
 		0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricTestViewController.swift; sourceTree = "<group>"; };
@@ -88,10 +106,30 @@
 		0E4BED2F246BE8B900AB1C5E /* GeometricResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricResult.swift; sourceTree = "<group>"; };
 		0E4BED31246BE9EE00AB1C5E /* DifficulyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficulyEntity.swift; sourceTree = "<group>"; };
 		0E4BED33246BEA0900AB1C5E /* DifficultyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyResult.swift; sourceTree = "<group>"; };
+		0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsDataProtocol.swift; sourceTree = "<group>"; };
+		0E4BED5B247023E500AB1C5E /* AllTestsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTestsData.swift; sourceTree = "<group>"; };
+		0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrovertCharacterTypeData.swift; sourceTree = "<group>"; };
+		0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrovertCharacterTypeData.swift; sourceTree = "<group>"; };
+		0E4BED65247026FC00AB1C5E /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		0E4BED67247027C200AB1C5E /* DifficultyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyData.swift; sourceTree = "<group>"; };
+		0E4BED69247028BA00AB1C5E /* GeometricData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricData.swift; sourceTree = "<group>"; };
+		0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotiteColorData.swift; sourceTree = "<group>"; };
+		0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhlegmaticData.swift; sourceTree = "<group>"; };
+		0E4BED6F2470299900AB1C5E /* MelancholicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelancholicData.swift; sourceTree = "<group>"; };
+		0E4BED71247029B500AB1C5E /* CholericData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CholericData.swift; sourceTree = "<group>"; };
+		0E4BED73247029D300AB1C5E /* SanguineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguineData.swift; sourceTree = "<group>"; };
+		0E4BED752470372100AB1C5E /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewController.swift; sourceTree = "<group>"; };
+		0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedResultControllerViewController.swift; sourceTree = "<group>"; };
+		0E4C2215247203F80006E657 /* FirebaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModule.swift; sourceTree = "<group>"; };
+		0E4C2219247220ED0006E657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrentStateViewController.swift; sourceTree = "<group>"; };
+		0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCurrentStateViewController.swift; sourceTree = "<group>"; };
 		0E7D5DDC242A3AB50002B228 /* CourseworkProjectPsychoanalysis.CourseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseworkProjectPsychoanalysis.CourseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7D5DDF242A3AB50002B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E7D5DE3242A3AB50002B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E7D5DE3242A3AB50002B228 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0E7D5DE6242A3AB50002B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E7D5DE8242A3AB90002B228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7D5DEB242A3AB90002B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				0E4BECA2245B99FA00AB1C5E /* UsersManager.swift */,
-				0E7D5DE3242A3AB50002B228 /* ViewController.swift */,
+				0E7D5DE3242A3AB50002B228 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -212,6 +250,42 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		0E4BED582470197700AB1C5E /* ResultTestData */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BED592470231C00AB1C5E /* TestsDataProtocol.swift */,
+				0E4BED5B247023E500AB1C5E /* AllTestsData.swift */,
+				0E4BED6D2470294700AB1C5E /* PhlegmaticData.swift */,
+				0E4BED6F2470299900AB1C5E /* MelancholicData.swift */,
+				0E4BED71247029B500AB1C5E /* CholericData.swift */,
+				0E4BED73247029D300AB1C5E /* SanguineData.swift */,
+				0E4BED612470269E00AB1C5E /* ExtrovertCharacterTypeData.swift */,
+				0E4BED63247026BF00AB1C5E /* IntrovertCharacterTypeData.swift */,
+				0E4BED65247026FC00AB1C5E /* CharacterData.swift */,
+				0E4BED67247027C200AB1C5E /* DifficultyData.swift */,
+				0E4BED69247028BA00AB1C5E /* GeometricData.swift */,
+				0E4BED6B2470290C00AB1C5E /* FavotiteColorData.swift */,
+				0E4BED752470372100AB1C5E /* BaseData.swift */,
+			);
+			path = ResultTestData;
+			sourceTree = "<group>";
+		};
+		0E4C2213247203D40006E657 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C2214247203E80006E657 /* Firebase */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0E4C2214247203E80006E657 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C2215247203F80006E657 /* FirebaseModule.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		0E7D5DD3242A3AB50002B228 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +308,9 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C2219247220ED0006E657 /* GoogleService-Info.plist */,
+				0E4C2213247203D40006E657 /* Modules */,
+				0E4BED582470197700AB1C5E /* ResultTestData */,
 				0E4BEC95245B937E00AB1C5E /* ViewControllers */,
 				0E7D5E05242E3CC90002B228 /* SystemFiles */,
 				0E4BEC96245B93B000AB1C5E /* Entities */,
@@ -263,6 +340,11 @@
 				0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */,
 				0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */,
 				0E7D5E03242E3C9E0002B228 /* BasicInformationsViewController.swift */,
+				0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */,
+				0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */,
+				0E4C22112471CFA60006E657 /* CompletedResultControllerViewController.swift */,
+				0E4C221B2473D7C60006E657 /* TestCurrentStateViewController.swift */,
+				0E4C221D2473F7660006E657 /* ResultCurrentStateViewController.swift */,
 			);
 			path = ProfileControllers;
 			sourceTree = "<group>";
@@ -274,7 +356,6 @@
 				0E7D5DE1242A3AB50002B228 /* SceneDelegate.swift */,
 				0E7D5DEA242A3AB90002B228 /* LaunchScreen.storyboard */,
 				0E7D5DED242A3AB90002B228 /* Info.plist */,
-				0E4BECDD2465CB9E00AB1C5E /* GoogleService-Info.plist */,
 			);
 			path = SystemFiles;
 			sourceTree = "<group>";
@@ -307,6 +388,7 @@
 				0E7D5DD8242A3AB50002B228 /* Sources */,
 				0E7D5DD9242A3AB50002B228 /* Frameworks */,
 				0E7D5DDA242A3AB50002B228 /* Resources */,
+				AC898452D5158BC69EBABB74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,15 +439,32 @@
 			files = (
 				0E4BECB42464C14400AB1C5E /* AllTests.json in Resources */,
 				0E7D5DEC242A3AB90002B228 /* LaunchScreen.storyboard in Resources */,
+				0E4C221A247220ED0006E657 /* GoogleService-Info.plist in Resources */,
 				0E7D5DE9242A3AB90002B228 /* Assets.xcassets in Resources */,
 				0E7D5DE7242A3AB50002B228 /* Main.storyboard in Resources */,
-				0E4BECDE2465CB9E00AB1C5E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AC898452D5158BC69EBABB74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B61C2F4346C05CC473B7CB42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,27 +494,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */,
 				0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */,
 				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
 				0E4BED2C246BE71200AB1C5E /* FavoriteColorResult.swift in Sources */,
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
 				0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */,
 				0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */,
-				0E7D5DE4242A3AB50002B228 /* ViewController.swift in Sources */,
+				0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */,
+				0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */,
+				0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */,
 				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
+				0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */,
 				0E4BED32246BE9EE00AB1C5E /* DifficulyEntity.swift in Sources */,
+				0E4C2216247203F80006E657 /* FirebaseModule.swift in Sources */,
+				0E4BED5A2470231D00AB1C5E /* TestsDataProtocol.swift in Sources */,
 				0E7D5DE0242A3AB50002B228 /* AppDelegate.swift in Sources */,
 				0E4BED34246BEA0900AB1C5E /* DifficultyResult.swift in Sources */,
 				0E4BEC9D245B989F00AB1C5E /* AuthorisationViewController.swift in Sources */,
+				0E4BED66247026FC00AB1C5E /* CharacterData.swift in Sources */,
+				0E4BED6C2470290C00AB1C5E /* FavotiteColorData.swift in Sources */,
+				0E4C221E2473F7660006E657 /* ResultCurrentStateViewController.swift in Sources */,
+				0E4BED7A2471871B00AB1C5E /* ResultCollectionViewCell.swift in Sources */,
+				0E4BED68247027C200AB1C5E /* DifficultyData.swift in Sources */,
 				0E4BEC92245B91C000AB1C5E /* SaveManager.swift in Sources */,
 				0E7D5DF7242D4F120002B228 /* MainMenuViewController.swift in Sources */,
 				0E7D5E04242E3C9E0002B228 /* BasicInformationsViewController.swift in Sources */,
 				0E7D5DF9242D4FF60002B228 /* AllTestsTableViewController.swift in Sources */,
+				0E4BED622470269E00AB1C5E /* ExtrovertCharacterTypeData.swift in Sources */,
 				0E7D5DFB242D50690002B228 /* YesNoTestQuestionsViewController.swift in Sources */,
+				0E4BED702470299900AB1C5E /* MelancholicData.swift in Sources */,
 				0E4BED28246BD90700AB1C5E /* CharacterEntity.swift in Sources */,
 				0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */,
 				0E4BEC9F245B98C100AB1C5E /* RegistrationViewController.swift in Sources */,
+				0E4C22122471CFA60006E657 /* CompletedResultControllerViewController.swift in Sources */,
 				0E4BED26246BD42300AB1C5E /* ResultCharacterEntity.swift in Sources */,
 				0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */,
 				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
@@ -425,13 +538,18 @@
 				0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */,
 				0E4BED2A246BE6EE00AB1C5E /* FavoriteColorEntity.swift in Sources */,
 				0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */,
+				0E4BED5C247023E500AB1C5E /* AllTestsData.swift in Sources */,
 				0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */,
 				0E4BECEC246AF40500AB1C5E /* QuestionEntity.swift in Sources */,
 				0E4BECE7246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift in Sources */,
 				0E4BED24246BD30300AB1C5E /* CharacterTypeEntity.swift in Sources */,
 				0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */,
 				0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */,
+				0E4BED762470372100AB1C5E /* BaseData.swift in Sources */,
+				0E4BED74247029D300AB1C5E /* SanguineData.swift in Sources */,
+				0E4BED6E2470294700AB1C5E /* PhlegmaticData.swift in Sources */,
 				0E4BED2E246BE89200AB1C5E /* GeometricEntity.swift in Sources */,
+				0E4BED72247029B500AB1C5E /* CholericData.swift in Sources */,
 				0E4BECEE246AF42000AB1C5E /* ResultTemperamentEntity.swift in Sources */,
 				0E7D5DE2242A3AB50002B228 /* SceneDelegate.swift in Sources */,
 				0E4BECF2246AF46500AB1C5E /* ResultCharacterTypeEntity.swift in Sources */,
@@ -587,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anas.learn.academy.CourseworkProjectPsychoanalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

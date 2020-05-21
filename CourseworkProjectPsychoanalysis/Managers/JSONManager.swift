@@ -9,9 +9,6 @@
 import UIKit
 
 class JSONManager {
-    
-    
-    
     func loadFileAsString(name: String, type: String) -> Data {
         if let path = Bundle.main.path(forResource: name, ofType: type) {
             let fileManager = FileManager()
