@@ -33,8 +33,8 @@ class YesNoTestQuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
         let backImage = UIImage(named: "back-button")
         let closeImage = UIImage(named: "close-button")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backQuestion))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: closeImage, style: .plain, target: self, action: #selector(closeTest))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backQuestion))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: closeImage, style: .plain, target: self, action: #selector(closeTest))
         
         countQuestion = questions?.count ?? 0
         for _ in 0...countQuestion {
@@ -52,7 +52,6 @@ class YesNoTestQuestionsViewController: UIViewController {
         
     }
     @objc func closeTest() {
-        print("closeTest")
         navigationController?.popViewController(animated: true)
     }
     
