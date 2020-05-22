@@ -25,6 +25,11 @@ class SettingViewController: UIViewController {
         backgroundSwitch()
     }
     
+    @IBAction func changeLanguage(_ sender: Any) {
+        let switchButton = sender as! UISwitch
+        Locale.current.localizedString(forCurrencyCode: "en-US")
+    }
+    
     func backgroundSwitch() {
         var array: [UIView] = [self.view]
         array.append(scrollView)

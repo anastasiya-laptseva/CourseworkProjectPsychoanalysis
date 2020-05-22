@@ -683,7 +683,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="cuh-Y7-pp0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Пройти тест на текущее состояние">
                                                     <color key="titleColor" name="TextColor"/>
                                                 </state>
@@ -703,7 +703,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="KjK-1U-ER7"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Посмотреть предыдущие результаты">
                                                     <color key="titleColor" name="TextColor"/>
                                                 </state>
@@ -1500,7 +1500,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-vp-7R1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPD-LM-av3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -1529,6 +1529,35 @@
                                                     <constraint firstItem="js3-es-k4e" firstAttribute="centerY" secondItem="GPD-LM-av3" secondAttribute="centerY" id="smC-JO-XpC"/>
                                                     <constraint firstItem="4Xy-uk-0M9" firstAttribute="centerY" secondItem="GPD-LM-av3" secondAttribute="centerY" id="tUZ-of-WSe"/>
                                                     <constraint firstAttribute="trailing" secondItem="js3-es-k4e" secondAttribute="trailing" constant="30" id="v50-DI-EX5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-AT-DkU">
+                                                <rect key="frame" x="0.0" y="80" width="414" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Русский язак" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-mp-qpZ">
+                                                        <rect key="frame" x="30" y="28" width="274" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWW-d1-6RP">
+                                                        <rect key="frame" x="334" y="24.5" width="52" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="BxW-Dv-wcd"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeLanguage:" destination="9MU-DI-wTm" eventType="valueChanged" id="O29-gd-zxc"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="BWW-d1-6RP" firstAttribute="centerY" secondItem="0c7-AT-DkU" secondAttribute="centerY" id="2Cv-9R-Xsl"/>
+                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="leading" secondItem="0c7-AT-DkU" secondAttribute="leading" constant="30" id="5gU-aQ-wEE"/>
+                                                    <constraint firstAttribute="height" constant="80" id="98G-Jz-0WJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BWW-d1-6RP" secondAttribute="trailing" constant="30" id="MxA-6O-H4v"/>
+                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="centerY" secondItem="0c7-AT-DkU" secondAttribute="centerY" id="UeR-c4-nxc"/>
+                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BWW-d1-6RP" secondAttribute="leading" constant="-30" id="eYV-dR-U62"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2802,7 +2831,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="vpz-Iv-V86"/>
-        <segue reference="lY4-7Z-RHq"/>
+        <segue reference="G3i-Oh-2OI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Profile" width="170.66667175292969" height="170.66667175292969"/>
