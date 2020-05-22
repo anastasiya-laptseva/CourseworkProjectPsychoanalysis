@@ -27,7 +27,7 @@ class AllTestsData {
     }
     
     func load() {
-        var data = allTests as! [BaseData]
+        let data = allTests as! [BaseData]
         loadTests.removeAll()
         for test in data {
             test.load()

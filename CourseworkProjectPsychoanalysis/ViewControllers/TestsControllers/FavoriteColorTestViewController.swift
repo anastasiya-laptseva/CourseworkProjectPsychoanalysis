@@ -24,52 +24,52 @@ class FavoriteColorTestViewController: UIViewController {
     
     @IBAction func whiteClick(_ sender: Any) {
         FavotiteColorData().save(value: "white")
-        result = favoriteModel?.results.white as! String
+        result = favoriteModel?.results.white
         goToResult()
     }
     @IBAction func blackClick(_ sender: Any) {
         FavotiteColorData().save(value: "black")
-        result = favoriteModel?.results.black as! String
+        result = favoriteModel?.results.black
         goToResult()
     }
     @IBAction func grayClick(_ sender: Any) {
         FavotiteColorData().save(value: "gray")
-        result = favoriteModel?.results.gray as! String
+        result = favoriteModel?.results.gray
         goToResult()
     }
     @IBAction func redClick(_ sender: Any) {
         FavotiteColorData().save(value: "red")
-        result = favoriteModel?.results.red as! String
+        result = favoriteModel?.results.red
         goToResult()
     }
     @IBAction func orangeClick(_ sender: Any) {
         FavotiteColorData().save(value: "orange")
-        result = favoriteModel?.results.orange as! String
+        result = favoriteModel?.results.orange
         goToResult()
     }
     @IBAction func brownClick(_ sender: Any) {
         FavotiteColorData().save(value: "brown")
-        result = favoriteModel?.results.brown as! String
+        result = favoriteModel?.results.brown
         goToResult()
     }
     @IBAction func yellowClick(_ sender: Any) {
         FavotiteColorData().save(value: "yellow")
-        result = favoriteModel?.results.yellow as! String
+        result = favoriteModel?.results.yellow
         goToResult()
     }
     @IBAction func pinkClick(_ sender: Any) {
         FavotiteColorData().save(value: "pink")
-        result = favoriteModel?.results.pink as! String
+        result = favoriteModel?.results.pink
         goToResult()
     }
     @IBAction func blueClick(_ sender: Any) {
         FavotiteColorData().save(value: "blue")
-        result = favoriteModel?.results.blue as! String
+        result = favoriteModel?.results.blue
         goToResult()
     }
     @IBAction func greenClick(_ sender: Any) {
         FavotiteColorData().save(value: "green")
-        result = favoriteModel?.results.green as! String
+        result = favoriteModel?.results.green
         goToResult()
     }
     

@@ -22,7 +22,7 @@ class JSONManager {
     
     func loadTest() -> TestsEntity {
         var nameJson = ""
-        let preferredLanguage = NSLocale.preferredLanguages[0]
+        let preferredLanguage = NSLocale.preferredLanguages.first
         switch preferredLanguage {
         case "ru-US":
             nameJson = "AllTestsRU"

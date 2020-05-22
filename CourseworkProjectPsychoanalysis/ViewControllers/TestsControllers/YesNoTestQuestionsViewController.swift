@@ -45,7 +45,11 @@ class YesNoTestQuestionsViewController: UIViewController {
     }
     
     @objc func backQuestion() {
-        print("backQuestion")
+        if currentNumber > 0{
+            currentNumber-=2
+            UpdateQuestion()
+        }
+        
     }
     @objc func closeTest() {
         print("closeTest")

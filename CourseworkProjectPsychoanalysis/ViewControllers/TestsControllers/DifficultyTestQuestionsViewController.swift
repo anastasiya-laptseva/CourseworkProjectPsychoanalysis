@@ -96,7 +96,6 @@ class DifficultyTestQuestionsViewController: UIViewController {
             guard let resultController = segue.destination as? ResultTestViewController ?? nil else {
                 return
             }
-            
             resultController.setNameResult(value: "Difficulty Test")
             resultController.setTextResult(value: resultSum(value: sum))
         }
