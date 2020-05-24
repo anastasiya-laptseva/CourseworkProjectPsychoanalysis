@@ -21,7 +21,17 @@ class JSONManager {
     }
     
     func loadTest() -> TestsEntity {
-        let dataJson = loadFileAsString(name: "AllTests", type: ".json")
+        var nameJson = ""
+        let preferredLanguage = NSLocale.preferredLanguages.first
+        switch preferredLanguage {
+        case "ru-US":
+            nameJson = "AllTestsRU"
+            break
+        default:
+            nameJson = "AllTestsEN"
+        }
+        
+        let dataJson = loadFileAsString(name: nameJson, type: ".json")
         let TestModel: TestsEntity = try! JSONDecoder().decode(TestsEntity.self, from: dataJson)
         return TestModel
     }

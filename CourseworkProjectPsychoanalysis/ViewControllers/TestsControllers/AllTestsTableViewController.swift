@@ -22,14 +22,22 @@ class AllTestsTableViewController: UITableViewController {
     var geometricTest: GeometricEntity?
     var difficultyTest: DifficultyEntity?
     
-    let arrayTests = [
+    let arrayTestsEN = [
         ["Phlegmatic Test","Melancholic Test","Choleric Test","Sanguine Test"],
         ["Extrovert","Introvert"],
         ["Character Test","Difficulty Test"],
         ["Geometric test","Favorite color test"]
     ]
     
-    let arrayNameSection = [ "Temperament tests","Character type tests", "Psychology tests", "Perception tests"]
+    let arrayTestsRU = [
+        ["Флегматик","Меланхолик","Холерик","Сангвиник"],
+        ["Экстроверт","Интроверт"],
+        ["Тест на черты характера","Тест на поведение в трудной ситуации"],
+        ["Геометрический тест","Тест по любимому цвету"]
+    ]
+    
+    let arrayNameSectionEN = [ "Temperament tests", "Character type tests", "Psychology tests", "Perception tests"]
+    let arrayNameSectionRU = [ "Тесты на тип тепмерамента", "Тесты на тип характера", "Психологические тесты", "Тесты на восприятие"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +50,22 @@ class AllTestsTableViewController: UITableViewController {
         geometricTest = loadTests.geometricTest
         difficultyTest = loadTests.difficultyTest
     }
+    
+    
+//    func loadNameTests() {
+//        var nameTests = ""
+//        var nameTypeTests = ""
+//        let preferredLanguage = NSLocale.preferredLanguages[0]
+//        switch preferredLanguage {
+//        case "ru-US":
+//            nameTests = "arrayTestsRU"
+//            nameTypeTests = "arrayNameSectionRU"
+//            break
+//        default:
+//            nameTests = "arrayTestsEN"
+//            nameTypeTests = "arrayNameSectionEN"
+//        }
+//    }
 
     // MARK: - Table view data source
 
@@ -67,22 +91,32 @@ class AllTestsTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return arrayNameSection.count
+        return arrayNameSectionEN.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return arrayNameSection[section]
+        if  NSLocale.preferredLanguages.first == "ru-US" {
+            return arrayNameSectionRU[section]
+        } else {
+            return arrayNameSectionEN[section]
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return arrayTests[section].count
+        return arrayTestsEN[section].count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = arrayTests[indexPath.section][indexPath.row]
+        var text = ""
+        if  NSLocale.preferredLanguages.first == "ru-US" {
+            text = arrayTestsRU[indexPath.section][indexPath.row]
+        } else {
+            text = arrayTestsEN[indexPath.section][indexPath.row]
+        }
+        cell.textLabel?.text = text
         return cell
     }
 

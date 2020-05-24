@@ -22,26 +22,44 @@ class ResultCurrentStateViewController: UIViewController {
     var progressBarActivity: GTProgressBar?
     var progressBarMood: GTProgressBar?
     
+    let maxPoints = 70.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        progressBarHealth = createProgressView(view: healthProgressView)
-        progressBarActivity = createProgressView(view: activityProgressView)
-        progressBarMood = createProgressView(view: moodProgressView)
+        let colorHealthBar = UIColor(named: "progressBarHealth") ?? .green
+        let colorActivityBar = UIColor(named: "progressBarActivity")  ?? .green
+        let colorMoodBar = UIColor(named: "progressBarMood")  ?? .green
+        
+        let backgroundHealthBar = UIColor(named: "backgroundProgressBarHealth") ?? .green
+        let backgroundActivityBar = UIColor(named: "backgroundProgressBarActivity")  ?? .green
+        let backgroundMoodBar = UIColor(named: "backgroundProgressBarMood")  ?? .green
+        
+        progressBarHealth = createProgressView(view: healthProgressView, color: colorHealthBar, backgroundColor: backgroundHealthBar)
+        progressBarActivity = createProgressView(view: activityProgressView, color: colorActivityBar, backgroundColor: backgroundActivityBar)
+        progressBarMood = createProgressView(view: moodProgressView, color: colorMoodBar, backgroundColor: backgroundMoodBar)
 
+        let data = CurrentStateData()
+        let healthPoints = data.get(key: .currentStateHealth)
+        let activityPoints = data.get(key: .currentStateActivity)
+        let moodPoint = data.get(key: .currentStateMood)
+        
+        progressBarHealth?.progress = CGFloat(Double(healthPoints)/maxPoints)
+        progressBarActivity?.progress = CGFloat(Double(activityPoints)/maxPoints)
+        progressBarMood?.progress = CGFloat(Double(moodPoint)/maxPoints)
         // Do any additional setup after loading the view.
     }
     
-    func createProgressView(view: UIView) ->  GTProgressBar{
+    func createProgressView(view: UIView, color: UIColor, backgroundColor: UIColor) ->  GTProgressBar{
         let progressBar = GTProgressBar(frame: CGRect(x: 0, y: 0, width: view.bounds.width-40, height: view.bounds.height))
 
-        progressBar.progress = 0.75
-        progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
-        progressBar.barFillColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
-        progressBar.barBackgroundColor = UIColor(red:0.77, green:0.93, blue:0.78, alpha:1.0)
+        progressBar.progress = 0.0
+        progressBar.barBorderColor = color
+        progressBar.barFillColor = color
+        progressBar.barBackgroundColor = backgroundColor
         progressBar.barBorderWidth = 1
         progressBar.barFillInset = 2
-        progressBar.labelTextColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+        progressBar.labelTextColor = color
         progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         progressBar.font = UIFont.boldSystemFont(ofSize: 25)
         progressBar.labelPosition = GTProgressBarLabelPosition.right
