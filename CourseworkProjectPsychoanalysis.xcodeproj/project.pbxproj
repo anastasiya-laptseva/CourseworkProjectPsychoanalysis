@@ -10,6 +10,8 @@
 		0E3F40C02476CD4A00038EC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E3F40C22476CD4A00038EC7 /* Localizable.strings */; };
 		0E3F40C52476CDA000038EC7 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F40C42476CDA000038EC7 /* LocalizationManager.swift */; };
 		0E3F40C82476DE2A00038EC7 /* AllTestsEN.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E3F40C72476DE2A00038EC7 /* AllTestsEN.json */; };
+		0E3F40CB247B25BD00038EC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3F40C9247B21DE00038EC7 /* MapKit.framework */; };
+		0E3F40CF247B28C300038EC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3F40CE247B28C300038EC7 /* CoreLocation.framework */; };
 		0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC8F245B914600AB1C5E /* Profile.swift */; };
 		0E4BEC92245B91C000AB1C5E /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC91245B91C000AB1C5E /* SaveManager.swift */; };
 		0E4BEC9B245B983300AB1C5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEC9A245B983300AB1C5E /* LoginViewController.swift */; };
@@ -87,6 +89,8 @@
 		0E3F40C32476CD4C00038EC7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E3F40C42476CDA000038EC7 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		0E3F40C72476DE2A00038EC7 /* AllTestsEN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllTestsEN.json; sourceTree = "<group>"; };
+		0E3F40C9247B21DE00038EC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0E3F40CE247B28C300038EC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E4BEC8F245B914600AB1C5E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		0E4BEC91245B91C000AB1C5E /* SaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManager.swift; sourceTree = "<group>"; };
 		0E4BEC9A245B983300AB1C5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3F40CF247B28C300038EC7 /* CoreLocation.framework in Frameworks */,
+				0E3F40CB247B25BD00038EC7 /* MapKit.framework in Frameworks */,
 				B081F694B1D5EEE4C462D1E7 /* Pods_CourseworkProjectPsychoanalysis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +390,8 @@
 		9665E83702A7DD92B0D6144A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E3F40CE247B28C300038EC7 /* CoreLocation.framework */,
+				0E3F40C9247B21DE00038EC7 /* MapKit.framework */,
 				80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */,
 			);
 			name = Frameworks;

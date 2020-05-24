@@ -17,20 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hTH-DF-AAH">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-nG-mpe">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </activityIndicatorView>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" name="ViewControllerColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hTH-DF-AAH" secondAttribute="trailing" id="GRs-jr-fQg"/>
-                            <constraint firstItem="hTH-DF-AAH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QIX-q7-ztG"/>
-                            <constraint firstItem="hTH-DF-AAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UST-M1-gUV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hTH-DF-AAH" secondAttribute="bottom" id="pf9-QT-MTR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FfQ-nG-mpe" secondAttribute="trailing" id="gpp-4V-Yq8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FfQ-nG-mpe" secondAttribute="bottom" id="l4s-fi-d2s"/>
+                            <constraint firstItem="FfQ-nG-mpe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ufi-6m-YPW"/>
+                            <constraint firstItem="FfQ-nG-mpe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v7d-js-MtW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="2mx-qh-tt4"/>
+                    <connections>
+                        <outlet property="mapView" destination="FfQ-nG-mpe" id="N5Y-v1-qLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
