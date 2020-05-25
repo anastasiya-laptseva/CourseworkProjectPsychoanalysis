@@ -28,7 +28,7 @@ class IntrovertCharacterTypeData: BaseData, TestsDataProtocol {
     }
     
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.characterTypeTest.results.introvert
     }
 

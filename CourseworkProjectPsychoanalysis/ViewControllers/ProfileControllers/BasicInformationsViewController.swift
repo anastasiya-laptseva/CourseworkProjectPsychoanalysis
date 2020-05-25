@@ -25,25 +25,23 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     
-    
-    
-    
     var profile = Profile(imagePath: nil, name: "", age: 0, gender: 0, info: "")
     var isEdit: Bool = false
     
     var imagePicker = UIImagePickerController()
-    var info : [UIImagePickerController.InfoKey : Any]?
+    var info: [UIImagePickerController.InfoKey: Any]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,stackView,scrollView,photoView])
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, stackView, scrollView, photoView])
         
-        if let p = SaveManager.shared.loadProfile(){
-            profile = p
+        if let prof = SaveManager.shared.loadProfile() {
+            profile = prof
             isEdit = false
-        }
-        else{
+        } else {
             isEdit = true
         }
         
@@ -71,47 +69,44 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         genderSegment.isHidden = !isEdit
         infoEdit.isHidden = !isEdit
         
-        var selector : Selector? = nil
+        var selector: Selector? = nil
         if isEdit {
             selector = #selector(saveClick)
-        }
-        else{
+        } else {
             selector = #selector(editClick)
         }
-        
         let saveStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_SAVE)
         let editStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_EDIT)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : editStr, style: .plain, target: self, action: selector)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: isEdit ? saveStr : editStr,
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: selector)
     }
-    
     func updateProfile() {
         if let imagePathData = profile.imagePath{
-            if let infoDic: NSDictionary? = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary{
-                if let info = infoDic as? [UIImagePickerController.InfoKey : Any] {
+            if let infoDic: NSDictionary = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary {
+                if let info = infoDic as? [UIImagePickerController.InfoKey: Any] {
                     if let image = info[.originalImage] as? UIImage {
                             photoView.image = image
                     }
                 }
             }
         }
-        
         if isEdit {
             nameEdit.text = profile.name
             ageEdit.text = "\(profile.age)"
             genderSegment.selectedSegmentIndex = profile.gender
             infoEdit.text = profile.info
-        }
-        else {
+        } else {
             nameLabel.text = profile.name
             ageLabel.text = "Age: \(profile.age)"
             genderLabel.text = "Gender: \(profile.gender == 0 ? "Male" : (profile.gender == 1 ? "Female" : "NotToSay"))"
             infoLabel.text = "Info: \(profile.info)"
         }
     }
-    
     @objc func saveClick() {
         print("Save")
-        if let dataImage = info{
+        if let dataImage = info {
             profile.imagePath = NSKeyedArchiver.archivedData(withRootObject: dataImage)
         }
         profile.name = nameEdit.text ?? ""
@@ -133,7 +128,6 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         updateComponents()
         updateProfile()
     }
-    
     @IBAction func photoLibraryClick(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
             //указываем что у нас реализованы протоколы получения фото
@@ -145,15 +139,14 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
             present(imagePicker, animated: true, completion: nil)
         }
     }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[.originalImage] as? UIImage{
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let image = info[.originalImage] as? UIImage {
             self.info = info
             photoView.image = image
         } else {
             print("Other source")
         }
-        
         dismiss(animated: true, completion: nil)
     }
 
@@ -170,5 +163,4 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         // Pass the selected object to the new view controller.
     }
     */
-
 }

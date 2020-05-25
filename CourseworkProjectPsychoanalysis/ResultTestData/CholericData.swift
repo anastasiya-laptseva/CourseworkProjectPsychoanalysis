@@ -10,7 +10,6 @@ import UIKit
 
 class CholericData: BaseData, TestsDataProtocol {
     let keySave = "result_choleric"
-    
     func getImage() -> UIImage {
         return UIImage(named: "choleric") ?? UIImage()
     }
@@ -18,17 +17,14 @@ class CholericData: BaseData, TestsDataProtocol {
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Choleric"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "0.0") %"
     }
-    
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.choleric
     }
 

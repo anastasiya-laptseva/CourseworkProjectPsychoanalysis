@@ -24,14 +24,11 @@ class SaveManager {
     }
     
     func backgroundSwitch(controller: UIViewController, navigation: UINavigationController?, views: [UIView]) {
-//        return
-        let darkColor = UIColor(red:15.0/255.0, green:86.0/255.0, blue:103.0/255.0, alpha:1.0)
-        let color: UIColor = (SaveManager.shared.isDark() ? darkColor : (UIColor(named: "ViewControllerColor")) ?? .systemBackground)
-
+        let darkColor = UIColor(red:0.261, green:0.261, blue:0.261, alpha:1.0)
+        let color: UIColor = SaveManager.shared.isDark() ? darkColor : (UIColor(named: "ViewControllerColor") ?? UIColor.gray)
         for view in views {
             view.backgroundColor = color
         }
-
         if let nc = navigation{
             nc.navigationBar.barTintColor = color
         }

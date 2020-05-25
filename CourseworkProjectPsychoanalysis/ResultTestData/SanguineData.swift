@@ -9,7 +9,6 @@
 import UIKit
 
 class SanguineData: BaseData, TestsDataProtocol {
-    
     func getImage() -> UIImage {
         return UIImage(named: "sanguine") ?? UIImage()
     }
@@ -29,7 +28,7 @@ class SanguineData: BaseData, TestsDataProtocol {
     }
     
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.sanguine
     }
 
