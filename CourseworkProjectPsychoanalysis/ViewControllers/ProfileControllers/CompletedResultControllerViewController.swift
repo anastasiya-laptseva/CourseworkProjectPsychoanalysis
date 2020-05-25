@@ -27,7 +27,6 @@ class CompletedResultControllerViewController: UIViewController {
         desriptionText = description
     }
     
-
     /*
     // MARK: - Navigation
 

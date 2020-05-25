@@ -12,7 +12,9 @@ class FirebaseModule {
     static let shared = FirebaseModule()
     private init(){}
     
-    func registration (email: String, password: String, loading: UIView, completion: @escaping (_ isRegistration: Bool) -> Void) {
+    func registration (email: String,
+                       password: String,
+                       loading: UIView, completion: @escaping (_ isRegistration: Bool) -> Void) {
         loading.isHidden = false
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             loading.isHidden = true
@@ -26,15 +28,17 @@ class FirebaseModule {
         }
     }
     
-    func logIn(email: String, password: String, loading: UIView, completion: @escaping(_ isRegistration: Bool) -> Void) {
+    func logIn(email: String,
+               password: String,
+               loading: UIView,
+               completion: @escaping(_ isRegistration: Bool) -> Void) {
         loading.isHidden = false
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+        Auth.auth().signIn(withEmail: email, password: password) { _, error in
             loading.isHidden = true
             if let error = error {
                 completion(false)
                 print("Fail registration User \(error.localizedDescription)")
-            }
-            else{
+            } else {
                 completion(true)
             }
         }
