@@ -9,6 +9,7 @@
 import UIKit
 
 class AllTestsTableViewController: UITableViewController {
+    
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
@@ -44,6 +45,10 @@ class AllTestsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, tableView])
 
         let loadTests = JSONManager().loadTest()
         temperamentsTests =  loadTests.temperamentTest
@@ -173,7 +178,6 @@ class AllTestsTableViewController: UITableViewController {
         testQuestionController.testName = testName
         testQuestionController.testDescription = testDescription
     }
-    
     func setUpCharacterType(testQuestionController: YesNoTestQuestionsViewController) {
         var questionsCharacterType = [QuestionsArray]()
         var testName = ""

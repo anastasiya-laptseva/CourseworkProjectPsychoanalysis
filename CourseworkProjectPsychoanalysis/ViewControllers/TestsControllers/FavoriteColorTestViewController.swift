@@ -11,6 +11,8 @@ import UIKit
 class FavoriteColorTestViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
     let resultIdentifier = "resultFavorite"
     
     var favoriteModel: FavoriteColorEntity?
@@ -18,6 +20,9 @@ class FavoriteColorTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view,scrollView,stackView])
         questionLabel.text = favoriteModel?.question
         // Do any additional setup after loading the view.
     }
@@ -72,7 +77,6 @@ class FavoriteColorTestViewController: UIViewController {
         result = favoriteModel?.results.green
         goToResult()
     }
-    
     func goToResult() {
         self.performSegue(withIdentifier: resultIdentifier, sender: self)
     }

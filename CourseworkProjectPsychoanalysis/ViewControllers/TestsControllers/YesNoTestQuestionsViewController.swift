@@ -11,9 +11,11 @@ import UIKit
 class YesNoTestQuestionsViewController: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+        
     var currentNumber: Int = -1
     let resultIdentifier = "result"
-    
     
     var testName: String?
     var testDescription: String?
@@ -29,6 +31,10 @@ class YesNoTestQuestionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scrollView, stackView])
 
         // Do any additional setup after loading the view.
         let backImage = UIImage(named: "back-button")

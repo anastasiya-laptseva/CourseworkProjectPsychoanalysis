@@ -18,18 +18,15 @@ class ResultsCollectionViewController: UICollectionViewController {
     var data = AllTestsData()
     var elementClick: TestsDataProtocol?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,collectionView])
 
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         data.load()
     }
-
-    
-    
-    
 
     // MARK: UICollectionViewDataSource
 

@@ -87,7 +87,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emG-WC-QoM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emG-WC-QoM" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="120" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -108,7 +108,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="4cK-Cw-mlR"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEK-du-ajY">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEK-du-ajY" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="190" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -129,7 +129,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="7v2-4f-n8s"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edo-gA-b8Z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edo-gA-b8Z" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="260" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -150,7 +150,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="cYd-vT-gR2"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-ae-0Iz">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-ae-0Iz" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="330" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -171,7 +171,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="Dnb-MF-sMq"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgt-7w-VqX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgt-7w-VqX" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="400" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -251,7 +251,7 @@
                                                     <constraint firstAttribute="height" constant="20" id="0ZP-48-2ie"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wE-GW-k6l">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wE-GW-k6l" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="320" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -271,7 +271,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="OFh-Sf-EFE"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0y-HA-9wT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0y-HA-9wT" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="390" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -291,7 +291,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="Wo5-sa-bO8"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZO-rK-S2C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZO-rK-S2C" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="460" width="334" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -439,7 +439,6 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шкала самочувствия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcu-LW-PGe">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
-                                                <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="SQn-TX-YVh"/>
                                                 </constraints>
@@ -455,7 +454,6 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шкала активности" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8if-N3-DbJ">
                                                 <rect key="frame" x="0.0" y="90" width="374" height="40"/>
-                                                <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="D3C-sa-GDm"/>
                                                 </constraints>
@@ -471,7 +469,6 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шкала настроения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck2-Y7-zRf">
                                                 <rect key="frame" x="0.0" y="180" width="374" height="40"/>
-                                                <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="IrZ-kp-VgW"/>
                                                 </constraints>
@@ -507,7 +504,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="sqx-26-4u0"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2r-Vf-OKf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2r-Vf-OKf" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="470" width="374" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -633,7 +630,7 @@
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzc-Xz-uWY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzc-Xz-uWY" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="694" width="374" height="40"/>
                                         <color key="backgroundColor" name="ComponentsColor"/>
                                         <constraints>
@@ -728,8 +725,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiR-cz-eyo">
                                                 <rect key="frame" x="0.0" y="430" width="374" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsR-m5-7or">
-                                                        <rect key="frame" x="98.5" y="0.0" width="177" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsR-m5-7or" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
+                                                        <rect key="frame" x="50" y="0.0" width="274" height="40"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="вернуться к тестам">
@@ -741,9 +738,11 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="YsR-m5-7or" firstAttribute="leading" secondItem="XiR-cz-eyo" secondAttribute="leading" constant="50" id="CJf-W4-zTl"/>
                                                     <constraint firstItem="YsR-m5-7or" firstAttribute="centerX" secondItem="XiR-cz-eyo" secondAttribute="centerX" id="aoR-Zt-afQ"/>
                                                     <constraint firstItem="YsR-m5-7or" firstAttribute="centerY" secondItem="XiR-cz-eyo" secondAttribute="centerY" id="d6I-1c-aMQ"/>
                                                     <constraint firstAttribute="bottom" secondItem="YsR-m5-7or" secondAttribute="bottom" id="fmB-5V-XMZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YsR-m5-7or" secondAttribute="trailing" constant="50" id="hml-q0-rAO"/>
                                                     <constraint firstItem="YsR-m5-7or" firstAttribute="top" secondItem="XiR-cz-eyo" secondAttribute="top" id="spO-Bo-BOv"/>
                                                     <constraint firstAttribute="height" constant="40" id="wiX-Ml-3Ra"/>
                                                 </constraints>
@@ -821,7 +820,7 @@
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkh-ma-5xR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkh-ma-5xR" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="150" width="314" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -835,7 +834,7 @@
                                                     <segue destination="Kod-i4-SmA" kind="show" id="VvA-wz-2NZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-G5-ARv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-G5-ARv" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="240" width="314" height="40"/>
                                                 <color key="backgroundColor" name="ComponentsColor"/>
                                                 <constraints>
@@ -987,7 +986,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="300" id="Xic-cE-7Zg"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz6-PZ-T4u">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz6-PZ-T4u" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                         <rect key="frame" x="111.5" y="510" width="191" height="40"/>
                                         <color key="backgroundColor" name="ComponentsColor"/>
                                         <constraints>
@@ -1152,7 +1151,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="300" id="bs0-Fs-cu4"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-jv-VLX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-jv-VLX" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                         <rect key="frame" x="132" y="345" width="150" height="40"/>
                                         <color key="backgroundColor" name="ComponentsColor"/>
                                         <constraints>
@@ -1372,7 +1371,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-vp-7R1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPD-LM-av3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1401,35 +1400,6 @@
                                                     <constraint firstItem="js3-es-k4e" firstAttribute="centerY" secondItem="GPD-LM-av3" secondAttribute="centerY" id="smC-JO-XpC"/>
                                                     <constraint firstItem="4Xy-uk-0M9" firstAttribute="centerY" secondItem="GPD-LM-av3" secondAttribute="centerY" id="tUZ-of-WSe"/>
                                                     <constraint firstAttribute="trailing" secondItem="js3-es-k4e" secondAttribute="trailing" constant="30" id="v50-DI-EX5"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-AT-DkU">
-                                                <rect key="frame" x="0.0" y="50" width="414" height="50"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Русский язык" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-mp-qpZ">
-                                                        <rect key="frame" x="30" y="15" width="274" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWW-d1-6RP">
-                                                        <rect key="frame" x="334" y="9.5" width="52" height="31"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="50" id="BxW-Dv-wcd"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="changeLanguage:" destination="9MU-DI-wTm" eventType="valueChanged" id="O29-gd-zxc"/>
-                                                        </connections>
-                                                    </switch>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="BWW-d1-6RP" firstAttribute="centerY" secondItem="0c7-AT-DkU" secondAttribute="centerY" id="2Cv-9R-Xsl"/>
-                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="leading" secondItem="0c7-AT-DkU" secondAttribute="leading" constant="30" id="5gU-aQ-wEE"/>
-                                                    <constraint firstAttribute="height" constant="50" id="98G-Jz-0WJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="BWW-d1-6RP" secondAttribute="trailing" constant="30" id="MxA-6O-H4v"/>
-                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="centerY" secondItem="0c7-AT-DkU" secondAttribute="centerY" id="UeR-c4-nxc"/>
-                                                    <constraint firstItem="lB3-mp-qpZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BWW-d1-6RP" secondAttribute="leading" constant="-30" id="eYV-dR-U62"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1518,7 +1488,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-Zo-hc6">
                                                 <rect key="frame" x="0.0" y="400" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-Qy-mVN">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-Qy-mVN" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="40" y="0.0" width="70" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1532,7 +1502,7 @@
                                                             <action selector="yesClick:" destination="lcQ-UV-X2v" eventType="touchUpInside" id="Bud-py-7oD"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-nU-PfJ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-nU-PfJ" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="284" y="0.0" width="70" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1708,6 +1678,8 @@
                     <connections>
                         <outlet property="progressLabel" destination="6N3-zE-eb3" id="Egz-aC-kr7"/>
                         <outlet property="questionLabel" destination="l04-nT-AJb" id="cdr-b6-Ifh"/>
+                        <outlet property="scrollView" destination="yw9-ND-NqE" id="Sgn-JH-7eT"/>
+                        <outlet property="stackView" destination="iiK-aQ-JxX" id="e5C-8d-YcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2J-9t-aAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1774,7 +1746,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-rv-Z7j" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="400" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-p3-4r4">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-p3-4r4" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1788,7 +1760,7 @@
                                                             <action selector="neverButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="ShL-8L-tnf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-a1-TEJ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-a1-TEJ" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="274" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1802,7 +1774,7 @@
                                                             <action selector="rarelyButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="rwh-gy-rQM"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-hN-iMb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-hN-iMb" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1841,7 +1813,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCt-Kf-Sg1" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="460" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-rM-PT7">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-rM-PT7" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1855,7 +1827,7 @@
                                                             <action selector="sometimesButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="G3x-Tx-alg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-LH-JFu">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-LH-JFu" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="274" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1869,7 +1841,7 @@
                                                             <action selector="almostAlwaysButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="chg-lP-FMJ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-Y3-kNp">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-Y3-kNp" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1907,7 +1879,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0T-BC-i4Y" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="520" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-1D-Eqb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-1D-Eqb" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -1957,6 +1929,8 @@
                         <outlet property="explanationLabel" destination="ZtQ-QO-YnC" id="gOX-tT-54T"/>
                         <outlet property="progressLabel" destination="9hp-N3-3xt" id="yDp-UG-8Qx"/>
                         <outlet property="questionLabel" destination="fH0-KD-0dY" id="Y3V-YG-ln0"/>
+                        <outlet property="scrollView" destination="Jye-Vk-lcP" id="Vik-80-Me0"/>
+                        <outlet property="stackView" destination="Voc-ml-PmX" id="KQa-rl-AeB"/>
                         <segue destination="PcS-02-fXY" kind="show" identifier="resultDifficalty" id="Dv7-6Q-WoJ"/>
                     </connections>
                 </viewController>
@@ -2017,7 +1991,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67h-9k-Ewl" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="440" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-rt-xOz">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-rt-xOz" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2031,7 +2005,7 @@
                                                             <action selector="squareButton:" destination="SwH-KW-L9b" eventType="touchUpInside" id="Iap-ya-mTg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXq-eN-j64">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXq-eN-j64" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="279" y="0.0" width="115" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2045,7 +2019,7 @@
                                                             <action selector="rectangleButton:" destination="SwH-KW-L9b" eventType="touchUpInside" id="eBS-Kn-yq6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCY-Oc-sqI">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCY-Oc-sqI" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="139.5" y="0.0" width="115" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2084,7 +2058,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIa-3W-LNx" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="500" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-ST-LZq">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-ST-LZq" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2098,7 +2072,7 @@
                                                             <action selector="circleButton:" destination="SwH-KW-L9b" eventType="touchUpInside" id="YfY-dv-q1X"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXn-qm-ceC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXn-qm-ceC" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="279" y="0.0" width="115" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2155,6 +2129,8 @@
                     <connections>
                         <outlet property="image" destination="Yye-Yj-FAz" id="maD-q1-Quk"/>
                         <outlet property="questionLabel" destination="w1N-b0-qbl" id="Tcm-up-Iyi"/>
+                        <outlet property="scrollView" destination="wZI-Tg-aSY" id="oG0-71-0Dc"/>
+                        <outlet property="stackView" destination="xfK-ki-54m" id="4kt-Ga-677"/>
                         <segue destination="PcS-02-fXY" kind="show" identifier="resultGeometric" id="hhj-hu-Ngy"/>
                     </connections>
                 </viewController>
@@ -2194,7 +2170,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-Tf-HJp" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="220" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8I-fr-6v9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8I-fr-6v9" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2208,7 +2184,7 @@
                                                             <action selector="whiteClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="qdD-Pm-XkV"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG1-Ob-mRg">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG1-Ob-mRg" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="274" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2222,7 +2198,7 @@
                                                             <action selector="grayClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="40d-h6-nY7"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-At-YbK">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-At-YbK" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2263,7 +2239,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9E-iT-cXh" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="295" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL7-mt-MuC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL7-mt-MuC" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2277,7 +2253,7 @@
                                                             <action selector="redClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="FKN-OB-rjc"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f64-b6-2UR">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f64-b6-2UR" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="274" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" red="0.67558568564768362" green="0.39771733593269409" blue="0.25805395760967298" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -2291,7 +2267,7 @@
                                                             <action selector="brownClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="321-D6-tYC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVQ-Jn-ys9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVQ-Jn-ys9" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2331,7 +2307,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inn-5J-tMT" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="370" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-EB-fId">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-EB-fId" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2345,7 +2321,7 @@
                                                             <action selector="yellowClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="m35-Y9-5fU"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Z-CH-xjU">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Z-CH-xjU" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="274" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2359,7 +2335,7 @@
                                                             <action selector="blueClick:" destination="53z-ea-j7z" eventType="touchUpInside" id="EHe-pA-HZ8"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-9j-lwr">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-9j-lwr" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" red="0.91980725526809692" green="0.4909195399546078" blue="0.60490390076228273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -2386,7 +2362,7 @@
                                                     <constraint firstItem="yOm-9j-lwr" firstAttribute="centerY" secondItem="inn-5J-tMT" secondAttribute="centerY" id="YhI-uy-Zca"/>
                                                     <constraint firstAttribute="bottom" secondItem="ew4-EB-fId" secondAttribute="bottom" id="csJ-fv-RwA"/>
                                                     <constraint firstAttribute="height" constant="50" id="vKb-Zs-Uve"/>
-                                                    <constraint firstItem="ew4-EB-fId" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="inn-5J-tMT" secondAttribute="leading" symbolic="YES" id="vhz-JW-4qn"/>
+                                                    <constraint firstItem="ew4-EB-fId" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="inn-5J-tMT" secondAttribute="leading" constant="20" symbolic="YES" id="vhz-JW-4qn"/>
                                                     <constraint firstItem="Q0Z-CH-xjU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yOm-9j-lwr" secondAttribute="trailing" constant="8" symbolic="YES" id="zip-Ef-Nf2"/>
                                                 </constraints>
                                             </view>
@@ -2399,7 +2375,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="not-or-HOe" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="445" width="394" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-j4-3Pb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-j4-3Pb" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2447,6 +2423,8 @@
                     <navigationItem key="navigationItem" id="7tP-EX-6Nt"/>
                     <connections>
                         <outlet property="questionLabel" destination="5rd-WE-t7a" id="5aV-UI-Dlb"/>
+                        <outlet property="scrollView" destination="bJj-26-Mjs" id="qcB-qM-ZNR"/>
+                        <outlet property="stackView" destination="0p8-cw-9j3" id="dqr-B3-esi"/>
                         <segue destination="PcS-02-fXY" kind="show" identifier="resultFavorite" id="as5-qm-Tft"/>
                     </connections>
                 </viewController>
@@ -2642,7 +2620,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-cy-WJf" userLabel="ViewButtons">
                                                 <rect key="frame" x="0.0" y="240" width="394" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reo-sL-IIS">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reo-sL-IIS" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
                                                         <rect key="frame" x="147" y="0.0" width="100" height="40"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
@@ -2702,7 +2680,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dv7-6Q-WoJ"/>
+        <segue reference="as5-qm-Tft"/>
         <segue reference="lY4-7Z-RHq"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2720,7 +2698,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ViewControllerColor">
-            <color red="0.92100000381469727" green="0.92100000381469727" blue="0.92100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

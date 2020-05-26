@@ -13,6 +13,9 @@ class DifficultyTestQuestionsViewController: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+    
     let resultIdentifier = "resultDifficalty"
     var currentNumber: Int = -1
     var sum: Int = 0
@@ -23,37 +26,38 @@ class DifficultyTestQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
         explanationLabel.text = difficultyModel?.explanation
         UpdateQuestion()
     }
     
     @IBAction func neverButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.never
+        sum += difficultyModel!.answers.never
     }
     @IBAction func extremelyRarelyButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.extremelyRarely
+        sum += difficultyModel!.answers.extremelyRarely
     }
     @IBAction func rarelyButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.rarely
+        sum += difficultyModel!.answers.rarely
     }
     @IBAction func sometimesButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.sometimes
+        sum += difficultyModel!.answers.sometimes
     }
     @IBAction func oftenButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.often
+        sum += difficultyModel!.answers.often
     }
     @IBAction func almostAlwaysButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.almostAlways
+        sum += difficultyModel!.answers.almostAlways
     }
     @IBAction func alwaysButton(_ sender: Any) {
         UpdateQuestion()
-        sum = sum + difficultyModel!.answers.always
+        sum += difficultyModel!.answers.always
     }
     
     func UpdateQuestion() {

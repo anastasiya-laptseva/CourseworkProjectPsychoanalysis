@@ -12,6 +12,10 @@ class GeometricTestViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    
     let resultIdentifier = "resultGeometric"
     
     var geometricModel: GeometricEntity?
@@ -19,6 +23,7 @@ class GeometricTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
         questionLabel.text = geometricModel?.question
         // Do any additional setup after loading the view.
     }
