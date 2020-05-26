@@ -15,23 +15,23 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let logoutStr = LocalizationManager.shared.getText(key: LocalizationManager.KEY_LOGOUT)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: logoutStr, style: .plain, target: self, action: #selector(logoutClick))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: logoutStr,
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(logoutClick))
     }
-    
     override func viewWillAppear(_ animated: Bool) {
-        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view,scrollView,stackView])
     }
-    
     @objc func logoutClick() {
         print("logoutClick")
         UsersManager.shared.saveLogin(state: false)
         ControllerManager.shared.setLoginControllerRoot()
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -41,5 +41,4 @@ class MainMenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
