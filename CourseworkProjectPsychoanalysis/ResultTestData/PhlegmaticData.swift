@@ -9,11 +9,10 @@
 import UIKit
 
 class PhlegmaticData: BaseData, TestsDataProtocol {
+    let keySave = "result_phlegmatic"
     func getImage() -> UIImage {
         return UIImage(named: "phlegmatic") ?? UIImage()
     }
-    
-    let keySave = "result_phlegmatic"
     
     override func getKey() -> String {
         return keySave
@@ -28,7 +27,7 @@ class PhlegmaticData: BaseData, TestsDataProtocol {
     }
     
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.phlegmatic
     }
 }

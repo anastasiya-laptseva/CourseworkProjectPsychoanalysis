@@ -45,7 +45,6 @@ class AllTestsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, tableView])
@@ -81,7 +80,6 @@ class AllTestsTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return arrayNameSectionEN.count
     }
-    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if  NSLocale.preferredLanguages.first == "ru-US" {
             return arrayNameSectionRU[section]
@@ -155,22 +153,18 @@ class AllTestsTableViewController: UITableViewController {
             questionsTemperament = temperamentsTests?.phlegmatic as! [QuestionsArray]
             testName = "Phlegmatic"
             testDescription = temperamentsTests?.results.phlegmatic as! String
-            break
         case 1:
             questionsTemperament = temperamentsTests?.melancholic as! [QuestionsArray]
             testName = "Melancholic"
             testDescription = temperamentsTests?.results.melancholic as! String
-            break
         case 2:
             questionsTemperament = temperamentsTests?.choleric as! [QuestionsArray]
             testName = "Choleric"
             testDescription = temperamentsTests?.results.choleric as! String
-            break
         case 3:
             questionsTemperament = temperamentsTests?.sanguine as! [QuestionsArray]
             testName = "Sanguine"
             testDescription = temperamentsTests?.results.sanguine as! String
-            break
         default:
             break
         }
@@ -187,12 +181,10 @@ class AllTestsTableViewController: UITableViewController {
             questionsCharacterType = characterTypeTests?.extrovert as! [QuestionsArray]
             testName = "Extrovert"
             testDescription = characterTypeTests?.results.extrovert as! String
-            break
         case 1:
             questionsCharacterType = characterTypeTests?.introvert as! [QuestionsArray]
             testName = "Introvert"
             testDescription = characterTypeTests?.results.introvert as! String
-            break
         default:
             break
         }
@@ -205,7 +197,6 @@ class AllTestsTableViewController: UITableViewController {
         switch indexRow {
         case 0:
             questionsCharacter = characterTest?.questions as! [QuestionsArray]
-            break
         default:
             break
         }
