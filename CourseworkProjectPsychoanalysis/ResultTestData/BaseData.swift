@@ -8,17 +8,14 @@
 
 import UIKit
 
-class BaseData{
+class BaseData {
     var result: String?
-    
-    open func getKey()-> String{
+    open func getKey() -> String{
         ""
     }
-    
     func load() {
         result = SaveManager.shared.loadWithKey(key: getKey())
     }
-    
     func save(value: String) {
         SaveManager.shared.saveWithKey(key: getKey(), value: value)
     }

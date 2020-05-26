@@ -10,27 +10,21 @@ import UIKit
 
 class GeometricData: BaseData, TestsDataProtocol {
     let keySave = "result_geometric"
-    
     func getImage() -> UIImage {
         return UIImage(named: "geometric") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Geometric test"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "")"
     }
-    
     func getLongDescription() -> String {
         return getResultLong(value: result ?? "")
     }
-    
     func getResultLong(value: String) -> String  {
         let tests = JSONManager().loadTest()
         let geometricResultModel = tests.geometricTest.results

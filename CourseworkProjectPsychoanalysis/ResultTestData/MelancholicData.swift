@@ -10,27 +10,20 @@ import UIKit
 
 class MelancholicData: BaseData, TestsDataProtocol {
     let keySave = "result_melancholic"
-    
     func getImage() -> UIImage {
         return UIImage(named: "melancholic") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Melancholic"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "0.0") %"
     }
-    
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.melancholic
     }
-    
-
 }

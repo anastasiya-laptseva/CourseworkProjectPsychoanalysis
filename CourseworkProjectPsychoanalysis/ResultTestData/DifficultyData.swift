@@ -10,28 +10,22 @@ import UIKit
 
 class DifficultyData: BaseData, TestsDataProtocol {
     let keySave = "result_difficalty"
-    
     func getImage() -> UIImage {
         return UIImage(named: "difficalty") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-
-    
     func getName() -> String {
         return "Difficalty test"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "")"
     }
-    
     func getLongDescription() -> String {
         return getResultLong(value: result ?? "")
     }
-    func getResultLong(value: String) -> String  {
+    func getResultLong(value: String) -> String {
         let tests = JSONManager().loadTest()
         let difficaltyResultModel = tests.difficultyTest.results
         switch result {
@@ -47,5 +41,4 @@ class DifficultyData: BaseData, TestsDataProtocol {
             return ""
         }
     }
-
 }

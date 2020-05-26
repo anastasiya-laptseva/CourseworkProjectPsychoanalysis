@@ -13,7 +13,6 @@ class CholericData: BaseData, TestsDataProtocol {
     func getImage() -> UIImage {
         return UIImage(named: "choleric") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
@@ -27,5 +26,4 @@ class CholericData: BaseData, TestsDataProtocol {
         let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.choleric
     }
-
 }

@@ -9,27 +9,21 @@
 import UIKit
 
 class SanguineData: BaseData, TestsDataProtocol {
+    let keySave = "result_sanguine"
     func getImage() -> UIImage {
         return UIImage(named: "sanguine") ?? UIImage()
     }
-    
-    let keySave = "result_sanguine"
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Sanguine"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "0.0") %"
     }
-    
     func getLongDescription() -> String {
         let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.sanguine
     }
-
 }

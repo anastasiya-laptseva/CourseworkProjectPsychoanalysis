@@ -13,19 +13,15 @@ class PhlegmaticData: BaseData, TestsDataProtocol {
     func getImage() -> UIImage {
         return UIImage(named: "phlegmatic") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Phlegmatic"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "0.0") %"
     }
-    
     func getLongDescription() -> String {
         let tests = JSONManager().loadTest()
         return tests.temperamentTest.results.phlegmatic

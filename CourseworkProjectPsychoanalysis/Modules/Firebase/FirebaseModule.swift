@@ -10,8 +10,7 @@ import FirebaseAuth
 
 class FirebaseModule {
     static let shared = FirebaseModule()
-    private init(){}
-    
+    private init() {}
     func registration (email: String,
                        password: String,
                        loading: UIView, completion: @escaping (_ isRegistration: Bool) -> Void) {
@@ -27,7 +26,6 @@ class FirebaseModule {
             }
         }
     }
-    
     func logIn(email: String,
                password: String,
                loading: UIView,
@@ -43,7 +41,6 @@ class FirebaseModule {
             }
         }
     }
-    
     func isUser() -> Bool {
         if Auth.auth().currentUser != nil {
             return true

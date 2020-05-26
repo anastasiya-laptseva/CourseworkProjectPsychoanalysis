@@ -11,7 +11,6 @@ import UIKit
 class BorderButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         layer.cornerRadius = 5
         layer.borderWidth = 1
         layer.borderColor = UIColor.black.cgColor

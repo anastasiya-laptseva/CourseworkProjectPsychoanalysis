@@ -10,28 +10,22 @@ import UIKit
 
 class CharacterData: BaseData, TestsDataProtocol {
     let keySave = "result_character"
-    
     func getImage() -> UIImage {
         return UIImage(named: "character") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Character test"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "")"
     }
-    
     func getLongDescription() -> String {
         return getResultLong(value: result ?? "")
     }
-
-    func getResultLong(value: String) -> String  {
+    func getResultLong(value: String) -> String {
         let tests = JSONManager().loadTest()
         let characterResultModel = tests.characterTest.results
         switch result {
