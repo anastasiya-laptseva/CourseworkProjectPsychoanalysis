@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ECurrentState{
+enum ECurrentState {
     case currentStateHealth
     case currentStateActivity
     case currentStateMood
@@ -22,13 +22,10 @@ class CurrentStateData {
         switch key {
         case .currentStateHealth:
             keySave = keyHealth
-            break
         case .currentStateActivity:
             keySave = keyActivity
-            break
         case .currentStateMood:
             keySave = keyMood
-            break
         }
         SaveManager.shared.saveWithKey(key: keySave, value: value)
     }
@@ -37,13 +34,10 @@ class CurrentStateData {
         switch key {
         case .currentStateHealth:
             keySave = keyHealth
-            break
         case .currentStateActivity:
             keySave = keyActivity
-            break
         case .currentStateMood:
             keySave = keyMood
-            break
         }
         return SaveManager.shared.loadWithKey(key: keySave)
     }

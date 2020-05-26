@@ -29,7 +29,7 @@ class AllTestsData {
         loadTests.removeAll()
         for test in data {
             test.load()
-            if test.isResult(){
+            if test.isResult() {
                 loadTests.append(test as! TestsDataProtocol)
             }
         }

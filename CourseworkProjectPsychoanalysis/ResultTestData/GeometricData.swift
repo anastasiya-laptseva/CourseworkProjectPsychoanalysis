@@ -25,7 +25,7 @@ class GeometricData: BaseData, TestsDataProtocol {
     func getLongDescription() -> String {
         return getResultLong(value: result ?? "")
     }
-    func getResultLong(value: String) -> String  {
+    func getResultLong(value: String) -> String {
         let tests = JSONManager().loadTest()
         let geometricResultModel = tests.geometricTest.results
         switch result {

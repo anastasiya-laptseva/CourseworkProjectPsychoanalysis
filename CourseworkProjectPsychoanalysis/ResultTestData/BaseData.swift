@@ -10,7 +10,7 @@ import UIKit
 
 class BaseData {
     var result: String?
-    open func getKey() -> String{
+    open func getKey() -> String {
         ""
     }
     func load() {
@@ -19,7 +19,6 @@ class BaseData {
     func save(value: String) {
         SaveManager.shared.saveWithKey(key: getKey(), value: value)
     }
-    
     func isResult() -> Bool {
         return result?.elementsEqual("") == false
     }
