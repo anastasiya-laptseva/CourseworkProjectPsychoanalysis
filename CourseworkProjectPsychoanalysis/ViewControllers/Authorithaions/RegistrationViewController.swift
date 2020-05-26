@@ -17,31 +17,31 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var repeatPasswordEditText: UITextField!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var waitView: UIView!
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view,scrollView,stackView])
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
     }
     
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
-    
-    
-    
+
     @IBAction func clickSignUp(_ sender: Any) {
-        guard let nameText = nameEditText.text else{
+        guard let nameText = nameEditText.text else {
             return
         }
         
@@ -56,23 +56,22 @@ class RegistrationViewController: UIViewController {
         guard let repeatPasswordText = repeatPasswordEditText.text else {
             return
         }
-        
-        if nameText.elementsEqual("") == true{
+        if nameText.elementsEqual("") == true {
             AlertManager.shared.showAlert(text: "Empty name", self)
             return
         }
-        
         if passwordText.elementsEqual(repeatPasswordText) == false {
             AlertManager.shared.showAlert(text: "Password mismatch", self)
             return
         }
-        
-        UsersManager.shared.registrationUser(name: nameText, login: loginText, password: passwordText, loading: waitView) { (state) in
-            if state{
+        UsersManager.shared.registrationUser(name: nameText,
+                                             login: loginText,
+                                             password: passwordText,
+                                             loading: waitView) { (state) in
+            if state {
                 ControllerManager.shared.setWelcomeControllerRoot()
                 UsersManager.shared.saveLogin(state: true)
-            }
-            else{
+            } else {
                 AlertManager.shared.showAlert(text: "Error registration", self)
             }
         }
@@ -86,15 +85,13 @@ class RegistrationViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let kbSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
+                self.view.frame.origin.y -= kbSize.height
             }
         }
     }
-    
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0

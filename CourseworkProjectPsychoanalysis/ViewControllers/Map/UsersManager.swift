@@ -12,35 +12,36 @@ class UsersManager {
     static let shared = UsersManager()
     let fileName = "User.txt"
     let keyLogin = "User.login"
-    let photos = ["BruceBenner","CarolDanvers","DoctorStrange","NatashaRomanoff","PeterParker", "StevenRogers", "ThorOdson", "TonyStark"]
     
-    private init(){}
+    private init() {}
     
-    func registrationUser(name: String, login: String, password: String, loading: UIView, completion: @escaping(_ isRegistration: Bool)-> Void) {
+    func registrationUser(name: String,
+                          login: String,
+                          password: String,
+                          loading: UIView,
+                          completion: @escaping(_ isRegistration: Bool) -> Void) {
         FirebaseModule.shared.registration(email: login, password: password, loading: loading) { (state) in
-            if state{
+            if state {
                 let user = User(name: name, login: login, password: password)
                 do {
                     let jsonData = try JSONEncoder().encode(user)
                     let jsonString = String(data: jsonData, encoding: .utf8)!
-                    if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
+                    if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                         let fileUrl = dir.appendingPathComponent(self.fileName)
                         do {
                             try jsonString.write(to: fileUrl, atomically: false, encoding: .utf8)
-                        }
-                        catch {}
+                        } catch {}
                     }
                     print(jsonString)
                 } catch { print(error) }
                 completion(true)
-            }
-            else{
+            } else {
                 completion(false)
             }
         }
     }
     
-    func IsUser(login: String, password: String)-> Bool {
+    func IsUser(login: String, password: String) -> Bool {
 //        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
 //            let fileUrl = dir.appendingPathComponent(fileName)
 //            do {
@@ -65,15 +66,6 @@ class UsersManager {
     func IsLogin() -> Bool {
         return FirebaseModule.shared.isUser()
             //UserDefaults.standard.bool(forKey: keyLogin)
-    }
-    
-    func getImageName(id: Int) -> String {
-        let number = id-1
-        if number<0 || number>=photos.count{
-            return ""
-        }
-        
-        return photos[number]
     }
 }
 

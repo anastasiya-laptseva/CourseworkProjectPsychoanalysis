@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BasicInformationsViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -37,14 +37,12 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, stackView, scrollView, photoView])
-        
         if let prof = SaveManager.shared.loadProfile() {
             profile = prof
             isEdit = false
         } else {
             isEdit = true
         }
-        
         updateComponents()
         updateProfile()
         
@@ -52,7 +50,6 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         self.view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
-    
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
@@ -62,7 +59,6 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         ageLabel.isHidden = isEdit
         genderLabel.isHidden = isEdit
         infoLabel.isHidden = isEdit
-        
         photoButton.isHidden = !isEdit
         nameEdit.isHidden = !isEdit
         ageEdit.isHidden = !isEdit
@@ -83,7 +79,7 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
                                                             action: selector)
     }
     func updateProfile() {
-        if let imagePathData = profile.imagePath{
+        if let imagePathData = profile.imagePath {
             if let infoDic: NSDictionary = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary {
                 if let info = infoDic as? [UIImagePickerController.InfoKey: Any] {
                     if let image = info[.originalImage] as? UIImage {
@@ -117,12 +113,10 @@ class BasicInformationsViewController: UIViewController, UIImagePickerController
         SaveManager.shared.saveProfile(profile: profile)
         switchComponents()
     }
-    
     @objc func editClick() {
         print("Edit")
         switchComponents()
     }
-    
     func switchComponents() {
         isEdit = !isEdit
         updateComponents()
