@@ -31,7 +31,6 @@ class YesNoTestQuestionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, scrollView, stackView])
@@ -39,53 +38,50 @@ class YesNoTestQuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
         let backImage = UIImage(named: "back-button")
         let closeImage = UIImage(named: "close-button")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backQuestion))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: closeImage, style: .plain, target: self, action: #selector(closeTest))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: backImage,
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(backQuestion))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: closeImage,
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(closeTest))
         
         countQuestion = questions?.count ?? 0
         for _ in 0...countQuestion {
             result.append(false)
         }
-        
-        UpdateQuestion()
+        updateQuestion()
     }
     
     @objc func backQuestion() {
-        if currentNumber > 0{
+        if currentNumber > 0 {
             currentNumber-=2
-            UpdateQuestion()
+            updateQuestion()
         }
-        
     }
     @objc func closeTest() {
         navigationController?.popViewController(animated: true)
     }
-    
     @IBAction func yesClick(_ sender: Any) {
         result[currentNumber] = true
-        UpdateQuestion()
+        updateQuestion()
     }
-    
     @IBAction func noClick(_ sender: Any) {
         result[currentNumber] = false
-        UpdateQuestion()
+        updateQuestion()
     }
-    
-    func UpdateQuestion() {
+    func updateQuestion() {
         currentNumber += 1
-        if(currentNumber < questions?.count ?? 0){
+        if currentNumber < questions?.count ?? 0 {
             questionLabel.text = questions?[currentNumber].question
             progressLabel.text = "\(currentNumber+1)/\(questions?.count ?? 0)"
-        }
-        else{
-            
-            if isCharacter{
+        } else {
+            if isCharacter {
                 characterCalculate()
-            }
-            else{
+            } else {
                 defaultCalculate()
             }
-            
             self.performSegue(withIdentifier: resultIdentifier, sender: self)
         }
     }
@@ -93,27 +89,26 @@ class YesNoTestQuestionsViewController: UIViewController {
     func defaultCalculate() {
         var countYes = 0
         for value in result {
-            if value == true{
+            if value == true {
                 countYes+=1
             }
         }
         resultPersent = Float(countYes)/Float(countQuestion)*100
     }
 
-    func characterCalculate(){
+    func characterCalculate() {
         var count = 0
         var countYes = 0
         resultCharacter = ""
         for value in result {
-            if value == true{
+            if value == true {
                 countYes+=1
             }
-            if count == 2{
+            if count == 2 {
                 resultCharacter+="\(countYes>=2 ? 1 : 0)"
                 count = 0
                 countYes = 0
-            }
-            else{
+            } else {
                 count+=1
             }
         }
@@ -123,106 +118,78 @@ class YesNoTestQuestionsViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == resultIdentifier{
+        if segue.identifier == resultIdentifier {
             guard let resultController = segue.destination as? ResultTestViewController ?? nil else {
                 return
             }
-            
-            if(isCharacter){
+            if isCharacter {
                 characterPrepare(resultController: resultController)
-            }
-            else{
+            } else {
                 defaultPrepare(resultController: resultController)
             }
         }
     }
-    
     func defaultPrepare(resultController: ResultTestViewController) {
         var str = "\(testName ?? "")"
         str+=" - \(resultPersent ?? 0.0)%"
         resultController.setNameResult(value: str)
         resultController.setTextResult(value: "\(testDescription ?? "")")
-        
         let rTest = "\(resultPersent ?? 0.0)"
         switch testName ?? "" {
         case "Phlegmatic":
             PhlegmaticData().save(value: rTest)
-            break
         case "Melancholic":
             MelancholicData().save(value: rTest)
-            break
         case "Choleric":
             CholericData().save(value: rTest)
-            break
         case "Sanguine":
             SanguineData().save(value: rTest)
-            break
         case "Extrovert":
             ExtrovertCharacterTypeData().save(value: rTest)
-            break
         case "Introvert":
             IntrovertCharacterTypeData().save(value: rTest)
-            break
         default:
             break
         }
     }
-    
-    func characterPrepare(resultController: ResultTestViewController)  {
+    func characterPrepare(resultController: ResultTestViewController) {
         CharacterData().save(value: resultCharacter)
         resultController.setNameResult(value: testName ?? "Character Type Test")
         switch resultCharacter {
         case "1111":
             resultController.setTextResult(value: "\(characterResultModel?.r1111 ?? "")")
-            break
         case "1000":
             resultController.setTextResult(value: "\(characterResultModel?.r1000 ?? "")")
-            break
         case "1001":
             resultController.setTextResult(value: "\(characterResultModel?.r1001 ?? "")")
-            break
         case "1011":
             resultController.setTextResult(value: "\(characterResultModel?.r1011 ?? "")")
-            break
         case "0111":
             resultController.setTextResult(value: "\(characterResultModel?.r0111 ?? "")")
-            break
         case "0110":
             resultController.setTextResult(value: "\(characterResultModel?.r0110 ?? "")")
-            break
         case "0100":
             resultController.setTextResult(value: "\(characterResultModel?.r0100 ?? "")")
-            break
         case "0000":
             resultController.setTextResult(value: "\(characterResultModel?.r0000 ?? "")")
-            break
         case "1010":
             resultController.setTextResult(value: "\(characterResultModel?.r1010 ?? "")")
-            break
         case "1110":
             resultController.setTextResult(value: "\(characterResultModel?.r1110 ?? "")")
-            break
         case "1100":
             resultController.setTextResult(value: "\(characterResultModel?.r1100 ?? "")")
-            break
         case "0001":
             resultController.setTextResult(value: "\(characterResultModel?.r0001 ?? "")")
-            break
         case "0011":
             resultController.setTextResult(value: "\(characterResultModel?.r0011 ?? "")")
-            break
         case "0101":
             resultController.setTextResult(value: "\(characterResultModel?.r0101 ?? "")")
-            break
         case "1101":
             resultController.setTextResult(value: "\(characterResultModel?.r1101 ?? "")")
-            break
         case "0010":
             resultController.setTextResult(value: "\(characterResultModel?.r0010 ?? "")")
-            break
         default:
             resultController.setTextResult(value: "")
-            break
         }
     }
 }
