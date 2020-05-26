@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct ResultArray : Codable {
+public struct ResultArray: Codable {
     var phlegmatic: String
     var melancholic: String
     var choleric: String

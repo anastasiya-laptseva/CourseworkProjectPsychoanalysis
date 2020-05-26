@@ -9,7 +9,7 @@
 import Foundation
 
 //geometric structures
-public struct GeometricEntity : Codable {
-    var question : String
+public struct GeometricEntity: Codable {
+    var question: String
     var results: GeometricResult
 }

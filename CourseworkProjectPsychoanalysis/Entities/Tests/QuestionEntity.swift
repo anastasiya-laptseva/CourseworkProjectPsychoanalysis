@@ -8,6 +8,6 @@
 
 import Foundation
 
-public struct QuestionsArray : Codable {
+public struct QuestionsArray: Codable {
     var question: String
 }

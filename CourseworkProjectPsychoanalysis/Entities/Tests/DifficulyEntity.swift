@@ -8,14 +8,14 @@
 
 import Foundation
 
-public struct DifficultyEntity : Codable {
-    var explanation : String
-    var questions : [QuestionsArray]
-    var answers : AnswersArray
+public struct DifficultyEntity: Codable {
+    var explanation: String
+    var questions: [QuestionsArray]
+    var answers: AnswersArray
     var results: DifficultyResultArray
 }
 
-public struct AnswersArray : Codable {
+public struct AnswersArray: Codable {
     var never: Int
     var extremelyRarely: Int
     var rarely: Int

@@ -17,5 +17,3 @@ public struct TestsEntity: Codable {
     var difficultyTest: DifficultyEntity
     var currentStateTest: CurrentStateEntity
 }
-
-

@@ -9,7 +9,7 @@
 import Foundation
 
 //favorite color structures
-public struct FavoriteColorEntity : Codable {
-    var question : String
+public struct FavoriteColorEntity: Codable {
+    var question: String
     var results: FavotiteColorResult
 }

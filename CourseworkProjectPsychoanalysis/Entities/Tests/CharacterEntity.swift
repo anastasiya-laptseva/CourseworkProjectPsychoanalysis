@@ -9,7 +9,7 @@
 import Foundation
 
 //Character structures
-public struct CharacterEntity : Codable {
-    var questions : [QuestionsArray]
+public struct CharacterEntity: Codable {
+    var questions: [QuestionsArray]
     var results: CharacterResult
 }

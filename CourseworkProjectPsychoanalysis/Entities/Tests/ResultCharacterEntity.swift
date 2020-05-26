@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CharacterResult : Codable {
+public struct CharacterResult: Codable {
     var r1111: String
     var r1000: String
     var r1001: String
