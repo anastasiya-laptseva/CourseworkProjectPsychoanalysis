@@ -15,13 +15,11 @@ class MainProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
-
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scrollView, stackView])
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -31,5 +29,4 @@ class MainProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

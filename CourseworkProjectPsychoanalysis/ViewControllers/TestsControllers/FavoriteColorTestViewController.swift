@@ -14,7 +14,6 @@ class FavoriteColorTestViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
     let resultIdentifier = "resultFavorite"
-    
     var favoriteModel: FavoriteColorEntity?
     var result: String?
 
@@ -26,7 +25,6 @@ class FavoriteColorTestViewController: UIViewController {
         questionLabel.text = favoriteModel?.question
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func whiteClick(_ sender: Any) {
         FavotiteColorData().save(value: "white")
         result = favoriteModel?.results.white

@@ -515,8 +515,8 @@
                                                     <color key="titleColor" name="TextColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="ClickButton:" destination="h9N-aW-rWv" eventType="touchUpInside" id="Nzs-Ew-AxN"/>
                                                     <action selector="clickBack:" destination="PcS-02-fXY" eventType="touchUpInside" id="AM0-fg-pJs"/>
+                                                    <action selector="clickButton:" destination="h9N-aW-rWv" eventType="touchUpInside" id="Nzs-Ew-AxN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2631,7 +2631,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="NextButton:" destination="f3r-p4-LYt" eventType="touchUpInside" id="x2H-4j-30H"/>
+                                                            <action selector="nextButton:" destination="f3r-p4-LYt" eventType="touchUpInside" id="x2H-4j-30H"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

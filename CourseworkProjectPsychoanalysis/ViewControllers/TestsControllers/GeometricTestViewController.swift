@@ -14,8 +14,7 @@ class GeometricTestViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-    
-    
+
     let resultIdentifier = "resultGeometric"
     
     var geometricModel: GeometricEntity?
@@ -23,11 +22,12 @@ class GeometricTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SaveManager.shared.backgroundSwitch(controller: self, navigation: self.navigationController, views: [self.view,scrollView,stackView])
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scrollView, stackView])
         questionLabel.text = geometricModel?.question
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func squareButton(_ sender: Any) {
         GeometricData().save(value: "square")
         result = geometricModel?.results.square
@@ -53,7 +53,6 @@ class GeometricTestViewController: UIViewController {
         result = geometricModel?.results.zigzag
         goToResult()
     }
-    
     func goToResult() {
         self.performSegue(withIdentifier: resultIdentifier, sender: self)
     }
@@ -62,7 +61,7 @@ class GeometricTestViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == resultIdentifier{
+        if segue.identifier == resultIdentifier {
             guard let resultController = segue.destination as? ResultTestViewController ?? nil else {
                 return
             }

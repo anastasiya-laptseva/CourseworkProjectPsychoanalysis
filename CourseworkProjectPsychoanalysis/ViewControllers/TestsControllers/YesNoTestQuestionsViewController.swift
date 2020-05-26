@@ -16,14 +16,12 @@ class YesNoTestQuestionsViewController: UIViewController {
         
     var currentNumber: Int = -1
     let resultIdentifier = "result"
-    
     var testName: String?
     var testDescription: String?
     var questions: [QuestionsArray]?
     var countQuestion = 0
     var result = [Bool]()
     var resultPersent: Float?
-    
     //Character Variables
     var isCharacter: Bool = false
     var resultCharacter = ""
@@ -34,7 +32,6 @@ class YesNoTestQuestionsViewController: UIViewController {
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, scrollView, stackView])
-
         // Do any additional setup after loading the view.
         let backImage = UIImage(named: "back-button")
         let closeImage = UIImage(named: "close-button")
@@ -46,14 +43,12 @@ class YesNoTestQuestionsViewController: UIViewController {
                                                            style: .plain,
                                                            target: self,
                                                            action: #selector(closeTest))
-        
         countQuestion = questions?.count ?? 0
         for _ in 0...countQuestion {
             result.append(false)
         }
         updateQuestion()
     }
-    
     @objc func backQuestion() {
         if currentNumber > 0 {
             currentNumber-=2
@@ -85,7 +80,6 @@ class YesNoTestQuestionsViewController: UIViewController {
             self.performSegue(withIdentifier: resultIdentifier, sender: self)
         }
     }
-
     func defaultCalculate() {
         var countYes = 0
         for value in result {
@@ -95,7 +89,6 @@ class YesNoTestQuestionsViewController: UIViewController {
         }
         resultPersent = Float(countYes)/Float(countQuestion)*100
     }
-
     func characterCalculate() {
         var count = 0
         var countYes = 0

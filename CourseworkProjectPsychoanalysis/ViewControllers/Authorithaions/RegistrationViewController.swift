@@ -20,14 +20,11 @@ class RegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view,scrollView,stackView])
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
                                                name: UIResponder.keyboardWillShowNotification,
                                                object: nil)
@@ -35,7 +32,6 @@ class RegistrationViewController: UIViewController {
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
     }
-    
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
@@ -44,15 +40,12 @@ class RegistrationViewController: UIViewController {
         guard let nameText = nameEditText.text else {
             return
         }
-        
         guard let loginText = loginEditText.text else {
             return
         }
-        
         guard let passwordText = passwordEditTex.text else {
             return
         }
-        
         guard let repeatPasswordText = repeatPasswordEditText.text else {
             return
         }

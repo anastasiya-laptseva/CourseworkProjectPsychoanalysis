@@ -27,7 +27,6 @@
 		0E4BECB42464C14400AB1C5E /* AllTestsRU.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* AllTestsRU.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
 		0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */; };
-		0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECDF2465CF4700AB1C5E /* Firebase.swift */; };
 		0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */; };
 		0E4BECE5246ABB9400AB1C5E /* GeometricTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */; };
 		0E4BECE7246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECE6246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift */; };
@@ -78,7 +77,6 @@
 		0E7D5DFB242D50690002B228 /* YesNoTestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFA242D50690002B228 /* YesNoTestQuestionsViewController.swift */; };
 		0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */; };
 		0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */; };
-		0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */; };
 		0E7D5E04242E3C9E0002B228 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */; };
 		B081F694B1D5EEE4C462D1E7 /* Pods_CourseworkProjectPsychoanalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */; };
 /* End PBXBuildFile section */
@@ -107,7 +105,6 @@
 		0E4BECB32464C14400AB1C5E /* AllTestsRU.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllTestsRU.json; sourceTree = "<group>"; };
 		0E4BECB92464CAF900AB1C5E /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsEntity.swift; sourceTree = "<group>"; };
-		0E4BECDF2465CF4700AB1C5E /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		0E4BECE2246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyTestQuestionsViewController.swift; sourceTree = "<group>"; };
 		0E4BECE4246ABB9400AB1C5E /* GeometricTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricTestViewController.swift; sourceTree = "<group>"; };
 		0E4BECE6246ABF0E00AB1C5E /* FavoriteColorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteColorTestViewController.swift; sourceTree = "<group>"; };
@@ -160,7 +157,6 @@
 		0E7D5DFA242D50690002B228 /* YesNoTestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoTestQuestionsViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
-		0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateViewController.swift; sourceTree = "<group>"; };
 		0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		78A8FF729B9CE739D0F4E2C0 /* Pods-CourseworkProjectPsychoanalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; sourceTree = "<group>"; };
 		80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseworkProjectPsychoanalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,7 +203,6 @@
 				0E4BEC93245B934A00AB1C5E /* Map */,
 				0E7D5DF5242D4E060002B228 /* TestsControllers */,
 				0E7D5DFE242E3B770002B228 /* ProfileControllers */,
-				0E4BECDF2465CF4700AB1C5E /* Firebase.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -376,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */,
-				0E7D5E01242E3C410002B228 /* CurrentStateViewController.swift */,
 				0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */,
 				0E4BED7724717E4B00AB1C5E /* ResultsCollectionViewController.swift */,
 				0E4BED792471871B00AB1C5E /* ResultCollectionViewCell.swift */,
@@ -555,7 +549,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4BED7824717E4C00AB1C5E /* ResultsCollectionViewController.swift in Sources */,
-				0E4BECE12468782D00AB1C5E /* Firebase.swift in Sources */,
 				0E4BECA1245B99BD00AB1C5E /* AlertManager.swift in Sources */,
 				0E4BED2C246BE71200AB1C5E /* FavoriteColorResult.swift in Sources */,
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
@@ -565,7 +558,6 @@
 				0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */,
 				0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */,
 				0E4BED64247026BF00AB1C5E /* IntrovertCharacterTypeData.swift in Sources */,
-				0E7D5E02242E3C410002B228 /* CurrentStateViewController.swift in Sources */,
 				0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */,
 				0E4C2220247570B50006E657 /* CurrentStateEntity.swift in Sources */,
 				0E4C221C2473D7C60006E657 /* TestCurrentStateViewController.swift in Sources */,

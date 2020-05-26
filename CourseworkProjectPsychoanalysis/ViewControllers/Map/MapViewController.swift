@@ -14,12 +14,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Init start pos
-//        let initialLocayion = CLLocation(latitude: 53.9171149, longitude: 27.5006956)
-//        let region = MKCoordinateRegion(center: initialLocayion.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
-//        mapView.setRegion(region, animated: true)
-        
         //First ps
         let minsk1 = Point(title: "Ирина Смирнова",
                            coordinate: CLLocationCoordinate2D(latitude: 53.8689116, longitude: 27.5219082),
@@ -46,7 +40,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                           coordinate: CLLocationCoordinate2D(latitude: 53.9305226, longitude: 30.3423575),
                           info: "ул. Белинского 20, Могилёв, 8 029 160-62-40")
         
-        
         mapView.addAnnotation(minsk1)
         mapView.addAnnotation(minsk2)
         mapView.addAnnotation(minsk3)
@@ -55,14 +48,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(vitebsk)
         mapView.addAnnotation(grodno)
         mapView.addAnnotation(mogileov)
-        
     }
-    
-    public class Point: NSObject, MKAnnotation{
+    public class Point: NSObject, MKAnnotation {
         var title: String?
         var coordinate: CLLocationCoordinate2D
         var subtitle: String?
-        
         init(title: String, coordinate: CLLocationCoordinate2D, info: String) {
             self.title = title
             self.coordinate = coordinate
@@ -70,4 +60,3 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 }
-

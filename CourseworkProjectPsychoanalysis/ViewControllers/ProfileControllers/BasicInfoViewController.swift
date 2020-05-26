@@ -15,25 +15,21 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
-    
     @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var nameEdit: UITextField!
     @IBOutlet weak var ageEdit: UITextField!
     @IBOutlet weak var genderSegment: UISegmentedControl!
     @IBOutlet weak var infoEdit: UITextField!
-    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     
     var profile = Profile(imagePath: nil, name: "", age: 0, gender: 0, info: "")
     var isEdit: Bool = false
-    
     var imagePicker = UIImagePickerController()
     var info: [UIImagePickerController.InfoKey: Any]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, stackView, scrollView, photoView])
@@ -45,7 +41,6 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
         }
         updateComponents()
         updateProfile()
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
@@ -53,7 +48,6 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
-
     func updateComponents() {
         nameLabel.isHidden = isEdit
         ageLabel.isHidden = isEdit
@@ -64,7 +58,6 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
         ageEdit.isHidden = !isEdit
         genderSegment.isHidden = !isEdit
         infoEdit.isHidden = !isEdit
-        
         var selector: Selector? = nil
         if isEdit {
             selector = #selector(saveClick)
@@ -147,7 +140,6 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-
     /*
     // MARK: - Navigation
 

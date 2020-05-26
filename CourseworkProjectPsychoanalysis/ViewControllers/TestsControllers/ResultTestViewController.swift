@@ -39,7 +39,6 @@ class ResultTestViewController: UIViewController {
             }
         }
     }
-    
     /*
     // MARK: - Navigation
 
@@ -49,5 +48,4 @@ class ResultTestViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

@@ -12,8 +12,6 @@ class ResultCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var imageIcon: UIImageView!
-    
-    
     func setCell(name: String, description: String, image: UIImage) {
         labelName.text = name
         labelDescription.text = description

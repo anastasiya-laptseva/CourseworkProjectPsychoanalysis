@@ -22,21 +22,18 @@ class AllTestsTableViewController: UITableViewController {
     var favoriteTest: FavoriteColorEntity?
     var geometricTest: GeometricEntity?
     var difficultyTest: DifficultyEntity?
-    
     let arrayTestsEN = [
         ["Phlegmatic Test", "Melancholic Test", "Choleric Test", "Sanguine Test"],
         ["Extrovert", "Introvert"],
         ["Character Test", "Difficulty Test"],
         ["Geometric test", "Favorite color test"]
     ]
-    
     let arrayTestsRU = [
         ["Флегматик", "Меланхолик", "Холерик", "Сангвиник"],
         ["Экстроверт", "Интроверт"],
         ["Тест на черты характера", "Тест на поведение в трудной ситуации"],
         ["Геометрический тест", "Тест по любимому цвету"]
     ]
-    
     let arrayNameSectionEN = [ "Temperament tests", "Character type tests", "Psychology tests", "Perception tests"]
     let arrayNameSectionRU = [ "Тесты на тип тепмерамента",
                                "Тесты на тип характера",
@@ -48,7 +45,6 @@ class AllTestsTableViewController: UITableViewController {
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, tableView])
-
         let loadTests = JSONManager().loadTest()
         temperamentsTests =  loadTests.temperamentTest
         characterTypeTests = loadTests.characterTypeTest
@@ -87,12 +83,10 @@ class AllTestsTableViewController: UITableViewController {
             return arrayNameSectionEN[section]
         }
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return arrayTestsEN[section].count
     }
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         var text = ""
