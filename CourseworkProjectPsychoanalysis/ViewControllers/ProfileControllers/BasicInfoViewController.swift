@@ -22,12 +22,10 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var infoEdit: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-    
     var profile = Profile(imagePath: nil, name: "", age: 0, gender: 0, info: "")
     var isEdit: Bool = false
     var imagePicker = UIImagePickerController()
     var info: [UIImagePickerController.InfoKey: Any]?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -93,6 +91,7 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
             infoLabel.text = "Info: \(profile.info)"
         }
     }
+    
     @objc func saveClick() {
         print("Save")
         if let dataImage = info {

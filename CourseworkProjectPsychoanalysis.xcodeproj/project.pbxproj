@@ -23,7 +23,7 @@
 		0E4BECA5245B9A3300AB1C5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA4245B9A3300AB1C5E /* User.swift */; };
 		0E4BECA7245B9A8200AB1C5E /* ControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECA6245B9A8200AB1C5E /* ControllerManager.swift */; };
 		0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAB245B9E1200AB1C5E /* SettingViewController.swift */; };
-		0E4BECB1245E432600AB1C5E /* Tests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */; };
+		0E4BECB1245E432600AB1C5E /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECAF245E432600AB1C5E /* Storage.xcdatamodeld */; };
 		0E4BECB42464C14400AB1C5E /* AllTestsRU.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BECB32464C14400AB1C5E /* AllTestsRU.json */; };
 		0E4BECBA2464CAF900AB1C5E /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECB92464CAF900AB1C5E /* JSONManager.swift */; };
 		0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BECBB2464CB8100AB1C5E /* TestsEntity.swift */; };
@@ -78,6 +78,7 @@
 		0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */; };
 		0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */; };
 		0E7D5E04242E3C9E0002B228 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */; };
+		0EA8929B247F0F4E00014701 /* ProfileCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */; };
 		B081F694B1D5EEE4C462D1E7 /* Pods_CourseworkProjectPsychoanalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,7 @@
 		0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
 		0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
+		0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoreData.swift; sourceTree = "<group>"; };
 		78A8FF729B9CE739D0F4E2C0 /* Pods-CourseworkProjectPsychoanalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; sourceTree = "<group>"; };
 		80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseworkProjectPsychoanalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E201A143F875EA48479E32 /* Pods-CourseworkProjectPsychoanalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				0E3F40C22476CD4A00038EC7 /* Localizable.strings */,
-				0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */,
+				0E4BECAF245E432600AB1C5E /* Storage.xcdatamodeld */,
 				0E4BECB32464C14400AB1C5E /* AllTestsRU.json */,
 				0E3F40C72476DE2A00038EC7 /* AllTestsEN.json */,
 			);
@@ -305,6 +307,7 @@
 		0E4C2213247203D40006E657 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0EA89299247F0F3300014701 /* CoreData */,
 				0E4C2214247203E80006E657 /* Firebase */,
 			);
 			path = Modules;
@@ -390,6 +393,14 @@
 				0E7D5DED242A3AB90002B228 /* Info.plist */,
 			);
 			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		0EA89299247F0F3300014701 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		9665E83702A7DD92B0D6144A /* Frameworks */ = {
@@ -554,6 +565,7 @@
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
 				0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */,
 				0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */,
+				0EA8929B247F0F4E00014701 /* ProfileCoreData.swift in Sources */,
 				0E3F40D3247C8DF500038EC7 /* BorderButton.swift in Sources */,
 				0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */,
 				0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */,
@@ -587,7 +599,7 @@
 				0E4BED26246BD42300AB1C5E /* ResultCharacterEntity.swift in Sources */,
 				0E4BECE3246AADED00AB1C5E /* DifficultyTestQuestionsViewController.swift in Sources */,
 				0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */,
-				0E4BECB1245E432600AB1C5E /* Tests.xcdatamodeld in Sources */,
+				0E4BECB1245E432600AB1C5E /* Storage.xcdatamodeld in Sources */,
 				0E4BEC90245B914600AB1C5E /* Profile.swift in Sources */,
 				0E4BECAC245B9E1200AB1C5E /* SettingViewController.swift in Sources */,
 				0E4BECEA246AF3DE00AB1C5E /* TemperamentEntity.swift in Sources */,
@@ -826,13 +838,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0E4BECAF245E432600AB1C5E /* Tests.xcdatamodeld */ = {
+		0E4BECAF245E432600AB1C5E /* Storage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				0E4BECB0245E432600AB1C5E /* Tests.xcdatamodel */,
 			);
 			currentVersion = 0E4BECB0245E432600AB1C5E /* Tests.xcdatamodel */;
-			path = Tests.xcdatamodeld;
+			path = Storage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -17,6 +17,7 @@ class BaseData {
         result = SaveManager.shared.loadWithKey(key: getKey())
     }
     func save(value: String) {
+       
         SaveManager.shared.saveWithKey(key: getKey(), value: value)
     }
     func isResult() -> Bool {

@@ -330,6 +330,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="0Pw-ji-bXO"/>
                     <connections>
+                        <outlet property="imageView" destination="Nbn-Fv-gBk" id="Zwe-X4-Dsb"/>
+                        <outlet property="nameLabel" destination="NPB-pG-jce" id="5hT-6g-396"/>
                         <outlet property="scrollView" destination="EgK-I9-0AO" id="8K5-qk-aA2"/>
                         <outlet property="stackView" destination="Vj3-Ig-vft" id="WRi-Ba-tFJ"/>
                     </connections>

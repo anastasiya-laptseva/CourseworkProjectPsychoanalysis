@@ -9,16 +9,29 @@
 import UIKit
 
 class MainProfileViewController: UIViewController {
-    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
                                             views: [self.view, scrollView, stackView])
-        // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let profile = SaveManager.shared.loadProfile()
+        if let imagePathData = profile?.imagePath {
+            if let infoDic: NSDictionary = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary {
+                if let info = infoDic as? [UIImagePickerController.InfoKey: Any] {
+                    if let image = info[.originalImage] as? UIImage {
+                            imageView.image = image
+                    }
+                }
+            }
+            nameLabel.text = profile?.name ?? ""
+        }
     }
     /*
     // MARK: - Navigation
