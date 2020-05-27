@@ -42,6 +42,11 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
+        let duration = 0.5
+        AnimationManager.shared.animationFromFade(view: nameLabel, duration: duration, delay: 0.0)
+        AnimationManager.shared.animationFromFade(view: ageLabel, duration: duration, delay: 0.25)
+        AnimationManager.shared.animationFromFade(view: genderLabel, duration: duration, delay: 0.5)
+        AnimationManager.shared.animationFromFade(view: infoLabel, duration: duration, delay: 0.75)
     }
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
@@ -91,7 +96,6 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
             infoLabel.text = "Info: \(profile.info)"
         }
     }
-    
     @objc func saveClick() {
         print("Save")
         if let dataImage = info {

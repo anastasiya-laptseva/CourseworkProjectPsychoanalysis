@@ -208,8 +208,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yp1-GA-PDF"/>
                     <connections>
+                        <outlet property="mapButton" destination="edo-gA-b8Z" id="Q0J-jB-Nmz"/>
+                        <outlet property="passedTestsButton" destination="LAC-h7-egR" id="Gn3-gd-rQF"/>
+                        <outlet property="profileButton" destination="emG-WC-QoM" id="vfA-81-Xkd"/>
                         <outlet property="scrollView" destination="88a-GM-Nlk" id="be3-yX-Dgi"/>
+                        <outlet property="settingsButton" destination="qE4-ae-0Iz" id="V9Y-zl-h8U"/>
                         <outlet property="stackView" destination="OT5-zX-QiS" id="XzH-OV-etm"/>
+                        <outlet property="testsButton" destination="kEK-du-ajY" id="k0v-Hj-s3N"/>
+                        <outlet property="welcomeLabel" destination="vgE-TK-Vft" id="Lyf-BI-dzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfU-TY-rh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -330,8 +336,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="0Pw-ji-bXO"/>
                     <connections>
+                        <outlet property="basicInfoButton" destination="2wE-GW-k6l" id="zSP-G7-xQa"/>
+                        <outlet property="currentStateButton" destination="L0y-HA-9wT" id="fsf-ex-tNZ"/>
                         <outlet property="imageView" destination="Nbn-Fv-gBk" id="Zwe-X4-Dsb"/>
                         <outlet property="nameLabel" destination="NPB-pG-jce" id="5hT-6g-396"/>
+                        <outlet property="resultButton" destination="BZO-rK-S2C" id="jeD-f6-oeJ"/>
                         <outlet property="scrollView" destination="EgK-I9-0AO" id="8K5-qk-aA2"/>
                         <outlet property="stackView" destination="Vj3-Ig-vft" id="WRi-Ba-tFJ"/>
                     </connections>
@@ -613,10 +622,10 @@
             </objects>
             <point key="canvasLocation" x="880" y="-541"/>
         </scene>
-        <!--View Controller-->
+        <!--Explanation View Controller-->
         <scene sceneID="aWC-xC-lZh">
             <objects>
-                <viewController id="e3S-iq-MRj" sceneMemberID="viewController">
+                <viewController id="e3S-iq-MRj" customClass="ExplanationViewController" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dpu-Gt-dW1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,6 +681,10 @@
                         <viewLayoutGuide key="safeArea" id="uCT-XI-Ryv"/>
                     </view>
                     <navigationItem key="navigationItem" id="mr3-rN-CFz"/>
+                    <connections>
+                        <outlet property="goButton" destination="vzc-Xz-uWY" id="QBB-ql-Gzt"/>
+                        <outlet property="textLabel" destination="dYz-cI-5SW" id="ucI-MY-bHS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJ5-ZM-ZCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -878,6 +891,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="6C2-6B-vkX"/>
                     <connections>
+                        <outlet property="loginButton" destination="gCo-G5-ARv" id="3cS-IJ-Ulq"/>
+                        <outlet property="messageLabel" destination="7ND-TO-AML" id="mhD-Vb-maa"/>
+                        <outlet property="registrationButton" destination="Qkh-ma-5xR" id="jDY-8B-zd2"/>
                         <outlet property="scrollView" destination="Tsq-Jf-UMf" id="G0C-UC-UGO"/>
                         <outlet property="stackView" destination="Vv7-rX-B1q" id="Cej-8u-gCb"/>
                     </connections>
@@ -1050,12 +1066,18 @@
                     <navigationItem key="navigationItem" id="Y85-N2-VO7"/>
                     <connections>
                         <outlet property="loginEditText" destination="wFF-cx-BVO" id="vir-sq-ORI"/>
+                        <outlet property="loginLabel" destination="bcW-PW-eLJ" id="muo-eV-Cfa"/>
                         <outlet property="nameEditText" destination="NMZ-Pk-JKB" id="AhC-A3-ksi"/>
+                        <outlet property="nameLabel" destination="C6A-47-ixS" id="4PZ-ob-cRd"/>
                         <outlet property="passwordEditTex" destination="VqJ-9W-MlF" id="K12-Bc-Sfd"/>
+                        <outlet property="passwordLabel" destination="riL-bl-SHH" id="2XT-QX-T7F"/>
+                        <outlet property="rapeatPasswordLabel" destination="UW8-L7-Rhg" id="jcK-gb-V4h"/>
                         <outlet property="repeatPasswordEditText" destination="SPL-e4-DeW" id="e4m-Er-cAN"/>
                         <outlet property="scrollView" destination="FNU-Gh-lg6" id="hbs-RU-2ng"/>
+                        <outlet property="signUpButton" destination="dz6-PZ-T4u" id="91A-wL-YkI"/>
                         <outlet property="stackView" destination="8Em-s0-dSO" id="zrN-fU-o10"/>
                         <outlet property="waitView" destination="zZO-pG-aUr" id="SCc-nX-eah"/>
+                        <outlet property="welcomeLabel" destination="RVh-3U-iab" id="oZO-4O-oTw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-GL-4bk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1216,12 +1238,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="hGZ-PM-Pcb"/>
                     <connections>
+                        <outlet property="logInButton" destination="5MX-jv-VLX" id="8qn-U1-rkI"/>
+                        <outlet property="loginLabel" destination="24j-Jv-oR2" id="Rqx-LY-uZJ"/>
                         <outlet property="loginTextField" destination="zrR-Ee-X4l" id="uCb-do-UNB"/>
+                        <outlet property="passwordLabel" destination="d66-JW-3VF" id="47t-Y5-oe7"/>
                         <outlet property="passwordTextField" destination="BJH-Bh-vIm" id="fdG-H4-TFb"/>
+                        <outlet property="passwordView" destination="qWx-rO-qe0" id="Jsa-1x-ace"/>
                         <outlet property="scrollView" destination="sOh-DM-Lwg" id="ofm-Ec-xih"/>
                         <outlet property="secureIcon" destination="UlW-qK-EzY" id="0WW-D7-RVl"/>
                         <outlet property="stackView" destination="zq6-hb-hcw" id="w1h-Rc-ve7"/>
                         <outlet property="waitView" destination="vza-l4-jov" id="HXV-dV-79w"/>
+                        <outlet property="welcomeLabel" destination="jrp-Vr-XHq" id="jjT-DR-9SN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEz-vn-GnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

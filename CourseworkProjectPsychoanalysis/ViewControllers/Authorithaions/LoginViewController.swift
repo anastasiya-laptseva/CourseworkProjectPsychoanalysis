@@ -9,13 +9,17 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var logInButton: BorderButton!
     @IBOutlet weak var secureIcon: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var waitView: UIView!
-    
     var secure: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +30,13 @@ class LoginViewController: UIViewController {
                                                                  action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         passwordTextField.isSecureTextEntry = !secure
-        //        UIColor(coder: .one)
+        let duration = 0.5
+        AnimationManager.shared.animationFromFade(view: welcomeLabel, duration: duration, delay: 0.0)
+        AnimationManager.shared.animationFromFade(view: loginLabel, duration: duration, delay: 0.25)
+        AnimationManager.shared.animationFromFade(view: loginTextField, duration: duration, delay: 0.5)
+        AnimationManager.shared.animationFromFade(view: passwordLabel, duration: duration, delay: 0.75)
+        AnimationManager.shared.animationFromFade(view: passwordView, duration: duration, delay: 1.0)
+        AnimationManager.shared.animationFromFade(view: logInButton, duration: duration, delay: 1.25)
     }
     @objc func dismissKeyboard() {
         self.view.endEditing(true)

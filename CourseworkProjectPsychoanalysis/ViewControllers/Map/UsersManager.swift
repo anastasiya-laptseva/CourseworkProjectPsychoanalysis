@@ -18,8 +18,8 @@ class UsersManager {
                           login: String,
                           password: String,
                           loading: UIView,
-                          completion: @escaping(_ isRegistration: Bool) -> Void) {
-        FirebaseModule.shared.registration(email: login, password: password, loading: loading) { (state) in
+                          completion: @escaping(_ isRegistration: Bool,_ error: String) -> Void) {
+        FirebaseModule.shared.registration(email: login, password: password, loading: loading) { (state, error) in
             if state {
                 let user = User(name: name, login: login, password: password)
                 do {
@@ -33,9 +33,9 @@ class UsersManager {
                     }
                     print(jsonString)
                 } catch { print(error) }
-                completion(true)
+                completion(true, "")
             } else {
-                completion(false)
+                completion(false, error)
             }
         }
     }

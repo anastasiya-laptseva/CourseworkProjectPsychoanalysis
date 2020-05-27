@@ -20,22 +20,4 @@ class ProfileCoreData: NSObject {
         return container
     }()
     
-    
-    func saveName(name: String) {
-        let managedContext = persistentContainer.viewContext
-        let entity =
-          NSEntityDescription.entity(forEntityName: "Profile",
-                                     in: managedContext)!
-        
-        let person = NSManagedObject(entity: <#T##NSEntityDescription#>, insertInto: <#T##NSManagedObjectContext?#>)
-            //NSManagedObject(entity: entity,
-                                   //  insertInto: managedContext)
-        person.setValue(name, forKeyPath: "name")
-        do {
-            try managedContext.save()
-            //save to table
-        } catch let error as NSError {
-          print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
 }

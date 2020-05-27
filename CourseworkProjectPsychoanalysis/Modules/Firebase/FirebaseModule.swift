@@ -13,15 +13,15 @@ class FirebaseModule {
     private init() {}
     func registration (email: String,
                        password: String,
-                       loading: UIView, completion: @escaping (_ isRegistration: Bool) -> Void) {
+                       loading: UIView, completion: @escaping (_ isRegistration: Bool, _ error: String) -> Void) {
         loading.isHidden = false
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             loading.isHidden = true
             if let error = error {
-                completion(false)
+                completion(false, error.localizedDescription)
                 print("Fail registration User \(error.localizedDescription)")
             } else {
-                completion(true)
+                completion(true, "")
                 print("Success registration User \(String(describing: authResult?.user))")
             }
         }

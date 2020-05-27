@@ -39,7 +39,6 @@ class ResultsCollectionViewController: UICollectionViewController {
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                       for: indexPath) as! ResultCollectionViewCell
-        
         // Configure the cell
         let element = data.loadTests[indexPath.row+sectionCount*indexPath.section]
         cell.setCell(name: element.getName(), description: element.getShortDescription(), image: element.getImage())
