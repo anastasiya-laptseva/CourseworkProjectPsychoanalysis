@@ -9,7 +9,7 @@
 import UIKit
 
 class AllTestsTableViewController: UITableViewController {
-    
+// variables
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
@@ -22,6 +22,7 @@ class AllTestsTableViewController: UITableViewController {
     var favoriteTest: FavoriteColorEntity?
     var geometricTest: GeometricEntity?
     var difficultyTest: DifficultyEntity?
+//    arrays for table view
     let arrayTestsEN = [
         ["Phlegmatic Test", "Melancholic Test", "Choleric Test", "Sanguine Test"],
         ["Extrovert", "Introvert"],
@@ -39,7 +40,7 @@ class AllTestsTableViewController: UITableViewController {
                                "Тесты на тип характера",
                                "Психологические тесты",
                                "Тесты на восприятие"]
-
+// view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -53,7 +54,6 @@ class AllTestsTableViewController: UITableViewController {
         geometricTest = loadTests.geometricTest
         difficultyTest = loadTests.difficultyTest
     }
-    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -10,19 +10,21 @@ import UIKit
 import GTProgressBar
 
 class ResultCurrentStateViewController: UIViewController {
+//    outlets
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var healthProgressView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var activityProgressView: UIView!
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var moodProgressView: UIView!
+//    variables
     var progressBarHealth: GTProgressBar?
     var progressBarActivity: GTProgressBar?
     var progressBarMood: GTProgressBar?
     let maxPoints = 70.0
+//    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let colorHealthBar = UIColor(named: "progressBarHealth") ?? .green
         let colorActivityBar = UIColor(named: "progressBarActivity")  ?? .green
         let colorMoodBar = UIColor(named: "progressBarMood")  ?? .green
@@ -74,13 +76,4 @@ class ResultCurrentStateViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

@@ -13,7 +13,7 @@ class YesNoTestQuestionsViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-        
+// variables
     var currentNumber: Int = -1
     let resultIdentifier = "result"
     var testName: String?
@@ -22,7 +22,7 @@ class YesNoTestQuestionsViewController: UIViewController {
     var countQuestion = 0
     var result = [Bool]()
     var resultPersent: Float?
-    //Character Variables
+//Character Variables
     var isCharacter: Bool = false
     var resultCharacter = ""
     var characterResultModel: CharacterResult?

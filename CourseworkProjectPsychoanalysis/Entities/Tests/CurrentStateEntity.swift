@@ -13,7 +13,6 @@ public struct CurrentStateEntity: Codable {
     var answers: [Int]
     var results: CurrentStateResult
 }
-
 public struct Questions: Codable {
     var question1: String
     var question2: String

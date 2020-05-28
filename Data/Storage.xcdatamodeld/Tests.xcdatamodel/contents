@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Tests" representedClassName="Tests" syncable="YES" codeGenerationType="class">
-        <attribute name="aaa" optional="YES" attributeType="String"/>
+    <entity name="TestsResults" representedClassName="TestsResults" syncable="YES" codeGenerationType="class">
+        <attribute name="result_character" optional="YES" attributeType="String"/>
+        <attribute name="result_choleric" optional="YES" attributeType="String"/>
+        <attribute name="result_current_state_activity" optional="YES" attributeType="String"/>
+        <attribute name="result_current_state_health" optional="YES" attributeType="String"/>
+        <attribute name="result_current_state_mood" optional="YES" attributeType="String"/>
+        <attribute name="result_difficalty" optional="YES" attributeType="String"/>
+        <attribute name="result_extrovert" optional="YES" attributeType="String"/>
+        <attribute name="result_favorite_color" optional="YES" attributeType="String"/>
+        <attribute name="result_geometric" optional="YES" attributeType="String"/>
+        <attribute name="result_introvert" optional="YES" attributeType="String"/>
+        <attribute name="result_melancholic" optional="YES" attributeType="String"/>
         <attribute name="result_phlegmatic" optional="YES" attributeType="String"/>
+        <attribute name="result_sanguine" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Tests" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="TestsResults" positionX="-63" positionY="-18" width="128" height="238"/>
     </elements>
 </model>

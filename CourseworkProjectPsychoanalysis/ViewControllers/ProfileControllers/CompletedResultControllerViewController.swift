@@ -15,7 +15,6 @@ class CompletedResultControllerViewController: UIViewController {
     var desriptionText: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         nameLabel.text = nameText
         descriptionLabel.text = desriptionText
     }
@@ -23,13 +22,4 @@ class CompletedResultControllerViewController: UIViewController {
         nameText = name
         desriptionText = description
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

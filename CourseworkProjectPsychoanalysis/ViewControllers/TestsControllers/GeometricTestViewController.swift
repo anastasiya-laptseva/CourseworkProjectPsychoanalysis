@@ -9,17 +9,15 @@
 import UIKit
 
 class GeometricTestViewController: UIViewController {
-    
+//    outlets
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-
     let resultIdentifier = "resultGeometric"
-    
     var geometricModel: GeometricEntity?
     var result: String?
-    
+// view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -28,6 +26,7 @@ class GeometricTestViewController: UIViewController {
         questionLabel.text = geometricModel?.question
         // Do any additional setup after loading the view.
     }
+//    answers buttons
     @IBAction func squareButton(_ sender: Any) {
         GeometricData().save(value: "square")
         result = geometricModel?.results.square
@@ -53,6 +52,7 @@ class GeometricTestViewController: UIViewController {
         result = geometricModel?.results.zigzag
         goToResult()
     }
+//    functions
     func goToResult() {
         self.performSegue(withIdentifier: resultIdentifier, sender: self)
     }

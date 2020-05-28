@@ -11,6 +11,7 @@ import FirebaseAuth
 class FirebaseModule {
     static let shared = FirebaseModule()
     private init() {}
+    
     func registration (email: String,
                        password: String,
                        loading: UIView, completion: @escaping (_ isRegistration: Bool, _ error: String) -> Void) {

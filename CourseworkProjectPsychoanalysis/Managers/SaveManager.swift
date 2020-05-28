@@ -11,9 +11,10 @@ import UIKit
 class SaveManager {
     static let shared = SaveManager()
     private init() {}
-    
+//variables
     let keyDarkMode = "settings.isDarkMode"
     let keyProfile = "profile"
+//    functions
     func setDark(state: Bool) {
         UserDefaults.standard.set(state, forKey: keyDarkMode)
     }

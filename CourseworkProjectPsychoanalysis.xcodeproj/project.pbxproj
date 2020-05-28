@@ -78,7 +78,7 @@
 		0E7D5DFD242E18AF0002B228 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */; };
 		0E7D5E00242E3BC80002B228 /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */; };
 		0E7D5E04242E3C9E0002B228 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */; };
-		0EA8929B247F0F4E00014701 /* ProfileCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */; };
+		0EA8929B247F0F4E00014701 /* TestsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8929A247F0F4E00014701 /* TestsCoreData.swift */; };
 		0EA8929D247F1C7D00014701 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8929C247F1C7D00014701 /* AnimationManager.swift */; };
 		0EA8929F247F2B4B00014701 /* ExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8929E247F2B4B00014701 /* ExplanationViewController.swift */; };
 		B081F694B1D5EEE4C462D1E7 /* Pods_CourseworkProjectPsychoanalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */; };
@@ -161,9 +161,11 @@
 		0E7D5DFC242E18AF0002B228 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
 		0E7D5DFF242E3BC80002B228 /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
 		0E7D5E03242E3C9E0002B228 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
-		0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoreData.swift; sourceTree = "<group>"; };
+		0EA8929A247F0F4E00014701 /* TestsCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsCoreData.swift; sourceTree = "<group>"; };
 		0EA8929C247F1C7D00014701 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		0EA8929E247F2B4B00014701 /* ExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationViewController.swift; sourceTree = "<group>"; };
+		0EA892A224803B8C00014701 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		0EA892A424803C2F00014701 /* CourseworkProjectPsychoanalysis.CourseApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CourseworkProjectPsychoanalysis.CourseApp.entitlements; sourceTree = "<group>"; };
 		78A8FF729B9CE739D0F4E2C0 /* Pods-CourseworkProjectPsychoanalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.debug.xcconfig"; sourceTree = "<group>"; };
 		80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseworkProjectPsychoanalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E201A143F875EA48479E32 /* Pods-CourseworkProjectPsychoanalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; path = "Target Support Files/Pods-CourseworkProjectPsychoanalysis/Pods-CourseworkProjectPsychoanalysis.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 		0E7D5DDE242A3AB50002B228 /* CourseworkProjectPsychoanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				0EA892A424803C2F00014701 /* CourseworkProjectPsychoanalysis.CourseApp.entitlements */,
 				0E3F40D1247C8DD800038EC7 /* Views */,
 				0E4C2219247220ED0006E657 /* GoogleService-Info.plist */,
 				0E4C2213247203D40006E657 /* Modules */,
@@ -404,7 +407,7 @@
 		0EA89299247F0F3300014701 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0EA8929A247F0F4E00014701 /* ProfileCoreData.swift */,
+				0EA8929A247F0F4E00014701 /* TestsCoreData.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 		9665E83702A7DD92B0D6144A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EA892A224803B8C00014701 /* CloudKit.framework */,
 				0E3F40CE247B28C300038EC7 /* CoreLocation.framework */,
 				0E3F40C9247B21DE00038EC7 /* MapKit.framework */,
 				80F90F9371B73540AAF13297 /* Pods_CourseworkProjectPsychoanalysis.framework */,
@@ -571,7 +575,7 @@
 				0E4BECA3245B99FA00AB1C5E /* UsersManager.swift in Sources */,
 				0E4BED30246BE8B900AB1C5E /* GeometricResult.swift in Sources */,
 				0E4BECBC2464CB8100AB1C5E /* TestsEntity.swift in Sources */,
-				0EA8929B247F0F4E00014701 /* ProfileCoreData.swift in Sources */,
+				0EA8929B247F0F4E00014701 /* TestsCoreData.swift in Sources */,
 				0E3F40D3247C8DF500038EC7 /* BorderButton.swift in Sources */,
 				0E7D5DE4242A3AB50002B228 /* MapViewController.swift in Sources */,
 				0E4BED6A247028BA00AB1C5E /* GeometricData.swift in Sources */,
@@ -787,6 +791,8 @@
 			baseConfigurationReference = 78A8FF729B9CE739D0F4E2C0 /* Pods-CourseworkProjectPsychoanalysis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CourseworkProjectPsychoanalysis/CourseworkProjectPsychoanalysis.CourseApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
 				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
@@ -797,6 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -807,6 +814,8 @@
 			baseConfigurationReference = 85E201A143F875EA48479E32 /* Pods-CourseworkProjectPsychoanalysis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CourseworkProjectPsychoanalysis/CourseworkProjectPsychoanalysis.CourseApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXKFR2XNYP;
 				INFOPLIST_FILE = "$(SRCROOT)/CourseworkProjectPsychoanalysis/SystemFiles/Info.plist";
@@ -817,6 +826,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = anas.alex.novikova;
 				PRODUCT_NAME = CourseworkProjectPsychoanalysis.CourseApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,7 +14,6 @@ public struct DifficultyEntity: Codable {
     var answers: AnswersArray
     var results: DifficultyResultArray
 }
-
 public struct AnswersArray: Codable {
     var never: Int
     var extremelyRarely: Int

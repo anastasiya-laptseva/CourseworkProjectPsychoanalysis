@@ -9,20 +9,20 @@
 import UIKit
 
 class DifficultyTestQuestionsViewController: UIViewController {
-
+// outlets
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-    
+// variables
     let resultIdentifier = "resultDifficalty"
     var currentNumber: Int = -1
     var sum: Int = 0
     var countQuestion = 0
     var difficultyModel: DifficultyEntity?
     var result: String?
-    
+// view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -31,6 +31,7 @@ class DifficultyTestQuestionsViewController: UIViewController {
         explanationLabel.text = difficultyModel?.explanation
         updateQuestion()
     }
+//    answers buttons
     @IBAction func neverButton(_ sender: Any) {
         updateQuestion()
         sum += difficultyModel!.answers.never
@@ -59,6 +60,7 @@ class DifficultyTestQuestionsViewController: UIViewController {
         updateQuestion()
         sum += difficultyModel!.answers.always
     }
+//    functions
     func updateQuestion() {
         currentNumber += 1
         let questions = difficultyModel?.questions

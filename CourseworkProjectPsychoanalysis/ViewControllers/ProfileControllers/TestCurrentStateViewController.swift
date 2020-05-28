@@ -9,10 +9,11 @@
 import UIKit
 
 class TestCurrentStateViewController: UIViewController {
-    
+//    outlets
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var question1Label: UILabel!
     @IBOutlet weak var question2Label: UILabel!
+//    variables
     let resultIdentifier = "stateResult"
     var currentNumber: Int = -1
     var sum: Int = 0
@@ -24,6 +25,7 @@ class TestCurrentStateViewController: UIViewController {
     var healthArray = [0, 1, 6, 7, 12, 13, 18, 19, 24, 25]
     var activityArray = [2, 3, 8, 9, 14, 15, 20, 21, 26, 27]
     var moodArray = [4, 5, 10, 11, 16, 17, 22, 23, 28, 29]
+//    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         currentStateModel = JSONManager().loadTest().currentStateTest
@@ -33,7 +35,6 @@ class TestCurrentStateViewController: UIViewController {
             }
         }
         updateQuestion()
-        // Do any additional setup after loading the view.
     }
     @IBAction func answersSegmentedControl(_ sender: Any) {
         if let segment = sender as? UISegmentedControl {
@@ -76,13 +77,4 @@ class TestCurrentStateViewController: UIViewController {
         data.set(key: .currentStateActivity, value: sumActivity)
         data.set(key: .currentStateMood, value: sumMood)
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
 }

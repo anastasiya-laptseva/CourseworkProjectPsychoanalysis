@@ -18,7 +18,7 @@ class UsersManager {
                           login: String,
                           password: String,
                           loading: UIView,
-                          completion: @escaping(_ isRegistration: Bool,_ error: String) -> Void) {
+                          completion: @escaping(_ isRegistration: Bool, _ error: String) -> Void) {
         FirebaseModule.shared.registration(email: login, password: password, loading: loading) { (state, error) in
             if state {
                 let user = User(name: name, login: login, password: password)
@@ -40,21 +40,8 @@ class UsersManager {
         }
     }
     func isUser(login: String, password: String) -> Bool {
-//        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
-//            let fileUrl = dir.appendingPathComponent(fileName)
-//            do {
-//                let userJson = try String(contentsOf: fileUrl, encoding: .utf8)
-//                let jsonData = userJson.data(using: .utf8)!
-//                let user = try JSONDecoder().decode(User.self, from: jsonData)
-//                if user.login.elementsEqual(login) && user.password.elementsEqual(password) {
-//                    return true
-//                }
-//            }
-//            catch {}
-//        }
         return FirebaseModule.shared.isUser()
     }
-    
     func saveLogin(state: Bool) {
         let cache = UserDefaults.standard
         cache.set(state, forKey: keyLogin)
@@ -62,6 +49,5 @@ class UsersManager {
     }
     func isLogin() -> Bool {
         return FirebaseModule.shared.isUser()
-            //UserDefaults.standard.bool(forKey: keyLogin)
     }
 }

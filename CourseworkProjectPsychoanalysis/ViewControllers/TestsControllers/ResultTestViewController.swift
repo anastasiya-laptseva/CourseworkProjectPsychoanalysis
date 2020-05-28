@@ -11,26 +11,22 @@ import UIKit
 class ResultTestViewController: UIViewController {
     @IBOutlet weak var nameResultLabel: UILabel!
     @IBOutlet weak var textResultLabel: UILabel!
-    
+//    variables
     var testName: String?
     var testDescription: String?
-
+// view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-
         nameResultLabel.text = testName
         textResultLabel.text = testDescription
         // Do any additional setup after loading the view.
     }
-    
     func setNameResult(value: String) {
         testName = value
     }
-    
     func setTextResult(value: String) {
         testDescription = value
     }
-    
     @IBAction func clickBack(_ sender: Any) {
         for controller in self.navigationController!.viewControllers as Array {
             if controller.isKind(of: AllTestsTableViewController.self) {
@@ -39,13 +35,4 @@ class ResultTestViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
+// outlets
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
@@ -22,10 +22,12 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var infoEdit: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
+//    variables
     var profile = Profile(imagePath: nil, name: "", age: 0, gender: 0, info: "")
     var isEdit: Bool = false
     var imagePicker = UIImagePickerController()
     var info: [UIImagePickerController.InfoKey: Any]?
+//    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -48,6 +50,7 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
         AnimationManager.shared.animationFromFade(view: genderLabel, duration: duration, delay: 0.5)
         AnimationManager.shared.animationFromFade(view: infoLabel, duration: duration, delay: 0.75)
     }
+//    functions
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
@@ -143,13 +146,4 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

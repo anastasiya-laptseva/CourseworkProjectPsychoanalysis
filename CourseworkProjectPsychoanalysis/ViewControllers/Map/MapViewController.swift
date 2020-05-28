@@ -38,8 +38,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                           info: "ул. Мостовая 40А, Гродно, 8 033 689-11-99")
         let mogileov = Point(title: "Консультация психолога Ольга Биндасова",
                           coordinate: CLLocationCoordinate2D(latitude: 53.9305226, longitude: 30.3423575),
-                          info: "ул. Белинского 20, Могилёв, 8 029 160-62-40")
-        
+                          info: "ул. Белинского 20, Могилёв, 8 029 160-62-40")        
         mapView.addAnnotation(minsk1)
         mapView.addAnnotation(minsk2)
         mapView.addAnnotation(minsk3)

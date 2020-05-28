@@ -9,22 +9,23 @@
 import UIKit
 
 class FavoriteColorTestViewController: UIViewController {
-    
+//    outlets
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
     let resultIdentifier = "resultFavorite"
     var favoriteModel: FavoriteColorEntity?
     var result: String?
-
+//view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
                                             navigation: self.navigationController,
-                                            views: [self.view,scrollView,stackView])
+                                            views: [self.view, scrollView, stackView])
         questionLabel.text = favoriteModel?.question
         // Do any additional setup after loading the view.
     }
+//    answers buttons
     @IBAction func whiteClick(_ sender: Any) {
         FavotiteColorData().save(value: "white")
         result = favoriteModel?.results.white
@@ -75,6 +76,7 @@ class FavoriteColorTestViewController: UIViewController {
         result = favoriteModel?.results.green
         goToResult()
     }
+//    result function
     func goToResult() {
         self.performSegue(withIdentifier: resultIdentifier, sender: self)
     }

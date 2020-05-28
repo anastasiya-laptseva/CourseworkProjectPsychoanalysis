@@ -9,9 +9,10 @@
 import UIKit
 
 class ExplanationViewController: UIViewController {
+//    outlets
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var goButton: BorderButton!
-    
+//    view did load
     override func viewDidLoad() {
         AnimationManager.shared.animationTextWithSymbol(label: textLabel,
                                                         newText: textLabel.text!,

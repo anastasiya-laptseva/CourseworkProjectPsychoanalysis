@@ -16,6 +16,7 @@ class MainProfileViewController: UIViewController {
     @IBOutlet weak var basicInfoButton: BorderButton!
     @IBOutlet weak var currentStateButton: BorderButton!
     @IBOutlet weak var resultButton: BorderButton!
+//    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -28,6 +29,7 @@ class MainProfileViewController: UIViewController {
         AnimationManager.shared.animationFromFade(view: currentStateButton, duration: duration, delay: 0.5)
         AnimationManager.shared.animationFromFade(view: resultButton, duration: duration, delay: 0.75)
     }
+//    view will appear
     override func viewWillAppear(_ animated: Bool) {
         let profile = SaveManager.shared.loadProfile()
         if let imagePathData = profile?.imagePath {
@@ -41,13 +43,4 @@ class MainProfileViewController: UIViewController {
             nameLabel.text = profile?.name ?? ""
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
