@@ -12,10 +12,8 @@ import CoreData
 class TestsCoreData {
     static let shared = TestsCoreData()
     private init() {}
-    
     let xcdatamodelId = "Storage"
     let profileTableName = "TestsResults"
-    
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: xcdatamodelId)
         container.loadPersistentStores { _, error in
@@ -25,7 +23,6 @@ class TestsCoreData {
         }
         return container
     }()
-    
     func editWithKey(key: String, value: String) {
         let context = persistentContainer.viewContext
         // Initialize Fetch Request
@@ -36,14 +33,14 @@ class TestsCoreData {
         fetchRequest.entity = entityDescription
         do {
             let result = try context.fetch(fetchRequest)
-            
             if result.count == 0 {
-                let entityDescription = NSEntityDescription.entity(forEntityName: profileTableName, in: persistentContainer.viewContext)
-                let newTests = NSManagedObject(entity: entityDescription!, insertInto: persistentContainer.viewContext)
-                
+                let entityDescription = NSEntityDescription.entity(forEntityName: profileTableName,
+                                                                   in: persistentContainer.viewContext)
+                let newTests = NSManagedObject(entity: entityDescription!,
+                                               insertInto: persistentContainer.viewContext)
                 saveContext(object: newTests)
             }
-        
+            
             if let nameField = result[0] as? NSManagedObject {
                 nameField.setValue(value, forKey: key)
                 saveContext(object: nameField)
@@ -53,7 +50,6 @@ class TestsCoreData {
             print(fetchError)
         }
     }
-    
     func getWithKey(key: String) -> String {
         let context = persistentContainer.viewContext
         // Initialize Fetch Request
@@ -64,7 +60,6 @@ class TestsCoreData {
         fetchRequest.entity = entityDescription
         do {
             let result = try context.fetch(fetchRequest)
-            
             if result.count > 0 {
                 if let nameField = result[0] as? NSManagedObject {
                     if let value = nameField.value(forKey: key) as? String {
@@ -76,10 +71,8 @@ class TestsCoreData {
             let fetchError = error as NSError
             print(fetchError)
         }
-        
         return ""
     }
-    
     func saveContext(object: NSManagedObject) {
         do {
             try object.managedObjectContext?.save()

@@ -42,8 +42,10 @@ class SaveManager {
     func loadProfile() -> Profile? {
         do {
             if let value: AnyObject = UserDefaults.standard.object(forKey: keyProfile) as AnyObject? {
-                let profile = try JSONDecoder().decode(Profile.self, from: value as! Data)
-                return profile
+                if let valueData = value as? Data {
+                    let profile = try JSONDecoder().decode(Profile.self, from: valueData)
+                    return profile
+                }
             }
         } catch {}
         return nil
@@ -54,8 +56,9 @@ class SaveManager {
     }
     func loadWithKey(key: String) -> String {
         if let value: AnyObject = UserDefaults.standard.object(forKey: key) as AnyObject? {
-            let str = value as! String
-            return str
+            if let str = value as? String {
+                return str
+            }
         }
         return ""
     }
@@ -65,8 +68,9 @@ class SaveManager {
     }
     func loadWithKey(key: String) -> Int {
         if let value: AnyObject = UserDefaults.standard.object(forKey: key) as AnyObject? {
-            let str = value as! Int
-            return str
+            if let str = value as? Int {
+                return str
+            }
         }
         return 0
     }

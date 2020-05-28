@@ -64,7 +64,7 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
         ageEdit.isHidden = !isEdit
         genderSegment.isHidden = !isEdit
         infoEdit.isHidden = !isEdit
-        var selector: Selector? = nil
+        var selector: Selector?
         if isEdit {
             selector = #selector(saveClick)
         } else {

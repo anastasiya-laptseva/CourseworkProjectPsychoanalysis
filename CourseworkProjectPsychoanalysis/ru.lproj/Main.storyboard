@@ -1246,6 +1246,7 @@
                         <outlet property="secureIcon" destination="UlW-qK-EzY" id="0WW-D7-RVl"/>
                         <outlet property="stackView" destination="zq6-hb-hcw" id="w1h-Rc-ve7"/>
                         <outlet property="waitView" destination="vza-l4-jov" id="HXV-dV-79w"/>
+                        <outlet property="welcomeLabel" destination="jrp-Vr-XHq" id="LLa-Fq-k4e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEz-vn-GnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

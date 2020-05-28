@@ -9,7 +9,7 @@
 import UIKit
 
 class AllTestsTableViewController: UITableViewController {
-// variables
+    // variables
     var section: Int?
     var indexRow: Int?
     let yesNoIdentifier = "yesNo"
@@ -22,7 +22,7 @@ class AllTestsTableViewController: UITableViewController {
     var favoriteTest: FavoriteColorEntity?
     var geometricTest: GeometricEntity?
     var difficultyTest: DifficultyEntity?
-//    arrays for table view
+    //    arrays for table view
     let arrayTestsEN = [
         ["Phlegmatic Test", "Melancholic Test", "Choleric Test", "Sanguine Test"],
         ["Extrovert", "Introvert"],
@@ -40,7 +40,7 @@ class AllTestsTableViewController: UITableViewController {
                                "Тесты на тип характера",
                                "Психологические тесты",
                                "Тесты на восприятие"]
-// view did load
+    // view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         SaveManager.shared.backgroundSwitch(controller: self,
@@ -55,7 +55,7 @@ class AllTestsTableViewController: UITableViewController {
         difficultyTest = loadTests.difficultyTest
     }
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         section = indexPath.section
         indexRow = indexPath.row
@@ -98,10 +98,10 @@ class AllTestsTableViewController: UITableViewController {
         cell.textLabel?.text = text
         return cell
     }
-
+    
     // MARK: - Navigation
-
-//     In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    //     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == yesNoIdentifier {
             yesNoSetUp(segue: segue)
@@ -144,21 +144,37 @@ class AllTestsTableViewController: UITableViewController {
         var testDescription = ""
         switch indexRow {
         case 0:
-            questionsTemperament = temperamentsTests?.phlegmatic as! [QuestionsArray]
+            if let questionsPhlegmatic = temperamentsTests?.phlegmatic {
+                questionsTemperament = questionsPhlegmatic
+            }
             testName = "Phlegmatic"
-            testDescription = temperamentsTests?.results.phlegmatic as! String
+            if let phlegmaticResult = temperamentsTests?.results.phlegmatic {
+                testDescription = phlegmaticResult
+            }
         case 1:
-            questionsTemperament = temperamentsTests?.melancholic as! [QuestionsArray]
+            if let questionsMelancholic = temperamentsTests?.melancholic {
+                questionsTemperament = questionsMelancholic
+            }
             testName = "Melancholic"
-            testDescription = temperamentsTests?.results.melancholic as! String
+            if let melancholicResult = temperamentsTests?.results.melancholic {
+                testDescription = melancholicResult
+            }
         case 2:
-            questionsTemperament = temperamentsTests?.choleric as! [QuestionsArray]
+            if let questionsCholeric = temperamentsTests?.choleric {
+                questionsTemperament = questionsCholeric
+            }
             testName = "Choleric"
-            testDescription = temperamentsTests?.results.choleric as! String
+            if let cholericResult = temperamentsTests?.results.choleric {
+                testDescription = cholericResult
+            }
         case 3:
-            questionsTemperament = temperamentsTests?.sanguine as! [QuestionsArray]
+            if let questionsSanguine = temperamentsTests?.sanguine {
+                questionsTemperament = questionsSanguine
+            }
             testName = "Sanguine"
-            testDescription = temperamentsTests?.results.sanguine as! String
+            if let sanguineResult = temperamentsTests?.results.sanguine {
+                testDescription = sanguineResult
+            }
         default:
             break
         }
@@ -172,13 +188,21 @@ class AllTestsTableViewController: UITableViewController {
         var testDescription = ""
         switch indexRow {
         case 0:
-            questionsCharacterType = characterTypeTests?.extrovert as! [QuestionsArray]
+            if let questionsExtrovert = characterTypeTests?.extrovert {
+                questionsCharacterType = questionsExtrovert
+            }
             testName = "Extrovert"
-            testDescription = characterTypeTests?.results.extrovert as! String
+            if let resultsExtrovert = characterTypeTests?.results.extrovert {
+                testDescription = resultsExtrovert
+            }
         case 1:
-            questionsCharacterType = characterTypeTests?.introvert as! [QuestionsArray]
+            if let questionsIntrovert = characterTypeTests?.introvert {
+                questionsCharacterType = questionsIntrovert
+            }
             testName = "Introvert"
-            testDescription = characterTypeTests?.results.introvert as! String
+            if let resultsIntrovert = characterTypeTests?.results.introvert {
+                testDescription = resultsIntrovert
+            }
         default:
             break
         }
@@ -190,7 +214,9 @@ class AllTestsTableViewController: UITableViewController {
         var questionsCharacter = [QuestionsArray]()
         switch indexRow {
         case 0:
-            questionsCharacter = characterTest?.questions as! [QuestionsArray]
+            if let questions = characterTest?.questions {
+                questionsCharacter = questions
+            }
         default:
             break
         }
