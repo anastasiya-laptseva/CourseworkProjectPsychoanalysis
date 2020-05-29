@@ -1654,10 +1654,10 @@
                                                 <rect key="frame" x="0.0" y="400" width="394" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-p3-4r4" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="0.0" width="100" height="50"/>
+                                                        <rect key="frame" x="10" y="0.0" width="122" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="rtQ-Ev-9op"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="3xG-da-qwt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <state key="normal" title="Никогда">
@@ -1667,25 +1667,11 @@
                                                             <action selector="neverButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="ShL-8L-tnf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-a1-TEJ" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="274" y="0.0" width="100" height="50"/>
-                                                        <color key="backgroundColor" name="ComponentsColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="sCX-PH-N34"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <state key="normal" title="Редко">
-                                                            <color key="titleColor" name="TextColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="rarelyButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="rwh-gy-rQM"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-hN-iMb" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="147" y="0.0" width="100" height="50"/>
+                                                        <rect key="frame" x="137" y="0.0" width="120" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="27L-RC-eFV"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Zui-TQ-RQr"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <state key="normal" title="Крайне редко">
@@ -1695,20 +1681,34 @@
                                                             <action selector="extremelyRarelyButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="Tg3-TW-ZBz"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-a1-TEJ" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
+                                                        <rect key="frame" x="284" y="0.0" width="100" height="50"/>
+                                                        <color key="backgroundColor" name="ComponentsColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="mlm-q5-B7m"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="Редко">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="rarelyButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="rwh-gy-rQM"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="i2F-hN-iMb" firstAttribute="leading" secondItem="vwP-p3-4r4" secondAttribute="trailing" constant="5" id="CDU-Y0-cUn"/>
                                                     <constraint firstAttribute="bottom" secondItem="sAq-a1-TEJ" secondAttribute="bottom" id="EdL-Uh-Gs2"/>
                                                     <constraint firstAttribute="bottom" secondItem="vwP-p3-4r4" secondAttribute="bottom" id="Fn2-GE-TVW"/>
                                                     <constraint firstItem="sAq-a1-TEJ" firstAttribute="top" secondItem="Awt-rv-Z7j" secondAttribute="top" id="Ie7-rf-vty"/>
                                                     <constraint firstItem="i2F-hN-iMb" firstAttribute="centerY" secondItem="Awt-rv-Z7j" secondAttribute="centerY" id="K6X-8G-NPk"/>
-                                                    <constraint firstItem="i2F-hN-iMb" firstAttribute="centerX" secondItem="Awt-rv-Z7j" secondAttribute="centerX" id="LOn-WP-gqg"/>
+                                                    <constraint firstItem="sAq-a1-TEJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i2F-hN-iMb" secondAttribute="trailing" constant="5" id="NjN-rQ-LGR"/>
+                                                    <constraint firstItem="VDX-8u-DW6" firstAttribute="trailing" secondItem="sAq-a1-TEJ" secondAttribute="trailing" constant="10" id="NlC-Gi-koz"/>
                                                     <constraint firstAttribute="bottom" secondItem="i2F-hN-iMb" secondAttribute="bottom" id="PDH-pF-YH1"/>
                                                     <constraint firstAttribute="height" constant="50" id="SWh-Js-qlk"/>
-                                                    <constraint firstItem="vwP-p3-4r4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Awt-rv-Z7j" secondAttribute="leading" constant="20" symbolic="YES" id="VNz-m8-acW"/>
                                                     <constraint firstItem="vwP-p3-4r4" firstAttribute="top" secondItem="Awt-rv-Z7j" secondAttribute="top" id="Y5D-uJ-al7"/>
-                                                    <constraint firstItem="i2F-hN-iMb" firstAttribute="leading" secondItem="vwP-p3-4r4" secondAttribute="trailing" constant="27" id="fU7-XE-pog"/>
-                                                    <constraint firstAttribute="trailing" secondItem="sAq-a1-TEJ" secondAttribute="trailing" constant="20" id="oxB-Mm-zkV"/>
-                                                    <constraint firstItem="sAq-a1-TEJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i2F-hN-iMb" secondAttribute="trailing" constant="8" symbolic="YES" id="pKC-Iv-9jH"/>
+                                                    <constraint firstItem="vwP-p3-4r4" firstAttribute="leading" secondItem="VDX-8u-DW6" secondAttribute="leading" constant="10" id="fFo-ma-piW"/>
+                                                    <constraint firstItem="i2F-hN-iMb" firstAttribute="centerX" secondItem="VDX-8u-DW6" secondAttribute="centerX" id="ytQ-iy-Nrj"/>
                                                     <constraint firstItem="i2F-hN-iMb" firstAttribute="top" secondItem="Awt-rv-Z7j" secondAttribute="top" id="ywL-ZH-Nt6"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="safeArea" id="VDX-8u-DW6"/>
@@ -1723,10 +1723,10 @@
                                                 <rect key="frame" x="0.0" y="460" width="394" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-rM-PT7" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="0.0" width="100" height="50"/>
+                                                        <rect key="frame" x="10" y="0.0" width="122" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Tw3-Go-Z2d"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="yGG-PV-tHP"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <state key="normal" title="Иногда">
@@ -1736,25 +1736,11 @@
                                                             <action selector="sometimesButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="G3x-Tx-alg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-LH-JFu" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="274" y="0.0" width="100" height="50"/>
-                                                        <color key="backgroundColor" name="ComponentsColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2lu-NJ-pX8"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <state key="normal" title="Почти всегда">
-                                                            <color key="titleColor" name="TextColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="almostAlwaysButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="chg-lP-FMJ"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-Y3-kNp" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="147" y="0.0" width="100" height="50"/>
+                                                        <rect key="frame" x="137" y="0.0" width="120" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="YmZ-hr-Aaw"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="FyC-mJ-nCS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <state key="normal" title="Часто">
@@ -1764,13 +1750,27 @@
                                                             <action selector="oftenButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="bIg-WI-tD7"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-LH-JFu" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
+                                                        <rect key="frame" x="284" y="0.0" width="100" height="50"/>
+                                                        <color key="backgroundColor" name="ComponentsColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="NdM-sn-san"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="Почти всегда">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="almostAlwaysButton:" destination="UxD-zs-Oeg" eventType="touchUpInside" id="chg-lP-FMJ"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="mJ9-LH-JFu" firstAttribute="top" secondItem="tCt-Kf-Sg1" secondAttribute="top" id="1ZQ-rf-Hi7"/>
-                                                    <constraint firstItem="mJ9-LH-JFu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XAk-Y3-kNp" secondAttribute="trailing" constant="8" symbolic="YES" id="2bk-3A-0hE"/>
-                                                    <constraint firstItem="AsU-rM-PT7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tCt-Kf-Sg1" secondAttribute="leading" symbolic="YES" id="47D-rt-wUp"/>
                                                     <constraint firstAttribute="bottom" secondItem="XAk-Y3-kNp" secondAttribute="bottom" id="9Sz-Nx-WlG"/>
-                                                    <constraint firstAttribute="trailing" secondItem="mJ9-LH-JFu" secondAttribute="trailing" constant="20" id="9YK-TX-WiQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mJ9-LH-JFu" secondAttribute="trailing" constant="10" id="ENM-3d-8Ol"/>
+                                                    <constraint firstItem="XAk-Y3-kNp" firstAttribute="leading" secondItem="AsU-rM-PT7" secondAttribute="trailing" constant="5" id="F43-Se-SdX"/>
+                                                    <constraint firstItem="mJ9-LH-JFu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XAk-Y3-kNp" secondAttribute="trailing" constant="5" id="Qaz-jD-tOq"/>
                                                     <constraint firstAttribute="bottom" secondItem="AsU-rM-PT7" secondAttribute="bottom" id="UHa-l2-zXi"/>
                                                     <constraint firstAttribute="height" constant="50" id="aYa-CD-Ojv"/>
                                                     <constraint firstItem="XAk-Y3-kNp" firstAttribute="centerX" secondItem="tCt-Kf-Sg1" secondAttribute="centerX" id="cPf-yQ-GU0"/>
@@ -1778,7 +1778,7 @@
                                                     <constraint firstItem="XAk-Y3-kNp" firstAttribute="top" secondItem="tCt-Kf-Sg1" secondAttribute="top" id="nTp-Mh-Q8u"/>
                                                     <constraint firstAttribute="bottom" secondItem="mJ9-LH-JFu" secondAttribute="bottom" id="rUk-PQ-waD"/>
                                                     <constraint firstItem="XAk-Y3-kNp" firstAttribute="centerY" secondItem="tCt-Kf-Sg1" secondAttribute="centerY" id="wBU-Cd-lx2"/>
-                                                    <constraint firstItem="XAk-Y3-kNp" firstAttribute="leading" secondItem="AsU-rM-PT7" secondAttribute="trailing" constant="27" id="xRW-mM-cVf"/>
+                                                    <constraint firstItem="AsU-rM-PT7" firstAttribute="leading" secondItem="tCt-Kf-Sg1" secondAttribute="leading" constant="10" id="x4V-OR-niz"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-2i-Sx6">
@@ -1791,10 +1791,10 @@
                                                 <rect key="frame" x="0.0" y="520" width="394" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-1D-Eqb" customClass="BorderButton" customModule="CourseworkProjectPsychoanalysis_CourseApp" customModuleProvider="target">
-                                                        <rect key="frame" x="147" y="0.0" width="100" height="50"/>
+                                                        <rect key="frame" x="137" y="0.0" width="120" height="50"/>
                                                         <color key="backgroundColor" name="ComponentsColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="GDm-wQ-3OS"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="GDm-wQ-3OS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <state key="normal" title="Всегда">
@@ -2596,7 +2596,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vpz-Iv-V86"/>
+        <segue reference="Dv7-6Q-WoJ"/>
         <segue reference="lY4-7Z-RHq"/>
     </inferredMetricsTieBreakers>
     <resources>
