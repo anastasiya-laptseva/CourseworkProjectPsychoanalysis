@@ -9,6 +9,8 @@
 import UIKit
 
 class ResultTestViewController: UIViewController {
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nameResultLabel: UILabel!
     @IBOutlet weak var textResultLabel: UILabel!
 //    variables
@@ -17,6 +19,9 @@ class ResultTestViewController: UIViewController {
 // view did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scrollView, stackView])
         nameResultLabel.text = testName
         textResultLabel.text = testDescription
         // Do any additional setup after loading the view.

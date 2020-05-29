@@ -10,6 +10,8 @@ import UIKit
 
 class TestCurrentStateViewController: UIViewController {
 //    outlets
+    @IBOutlet weak var scroliView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var question1Label: UILabel!
     @IBOutlet weak var question2Label: UILabel!
@@ -28,6 +30,9 @@ class TestCurrentStateViewController: UIViewController {
 //    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scroliView, stackView])
         currentStateModel = JSONManager().loadTest().currentStateTest
         if let questions = currentStateModel?.questions {
             for _ in 0...questions.count {

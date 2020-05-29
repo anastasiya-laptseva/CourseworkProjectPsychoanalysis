@@ -11,6 +11,8 @@ import GTProgressBar
 
 class ResultCurrentStateViewController: UIViewController {
 //    outlets
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var healthProgressView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
@@ -25,6 +27,9 @@ class ResultCurrentStateViewController: UIViewController {
 //    view did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                             navigation: self.navigationController,
+                                             views: [self.view, scrollView, stackView])
         let colorHealthBar = UIColor(named: "progressBarHealth") ?? .green
         let colorActivityBar = UIColor(named: "progressBarActivity")  ?? .green
         let colorMoodBar = UIColor(named: "progressBarMood")  ?? .green

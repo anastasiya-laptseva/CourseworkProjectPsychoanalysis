@@ -10,10 +10,15 @@ import UIKit
 
 class ExplanationViewController: UIViewController {
 //    outlets
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var goButton: BorderButton!
 //    view did load
     override func viewDidLoad() {
+        SaveManager.shared.backgroundSwitch(controller: self,
+                                            navigation: self.navigationController,
+                                            views: [self.view, scrollView, stackView, textLabel])
         AnimationManager.shared.animationTextWithSymbol(label: textLabel,
                                                         newText: textLabel.text!,
                                                         characterDelay: 0.001)

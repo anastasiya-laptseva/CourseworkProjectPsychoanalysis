@@ -567,6 +567,8 @@
                         <outlet property="healthProgressView" destination="r5L-TN-WaP" id="NMX-nC-E0a"/>
                         <outlet property="moodLabel" destination="ck2-Y7-zRf" id="Hn5-A9-BzI"/>
                         <outlet property="moodProgressView" destination="8NR-1s-pHP" id="3jq-nj-GDP"/>
+                        <outlet property="scrollView" destination="Q14-n3-j0d" id="rVn-xA-fkN"/>
+                        <outlet property="stackView" destination="Mys-xW-3H3" id="f94-qI-orD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8W9-Qs-Pxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -683,6 +685,8 @@
                     <navigationItem key="navigationItem" id="mr3-rN-CFz"/>
                     <connections>
                         <outlet property="goButton" destination="vzc-Xz-uWY" id="QBB-ql-Gzt"/>
+                        <outlet property="scrollView" destination="0uK-1S-cJX" id="Edf-Wd-aax"/>
+                        <outlet property="stackView" destination="zqX-hf-Ssr" id="as9-v2-DkV"/>
                         <outlet property="textLabel" destination="dYz-cI-5SW" id="ucI-MY-bHS"/>
                     </connections>
                 </viewController>
@@ -793,6 +797,8 @@
                     <navigationItem key="navigationItem" id="wcu-Bb-Z66"/>
                     <connections>
                         <outlet property="nameResultLabel" destination="oWJ-NL-GXu" id="FUR-ML-A7h"/>
+                        <outlet property="scrollView" destination="hAd-Bc-Mh9" id="LVv-kL-tiR"/>
+                        <outlet property="stackView" destination="nat-5Y-BkD" id="9Zz-wz-eGZ"/>
                         <outlet property="textResultLabel" destination="9VV-L3-eKX" id="EMw-Tc-sPF"/>
                     </connections>
                 </viewController>
@@ -2435,6 +2441,8 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="Dct-ZV-3sp" id="LWQ-gw-DHY"/>
                         <outlet property="nameLabel" destination="fVm-UN-5o3" id="6hL-Rb-gEr"/>
+                        <outlet property="scrollView" destination="w6L-as-bxy" id="oSC-Fl-ikv"/>
+                        <outlet property="stackView" destination="66X-Of-bI8" id="5pf-QI-9qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kI-v3-fpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2590,6 +2598,8 @@
                         <outlet property="progressLabel" destination="2by-Bq-Xky" id="kbk-P4-Agy"/>
                         <outlet property="question1Label" destination="qML-i5-Qt3" id="RVC-fo-DoV"/>
                         <outlet property="question2Label" destination="JJk-jm-NaS" id="4VC-ju-H5U"/>
+                        <outlet property="scroliView" destination="KiA-1W-pqQ" id="m22-IS-5bw"/>
+                        <outlet property="stackView" destination="LGE-w2-xnL" id="ug6-i7-Efu"/>
                         <segue destination="h9N-aW-rWv" kind="show" identifier="stateResult" id="lY4-7Z-RHq"/>
                     </connections>
                 </viewController>
