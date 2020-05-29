@@ -37,12 +37,14 @@ class ResultsCollectionViewController: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView,
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
-                                                      for: indexPath) as! ResultCollectionViewCell
-        // Configure the cell
-        let element = data.loadTests[indexPath.row+sectionCount*indexPath.section]
-        cell.setCell(name: element.getName(), description: element.getShortDescription(), image: element.getImage())
-        return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
+                                                         for: indexPath) as? ResultCollectionViewCell {
+            // Configure the cell
+            let element = data.loadTests[indexPath.row+sectionCount*indexPath.section]
+            cell.setCell(name: element.getName(), description: element.getShortDescription(), image: element.getImage())
+            return cell
+        }
+        return UICollectionViewCell()
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         elementClick = data.loadTests[indexPath.row+sectionCount*indexPath.section]
