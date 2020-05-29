@@ -33,7 +33,7 @@ class MainProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         let profile = SaveManager.shared.loadProfile()
         if let imagePathData = profile?.imagePath {
-            if let infoDic: NSDictionary = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary {
+            if let infoDic = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(imagePathData) as? NSDictionary {
                 if let info = infoDic as? [UIImagePickerController.InfoKey: Any] {
                     if let image = info[.originalImage] as? UIImage {
                             imageView.image = image

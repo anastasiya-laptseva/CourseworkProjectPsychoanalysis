@@ -79,7 +79,7 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     }
     func updateProfile() {
         if let imagePathData = profile.imagePath {
-            if let infoDic: NSDictionary = NSKeyedUnarchiver.unarchiveObject(with: imagePathData)! as? NSDictionary {
+            if let infoDic = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(imagePathData) as? NSDictionary {
                 if let info = infoDic as? [UIImagePickerController.InfoKey: Any] {
                     if let image = info[.originalImage] as? UIImage {
                             photoView.image = image
@@ -102,7 +102,7 @@ class BasicInfoViewController: UIViewController, UIImagePickerControllerDelegate
     @objc func saveClick() {
         print("Save")
         if let dataImage = info {
-            profile.imagePath = NSKeyedArchiver.archivedData(withRootObject: dataImage)
+            profile.imagePath = try! NSKeyedArchiver.archivedData(withRootObject: dataImage, requiringSecureCoding: false)
         }
         profile.name = nameEdit.text ?? ""
         let ageStr = ageEdit.text ?? "0"
