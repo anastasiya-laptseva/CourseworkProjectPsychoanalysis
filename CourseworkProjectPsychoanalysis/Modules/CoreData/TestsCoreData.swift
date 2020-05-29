@@ -41,7 +41,7 @@ class TestsCoreData {
                 saveContext(object: newTests)
             }
             
-            if let nameField = result[0] as? NSManagedObject {
+            if let nameField = result.first as? NSManagedObject {
                 nameField.setValue(value, forKey: key)
                 saveContext(object: nameField)
             }
