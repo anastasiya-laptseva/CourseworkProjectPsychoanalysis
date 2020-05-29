@@ -10,9 +10,7 @@ import UIKit
 
 public class AlertManager {
     static let shared = AlertManager()
-    
-    private init(){}
-    
+    private init() {}
     func showAlert(text: String, _ sender: Any) {
         let alert = UIAlertController(title: "Error", message: text, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Sorry", style: UIAlertAction.Style.default, handler: nil))

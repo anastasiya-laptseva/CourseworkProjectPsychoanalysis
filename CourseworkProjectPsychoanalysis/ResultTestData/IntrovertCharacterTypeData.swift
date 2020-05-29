@@ -10,26 +10,20 @@ import UIKit
 
 class IntrovertCharacterTypeData: BaseData, TestsDataProtocol {
     let keySave = "result_introvert"
-    
     func getImage() -> UIImage {
         return UIImage(named: "introvert") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-
     func getName() -> String {
         return "Introvert"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "0.0") %"
     }
-    
     func getLongDescription() -> String {
-        var tests = JSONManager().loadTest()
+        let tests = JSONManager().loadTest()
         return tests.characterTypeTest.results.introvert
     }
-
 }

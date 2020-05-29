@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CharacterTypeResult : Codable {
+public struct CharacterTypeResult: Codable {
     var introvert: String
     var extrovert: String
 }

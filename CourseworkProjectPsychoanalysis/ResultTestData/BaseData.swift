@@ -8,21 +8,19 @@
 
 import UIKit
 
-class BaseData{
+class BaseData {
     var result: String?
-    
-    open func getKey()-> String{
+    open func getKey() -> String {
         ""
     }
-    
     func load() {
-        result = SaveManager.shared.loadWithKey(key: getKey())
+        result = TestsCoreData.shared.getWithKey(key: getKey())
+            //SaveManager.shared.loadWithKey(key: getKey())
     }
-    
     func save(value: String) {
-        SaveManager.shared.saveWithKey(key: getKey(), value: value)
+        TestsCoreData.shared.editWithKey(key: getKey(), value: value)
+        //SaveManager.shared.saveWithKey(key: getKey(), value: value)
     }
-    
     func isResult() -> Bool {
         return result?.elementsEqual("") == false
     }

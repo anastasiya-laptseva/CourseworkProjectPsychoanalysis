@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct GeometricResult : Codable {
+public struct GeometricResult: Codable {
     var square: String
     var triangle: String
     var rectangle: String

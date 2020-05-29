@@ -10,28 +10,22 @@ import UIKit
 
 class FavotiteColorData: BaseData, TestsDataProtocol {
     let keySave = "result_favorite_color"
-    
     func getImage() -> UIImage {
         return UIImage(named: "favoriteColor") ?? UIImage()
     }
-    
     override func getKey() -> String {
         return keySave
     }
-    
     func getName() -> String {
         return "Favorite color Test"
     }
-    
     func getShortDescription() -> String {
         return "\(result ?? "")"
     }
-    
     func getLongDescription() -> String {
         return getResultLong(value: result ?? "")
     }
-    
-    func getResultLong(value: String) -> String  {
+    func getResultLong(value: String) -> String {
         let tests = JSONManager().loadTest()
         let favoriteColorResultModel = tests.favoriteColorTest.results
         switch result {

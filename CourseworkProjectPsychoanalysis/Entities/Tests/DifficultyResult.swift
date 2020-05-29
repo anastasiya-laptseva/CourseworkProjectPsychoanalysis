@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct DifficultyResultArray : Codable {
+public struct DifficultyResultArray: Codable {
     var result1: String
     var result2: String
     var result3: String

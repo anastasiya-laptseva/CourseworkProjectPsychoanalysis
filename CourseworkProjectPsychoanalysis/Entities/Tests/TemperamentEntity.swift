@@ -9,10 +9,10 @@
 import Foundation
 
 //Temperament structures
-public struct TemperamentEntity : Codable {
-    var phlegmatic : [QuestionsArray]
-    var melancholic : [QuestionsArray]
-    var choleric : [QuestionsArray]
-    var sanguine : [QuestionsArray]
+public struct TemperamentEntity: Codable {
+    var phlegmatic: [QuestionsArray]
+    var melancholic: [QuestionsArray]
+    var choleric: [QuestionsArray]
+    var sanguine: [QuestionsArray]
     var results: ResultArray
 }

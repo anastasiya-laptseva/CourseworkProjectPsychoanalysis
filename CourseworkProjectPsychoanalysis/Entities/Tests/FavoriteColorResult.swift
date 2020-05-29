@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct FavotiteColorResult : Codable {
+public struct FavotiteColorResult: Codable {
     var white: String
     var black: String
     var gray: String

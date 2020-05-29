@@ -11,7 +11,6 @@ import UIKit
 class AllTestsData {
     private var allTests: [TestsDataProtocol]?
     var loadTests = [TestsDataProtocol]()
-    
     init() {
         allTests = [TestsDataProtocol]()
         allTests?.append(PhlegmaticData())
@@ -25,16 +24,17 @@ class AllTestsData {
         allTests?.append(GeometricData())
         allTests?.append(FavotiteColorData())
     }
-    
     func load() {
-        let data = allTests as! [BaseData]
-        loadTests.removeAll()
-        for test in data {
-            test.load()
-            if test.isResult(){
-                loadTests.append(test as! TestsDataProtocol)
+        if let data = allTests as? [BaseData] {
+            loadTests.removeAll()
+            for test in data {
+                test.load()
+                if test.isResult() {
+                    if let testData = test as? TestsDataProtocol {
+                        loadTests.append(testData)
+                    }
+                }
             }
         }
     }
 }
-
